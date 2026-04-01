@@ -1,4 +1,11 @@
 export default function CallToActionSection() {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact-form');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 kinetic-gradient opacity-10"></div>
@@ -12,7 +19,10 @@ export default function CallToActionSection() {
           Join 5,000+ top-performing sales teams using CloseIQ to dominate their markets.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-10 py-5 kinetic-gradient text-on-primary font-bold rounded-xl text-xl shadow-2xl hover:scale-105 transition-transform">
+          <button 
+            onClick={scrollToContact}
+            className="px-10 py-5 kinetic-gradient text-on-primary font-bold rounded-xl text-xl shadow-2xl hover:scale-105 transition-transform"
+          >
             Contact Us
           </button>
         </div>

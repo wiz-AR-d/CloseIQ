@@ -1,4 +1,8 @@
-export default function HeroSection() {
+interface HeroSectionProps {
+  onOpenPopup?: () => void;
+}
+
+export default function HeroSection({ onOpenPopup }: HeroSectionProps) {
   return (
     <header className="relative pt-32 pb-20 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
@@ -21,7 +25,10 @@ export default function HeroSection() {
             CloseIQ captures, transcribes, and analyzes every sales interaction—automatically. Get automated summaries, sales insights, and company-wide analytics from your calls.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <button className="px-8 py-4 kinetic-gradient text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg">
+            <button 
+              onClick={onOpenPopup}
+              className="px-8 py-4 kinetic-gradient text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg"
+            >
               Get Started with us
             </button>
           </div>
