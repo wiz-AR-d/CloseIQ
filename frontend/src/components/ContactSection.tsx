@@ -50,7 +50,7 @@ export default function ContactSection() {
         
         {/* Left Side: Copy */}
         <div className="space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">
             Ready to transform <br/>
             <span className="text-primary">your sales process?</span>
           </h2>
@@ -74,7 +74,7 @@ export default function ContactSection() {
         </div>
 
         {/* Right Side: Form */}
-        <div className="relative z-10 p-8 glass-card border border-outline-variant/20 rounded-2xl shadow-xl">
+        <div className="relative z-10 p-8 bg-surface border border-outline-variant/20 rounded-2xl shadow-xl">
           {status === 'success' ? (
             <div className="bg-primary/10 border border-primary/20 rounded-xl p-8 text-center flex flex-col items-center justify-center h-full min-h-[400px]">
               <span className="material-symbols-outlined text-primary text-5xl mb-4">check_circle</span>
@@ -84,12 +84,12 @@ export default function ContactSection() {
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <label htmlFor="contact-name" className="block text-sm font-medium text-white mb-1">Full Name</label>
+                <label htmlFor="contact-name" className="block text-sm font-medium text-on-surface mb-1">Full Name</label>
                 <input 
                   type="text" 
                   id="contact-name"
                   required
-                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                   placeholder="Jane Doe"
                   value={formData.name}
                   onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -97,12 +97,12 @@ export default function ContactSection() {
               </div>
               
               <div>
-                <label htmlFor="contact-email" className="block text-sm font-medium text-white mb-1">Work Email</label>
+                <label htmlFor="contact-email" className="block text-sm font-medium text-on-surface mb-1">Work Email</label>
                 <input 
                   type="email" 
                   id="contact-email"
                   required
-                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                   placeholder="jane@company.com"
                   value={formData.email}
                   onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -110,12 +110,12 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="contact-company" className="block text-sm font-medium text-white mb-1">Company Name</label>
+                <label htmlFor="contact-company" className="block text-sm font-medium text-on-surface mb-1">Company Name</label>
                 <input 
                   type="text" 
                   id="contact-company"
                   required
-                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                   placeholder="Acme Corp"
                   value={formData.company}
                   onChange={(e) => setFormData({...formData, company: e.target.value})}
@@ -123,11 +123,11 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="contact-message" className="block text-sm font-medium text-white mb-1">How can we help?</label>
+                <label htmlFor="contact-message" className="block text-sm font-medium text-on-surface mb-1">How can we help?</label>
                 <textarea 
                   id="contact-message"
                   required
-                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none h-28"
+                  className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none h-28"
                   placeholder="Tell us about your needs..."
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}

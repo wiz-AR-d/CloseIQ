@@ -5,15 +5,15 @@ interface NavBarProps {
 }
 
 export default function NavBar({ onOpenPopup }: NavBarProps) {
-  const [isLightMode, setIsLightMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    if (isLightMode) {
-      document.body.classList.add('light-mode');
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
     } else {
-      document.body.classList.remove('light-mode');
+      document.body.classList.remove('dark-mode');
     }
-  }, [isLightMode]);
+  }, [isDarkMode]);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-xl border-b border-outline-variant/10">
@@ -21,12 +21,12 @@ export default function NavBar({ onOpenPopup }: NavBarProps) {
         <div className="text-2xl font-bold tracking-tighter text-primary">CloseIQ</div>
         <div className="flex items-center gap-4">
           <button 
-            onClick={() => setIsLightMode(!isLightMode)}
+            onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-2 bg-surface-container rounded-full text-on-surface flex items-center justify-center border border-outline-variant/30 transition-transform active:scale-95"
             aria-label="Toggle Theme"
           >
             <span className="material-symbols-outlined text-lg">
-              {isLightMode ? 'dark_mode' : 'light_mode'}
+              {isDarkMode ? 'light_mode' : 'dark_mode'}
             </span>
           </button>
           <button 
