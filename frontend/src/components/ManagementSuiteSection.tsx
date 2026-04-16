@@ -1,3 +1,5 @@
+import AianiImage from '../Aiani.png';
+
 export default function ManagementSuiteSection() {
   return (
     <section className="py-24 bg-surface">
@@ -46,17 +48,13 @@ export default function ManagementSuiteSection() {
             </div>
             <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-[80px]"></div>
           </div>
-          {/* Small Bento Item */}
-          <div className="bg-primary p-8 rounded-3xl flex flex-col justify-between group">
-            <span className="material-symbols-outlined text-on-primary text-4xl">
-              trending_up
-            </span>
-            <div>
-              <h3 className="text-3xl font-bold text-on-primary leading-tight mb-2">240%</h3>
-              <p className="text-on-primary/80 font-medium">
-                Average increase in CRM data accuracy after implementation.
-              </p>
-            </div>
+          {/* Small Bento Item Image */}
+          <div className="flex justify-center items-center h-full">
+            <img
+              alt="Data Accuracy Insights"
+              className="w-full h-full object-cover rounded-3xl border border-outline-variant/20 shadow-xl"
+              src={AianiImage}
+            />
           </div>
           {/* Another Small Bento Item */}
           <div className="bg-surface-container-high rounded-3xl p-8 border border-outline-variant/10 flex flex-col justify-between">
@@ -66,11 +64,42 @@ export default function ManagementSuiteSection() {
                 AI identifies specific moments in calls where reps can improve pitch delivery.
               </p>
             </div>
-            <img
-              alt="Coaching Stats"
-              className="rounded-xl mt-6 grayscale hover:grayscale-0 transition-all duration-500"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPtFB6LIKPp4IARnIdRVsIDZQ39hXS7R9Ip9IMa2dNI_6PjK0uEVUywnBifNahvth9FxhIR7EE572KW1fvt_QqQ9mr9Wqq_1_69v2d-8YwF7Pz7SDUa3ruIS5gQHI63gvaPYA4J4Q1U3XZhUKJS6ShmMQ_ErwJ53d1a2y2neZuuq2QKDslqgqr-XkmNdDQRLn8CzDQuhO-QviQFA08bH6uFa1jUG8cH_KctcTBRqt_vsj4cd3so-bDr7uOfeKxCfM-xR1fyq0qdfY"
-            />
+            <div className="mt-6 flex-grow flex flex-col justify-end space-y-3 bg-surface p-4 rounded-xl border border-outline-variant/10 shadow-inner">
+              <div className="space-y-1">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-on-surface-variant font-medium">Objection Handling</span>
+                  <span className="text-primary font-bold">92%</span>
+                </div>
+                <div className="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-primary h-full w-[92%] rounded-full opacity-90"></div>
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-on-surface-variant font-medium">Pacing & Pitch</span>
+                  <span className="text-secondary font-bold">78%</span>
+                </div>
+                <div className="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-secondary h-full w-[78%] rounded-full opacity-90"></div>
+                </div>
+              </div>
+
+              <div className="space-y-1">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-on-surface-variant font-medium">Active Listening</span>
+                  <span className="text-error font-bold">45%</span>
+                </div>
+                <div className="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-error h-full w-[45%] rounded-full opacity-90"></div>
+                </div>
+              </div>
+              
+              <div className="mt-2 text-[10px] text-error flex gap-1 items-start bg-error/10 p-2 rounded-lg border border-error/20 leading-tight">
+                 <span className="material-symbols-outlined text-[14px]">warning</span>
+                 <span>Rep spoke 65% of the time during the demo. Coach to listen more.</span>
+              </div>
+            </div>
           </div>
           {/* Long Bento Item */}
           <div className="md:col-span-2 bg-surface-container-high rounded-3xl p-8 border border-outline-variant/10 flex flex-col md:flex-row items-center gap-8">

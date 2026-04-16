@@ -1,3 +1,5 @@
+import salya from '../assets/salya.png';
+
 export default function SalesAssistantSection() {
   return (
     <section className="py-24 bg-surface-container-low">
@@ -30,9 +32,9 @@ export default function SalesAssistantSection() {
         <div className="relative">
           <div className="absolute inset-0 bg-tertiary/5 blur-[100px] rounded-full"></div>
           <img
-            alt="CRM Automation"
-            className="relative z-10 rounded-2xl shadow-2xl border border-outline-variant/10"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl7rAkdfOtw7GuuzcqSkdWKRJzMZYVUVDhzkVc_AqsK8tEGJVz_ii1FE7EZwtb9taMyeR7ybQcTIyzKMQAekt0AoPuBzsjeHnMHSwZQc3mrnOnUmtfr5yJtKX5f47N3Wch7G-IWeUyWYIWEuzZulEokQBDHmgoFox83AiLyKxD4Y4FZ9i4tGU3S7uyvTWSJXBrmA-sCIsSO5G58eBlR3FMmmkSSCX4c2h3G6ETNiaCAGv9I8J6IAp3vYwx7kGu8-mZw2-DSQXUT6s"
+            alt="AI Sales Assistant"
+            className="relative z-10 w-full h-auto rounded-xl border border-outline-variant/20 shadow-2xl"
+            src={salya}
           />
         </div>
       </div>

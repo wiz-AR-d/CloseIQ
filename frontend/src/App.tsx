@@ -10,6 +10,7 @@ import CallToActionSection from './components/CallToActionSection'
 import Footer from './components/Footer'
 import PopupForm from './components/PopupForm'
 import ContactSection from './components/ContactSection'
+import RealEstateInsightsSection from './components/RealEstateInsightsSection'
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -24,6 +25,7 @@ function App() {
         <SalesAssistantSection />
         <ManagementSuiteSection />
         <KeyFeaturesSection />
+        <RealEstateInsightsSection />
         <CallToActionSection />
         <ContactSection />
       </main>

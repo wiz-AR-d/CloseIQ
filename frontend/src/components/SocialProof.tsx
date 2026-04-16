@@ -6,11 +6,11 @@ export default function SocialProof() {
           Trusted by leading sales teams
         </p>
         <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale contrast-125">
-          <div className="text-2xl font-bold font-headline tracking-tighter">VOXOR</div>
-          <div className="text-2xl font-bold font-headline tracking-tighter">NEXA</div>
-          <div className="text-2xl font-bold font-headline tracking-tighter">QUANTUM</div>
-          <div className="text-2xl font-bold font-headline tracking-tighter">SPHERE</div>
-          <div className="text-2xl font-bold font-headline tracking-tighter">ORBIT</div>
+          <div className="text-2xl font-bold font-headline tracking-tighter">Sawant Sales</div>
+          <div className="text-2xl font-bold font-headline tracking-tighter">Aakash Kalyan</div>
+          <div className="text-2xl font-bold font-headline tracking-tighter">Sundar's Classes</div>
+          <div className="text-2xl font-bold font-headline tracking-tighter">Gurukul Developers</div>
+
         </div>
       </div>
     </section>

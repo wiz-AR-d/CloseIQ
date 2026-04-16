@@ -1,3 +1,5 @@
+import firstimgAI from '../assets/firstimgAI.png';
+
 interface HeroSectionProps {
   onOpenPopup?: () => void;
 }
@@ -17,7 +19,7 @@ export default function HeroSection({ onOpenPopup }: HeroSectionProps) {
               Intelligence is Live
             </span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-[-0.04em] text-white">
+          <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-[-0.04em] text-on-surface">
             No manual work.<br />
             <span className="text-primary-dim">No Blind spots.</span>
           </h1>
@@ -27,28 +29,28 @@ export default function HeroSection({ onOpenPopup }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
             <button 
               onClick={onOpenPopup}
-              className="px-8 py-4 kinetic-gradient text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg"
+              className="px-8 py-4 bg-primary text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg"
             >
               Get Started with us
             </button>
           </div>
         </div>
         <div className="lg:col-span-6 relative z-10">
-          <div className="glass-card p-4 rounded-xl border border-outline-variant/20 glow-pulse">
+          <div className="bg-surface p-4 rounded-xl border border-outline-variant/20 shadow-2xl relative glow-pulse">
             <img
               alt="Sales Intelligence Interface"
               className="rounded-lg w-full h-auto shadow-2xl"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVF_2fKQmtK7-tfUvyjoq3aH4szGZ9_bDOep5EHQzPIzLL555jzTySXk0zz4G0MZJ1iQwPAzlvJnpCZNmhn1KvCKaMV2-RO-OXicRx-NcMmKswu3H6z_tmvx_9f5cV7bDI9QDgR1rNuJ0zYXb_0-bKdJUKL9kj_NaOrPdACs_MW-3tIpIQUcGzVJRFOeArb197C1ss3oLLjXT_FpGgT4WMhv0NW38JRD-wgp-Rn4rLhHYObjKNC1KdpP_fvF5cqmafJ5sVGGlACXo"
+              src={firstimgAI}
             />
-            <div className="absolute -bottom-6 -left-6 glass-card p-6 rounded-xl border border-primary/30 max-w-[240px]">
+            <div className="absolute -bottom-25 -left-6 bg-surface shadow-2xl p-6 rounded-xl border border-outline-variant/50 max-w-[240px]">
               <div className="flex items-center gap-3 mb-2">
                 <span className="material-symbols-outlined text-primary">auto_awesome</span>
                 <span className="text-xs font-bold text-primary uppercase tracking-widest">
-                  AI Insight
+                  Data Capture
                 </span>
               </div>
               <p className="text-sm text-on-surface leading-snug">
-                "Client showed 85% positive sentiment during the pricing discussion. Immediate follow-up recommended."
+                "Never lose a lead again. CloseIQ captures every call, CRM, chat, and email automatically."
               </p>
             </div>
           </div>

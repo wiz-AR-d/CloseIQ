@@ -141,7 +141,7 @@ export default function ContactSection() {
               <button 
                 type="submit" 
                 disabled={status === 'submitting'}
-                className="w-full py-4 kinetic-gradient text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg disabled:opacity-70 flex justify-center items-center gap-2"
+                className="w-full py-4 bg-primary text-on-primary font-bold rounded-lg shadow-lg hover:brightness-110 transition-all text-lg disabled:opacity-70 flex justify-center items-center gap-2"
               >
                 {status === 'submitting' ? (
                   <>
