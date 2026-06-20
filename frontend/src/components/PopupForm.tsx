@@ -82,7 +82,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
                 id="name"
                 required
                 className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                placeholder="Jane Doe"
+                placeholder="Pooja Sharma"
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
               />
@@ -95,7 +95,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
                 id="email"
                 required
                 className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
-                placeholder="jane@company.com"
+                placeholder="pooja@company.com"
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
               />
