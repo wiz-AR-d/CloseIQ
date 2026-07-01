@@ -1,30 +1,31 @@
 import { useState, useEffect } from 'react'
 import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
-import LeadershipSection from './components/LeadershipSection'
-import SalesAssistantSection from './components/SalesAssistantSection'
-import ManagementSuiteSection from './components/ManagementSuiteSection'
-import KeyFeaturesSection from './components/KeyFeaturesSection'
-import CallToActionSection from './components/CallToActionSection'
+import SocialProofSection from './components/SocialProofSection'
+import ProblemSection from './components/ProblemSection'
+import ValuePropsSection from './components/ValuePropsSection'
+import FinalCtaSection from './components/FinalCtaSection'
 import Footer from './components/Footer'
 import PopupForm from './components/PopupForm'
-import ContactSection from './components/ContactSection'
-import RealEstateInsightsSection from './components/RealEstateInsightsSection'
 
 // Import New Pages
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
 import SecurityPage from './components/SecurityPage'
 import ContactPage from './components/ContactPage'
+import RampTimePage from './components/RampTimePage'
+import CoachingPage from './components/CoachingPage'
+import QualityAutomationPage from './components/QualityAutomationPage'
+import PricingPage from './components/PricingPage'
 
-type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security';
+type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'quality-automation' | 'pricing';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState<PageType>('home')
 
   useEffect(() => {
-    window.scrollTo({ top: 0 });
+    window.scrollTo({ top: 0, behavior: 'instant' as any });
   }, [currentPage]);
 
   const renderContent = () => {
@@ -37,26 +38,31 @@ function App() {
         return <SecurityPage onBack={() => setCurrentPage('home')} />;
       case 'contact':
         return <ContactPage onBack={() => setCurrentPage('home')} />;
+      case 'ramp-time':
+        return <RampTimePage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'coaching':
+        return <CoachingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'quality-automation':
+        return <QualityAutomationPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'pricing':
+        return <PricingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'home':
       default:
         return (
           <>
             <HeroSection onOpenPopup={() => setIsPopupOpen(true)} />
-            <LeadershipSection />
-            <SalesAssistantSection />
-            <ManagementSuiteSection />
-            <KeyFeaturesSection />
-            <RealEstateInsightsSection />
-            <CallToActionSection />
-            <ContactSection />
+            <SocialProofSection />
+            <ProblemSection />
+            <ValuePropsSection />
+            <FinalCtaSection />
           </>
         );
     }
   };
 
   return (
-    <div className="min-h-screen">
-      <NavBar onOpenPopup={() => setIsPopupOpen(true)} onNavigate={setCurrentPage} />
+    <div className="min-h-screen bg-background text-on-background transition-colors duration-300">
+      <NavBar currentPage={currentPage} onNavigate={setCurrentPage} />
       <main>
         {renderContent()}
       </main>

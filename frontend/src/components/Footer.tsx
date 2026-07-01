@@ -1,48 +1,105 @@
 interface FooterProps {
-  onNavigate?: (page: 'home' | 'privacy' | 'terms' | 'contact' | 'security') => void;
+  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms') => void;
 }
 
 export default function Footer({ onNavigate }: FooterProps) {
   return (
-    <footer className="w-full py-12 border-t border-outline-variant/20 bg-surface-container-lowest">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div 
-          onClick={() => onNavigate?.('home')}
-          className="text-primary font-bold text-xl cursor-pointer select-none flex items-center gap-2"
-        >
-          <img src="/fox_logo.png" alt="CloseIQ Logo" className="h-7 w-auto object-contain" />
-          CloseIQ
+    <footer className="w-full py-16 bg-white border-t-4 border-black text-black">
+      <div className="max-w-[1400px] mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10">
+        
+        {/* Logo and Copyright column */}
+        <div className="md:col-span-4 space-y-6">
+          <div 
+            onClick={() => onNavigate?.('home')}
+            className="text-black font-black text-3xl cursor-pointer select-none flex items-center gap-2 uppercase tracking-tighter"
+          >
+            <span className="material-symbols-outlined text-[32px] font-black">token</span>
+            <span>CloseIQ</span>
+          </div>
+          <p className="text-sm font-bold uppercase leading-relaxed max-w-sm border-l-4 border-primary pl-4">
+            CloseIQ surfaces active speech cues during live customer calls and translates raw audio transcript analysis into personalized sales playbooks.
+          </p>
+          <div className="text-sm font-black uppercase pt-4 border-t-4 border-black inline-block mt-4">
+            © 2026 CLOSEIQ. ALL RIGHTS RESERVED.
+          </div>
         </div>
-        <div className="flex flex-wrap justify-center gap-8">
-          <button
-            className="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-colors focus:outline-none"
-            onClick={() => onNavigate?.('privacy')}
-          >
-            Privacy Policy
-          </button>
-          <button
-            className="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-colors focus:outline-none"
-            onClick={() => onNavigate?.('terms')}
-          >
-            Terms of Service
-          </button>
-          <button
-            className="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-colors focus:outline-none"
-            onClick={() => onNavigate?.('contact')}
-          >
-            Contact
-          </button>
-          <button
-            className="font-['Inter'] text-sm text-on-surface-variant hover:text-primary transition-colors focus:outline-none"
-            onClick={() => onNavigate?.('security')}
-          >
-            Security
-          </button>
+
+        {/* Product Column */}
+        <div className="md:col-span-3 space-y-6">
+          <h4 className="text-lg font-black uppercase tracking-wider text-primary border-b-4 border-black pb-2 inline-block">Product Features</h4>
+          <div className="flex flex-col gap-4">
+            <button
+              onClick={() => onNavigate?.('ramp-time')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Ramp Accelerator
+            </button>
+            <button
+              onClick={() => onNavigate?.('coaching')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Sales Coaching
+            </button>
+            <button
+              onClick={() => onNavigate?.('quality-automation')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              QA & Compliance
+            </button>
+            <button
+              onClick={() => onNavigate?.('pricing')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Pricing Plans
+            </button>
+          </div>
         </div>
-        <div className="font-['Inter'] text-sm text-on-surface-variant">
-          © 2026 CloseIQ. All rights reserved.
+
+        {/* Trust & Legal Column */}
+        <div className="md:col-span-3 space-y-6">
+          <h4 className="text-lg font-black uppercase tracking-wider text-primary border-b-4 border-black pb-2 inline-block">Trust & Security</h4>
+          <div className="flex flex-col gap-4">
+            <button
+              onClick={() => onNavigate?.('security')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Security Specs
+            </button>
+            <button
+              onClick={() => onNavigate?.('privacy')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Privacy Policy
+            </button>
+            <button
+              onClick={() => onNavigate?.('terms')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Terms of Service
+            </button>
+          </div>
         </div>
+
+        {/* Contact/Support Column */}
+        <div className="md:col-span-2 space-y-6">
+          <h4 className="text-lg font-black uppercase tracking-wider text-primary border-b-4 border-black pb-2 inline-block">Company</h4>
+          <div className="flex flex-col gap-4">
+            <button
+              onClick={() => onNavigate?.('contact')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Book a Demo
+            </button>
+            <button
+              onClick={() => onNavigate?.('contact')}
+              className="text-sm text-black hover:text-primary transition-colors text-left font-black uppercase tracking-wider"
+            >
+              Customer Support
+            </button>
+          </div>
+        </div>
+
       </div>
     </footer>
-  )
+  );
 }

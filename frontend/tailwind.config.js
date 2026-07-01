@@ -70,9 +70,14 @@ export default {
       fontFamily: {
         "headline": ["Space Grotesk"],
         "body": ["Inter"],
-        "label": ["Inter"]
+        "label": ["Inter"],
+        "serif": ["Cormorant Garamond", "serif"]
       },
-      borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+      borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+      boxShadow: {
+        'brutal': '4px 4px 0px 0px rgba(0,0,0,1)',
+        'brutal-lg': '8px 8px 0px 0px rgba(0,0,0,1)',
+      }
     },
   },
   plugins: [

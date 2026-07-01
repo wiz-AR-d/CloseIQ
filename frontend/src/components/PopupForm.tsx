@@ -63,7 +63,7 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
         </button>
         
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-white tracking-tight mb-2">Let's Connect</h2>
+          <h2 className="text-3xl font-bold text-on-surface tracking-tight mb-2">Let's Connect</h2>
           <p className="text-on-surface-variant">Fill out the details below and our team will get back to you shortly.</p>
         </div>
 
@@ -76,12 +76,12 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-white mb-1">Full Name</label>
+              <label htmlFor="name" className="block text-sm font-medium text-on-surface mb-1">Full Name</label>
               <input 
                 type="text" 
                 id="name"
                 required
-                className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-background border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                 placeholder="Pooja Sharma"
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -89,12 +89,12 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
             </div>
             
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-white mb-1">Work Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-on-surface mb-1">Work Email</label>
               <input 
                 type="email" 
                 id="email"
                 required
-                className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-background border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                 placeholder="pooja@company.com"
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -102,12 +102,12 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
             </div>
 
             <div>
-              <label htmlFor="company" className="block text-sm font-medium text-white mb-1">Company Name</label>
+              <label htmlFor="company" className="block text-sm font-medium text-on-surface mb-1">Company Name</label>
               <input 
                 type="text" 
                 id="company"
                 required
-                className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
+                className="w-full bg-background border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                 placeholder="Acme Corp"
                 value={formData.company}
                 onChange={(e) => setFormData({...formData, company: e.target.value})}
@@ -115,10 +115,10 @@ export default function PopupForm({ isOpen, onClose }: PopupFormProps) {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-white mb-1">How can we help?</label>
+              <label htmlFor="message" className="block text-sm font-medium text-on-surface mb-1">How can we help?</label>
               <textarea 
                 id="message"
-                className="w-full bg-surface border border-outline-variant/50 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none h-24"
+                className="w-full bg-background border border-outline-variant/50 rounded-lg px-4 py-3 text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors resize-none h-24"
                 placeholder="Tell us about your needs..."
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
