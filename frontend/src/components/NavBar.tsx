@@ -7,6 +7,7 @@ interface NavBarProps {
 
 export default function NavBar({ currentPage, onNavigate }: NavBarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +19,18 @@ export default function NavBar({ currentPage, onNavigate }: NavBarProps) {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-outline/20 py-4' : 'bg-transparent py-6'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled 
+        ? 'bg-background/90 backdrop-blur-md border-b border-outline/20 py-4' 
+        : 'bg-background/80 md:bg-transparent backdrop-blur-md md:backdrop-blur-none border-b border-outline/10 md:border-none py-4 md:py-6'
+    }`}>
       <div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
         {/* Left Side: Logo */}
         <div 
-          onClick={() => onNavigate?.('home')}
+          onClick={() => {
+            onNavigate?.('home');
+            setIsMobileMenuOpen(false);
+          }}
           className="cursor-pointer select-none flex items-center gap-3 group"
         >
           <img 
@@ -33,7 +41,7 @@ export default function NavBar({ currentPage, onNavigate }: NavBarProps) {
           <span className="font-sans font-extrabold tracking-tighter text-2xl text-white">CloseIQ</span>
         </div>
         
-        {/* Center: Nav Links */}
+        {/* Center: Desktop Nav Links */}
         <div className="hidden md:flex items-center gap-8 bg-surface-container-high/50 backdrop-blur-md px-6 py-2 rounded-full border border-outline/30">
           <button onClick={() => onNavigate?.('home')} className={`text-[15px] font-medium transition-colors ${currentPage === 'home' ? 'text-white' : 'text-on-surface-variant hover:text-white'}`}>Home</button>
           
@@ -59,16 +67,74 @@ export default function NavBar({ currentPage, onNavigate }: NavBarProps) {
           <button onClick={() => onNavigate?.('company')} className={`text-[15px] font-medium transition-colors ${currentPage === 'company' ? 'text-white' : 'text-on-surface-variant hover:text-white'}`}>Company</button>
         </div>
 
-        {/* Right Side: Actions */}
-        <div className="flex items-center gap-4">
+        {/* Right Side: Actions & Burger Toggle */}
+        <div className="flex items-center gap-3">
           <button 
-            onClick={() => onNavigate?.('contact')}
-            className="px-6 py-2.5 bg-white text-black font-semibold text-[15px] rounded-full hover:bg-gray-200 transition-colors shadow-clay-sm hover:shadow-clay"
+            onClick={() => {
+              onNavigate?.('contact');
+              setIsMobileMenuOpen(false);
+            }}
+            className="px-4 md:px-6 py-2 md:py-2.5 bg-white text-black font-bold text-[14px] md:text-[15px] rounded-full hover:bg-gray-200 transition-colors shadow-clay-sm hover:shadow-clay"
           >
-            Contact Us
+            Contact
+          </button>
+          
+          {/* Mobile menu burger toggler */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden flex items-center justify-center w-9 h-9 rounded-full border border-white/10 text-white hover:bg-white/5 transition-colors"
+          >
+            <span className="material-symbols-outlined text-[20px]">
+              {isMobileMenuOpen ? 'close' : 'menu'}
+            </span>
           </button>
         </div>
       </div>
+
+      {/* Mobile Nav Menu Drawer */}
+      {isMobileMenuOpen && (
+        <div className="absolute top-full left-6 right-6 mt-3 bg-[#0A0A0C]/95 backdrop-blur-2xl border border-white/10 rounded-2xl p-6 shadow-2xl flex flex-col gap-4 z-50 md:hidden animate-in fade-in slide-in-from-top-4 duration-300">
+          <button 
+            onClick={() => {
+              onNavigate?.('home');
+              setIsMobileMenuOpen(false);
+            }} 
+            className={`text-left text-base font-semibold py-2 border-b border-white/5 transition-colors ${currentPage === 'home' ? 'text-emerald-400' : 'text-on-surface-variant'}`}
+          >
+            Home
+          </button>
+          
+          <div className="py-2 border-b border-white/5 space-y-3">
+            <div className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 font-mono">Solutions</div>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pl-1">
+              <button onClick={() => { onNavigate?.('ai-debriefer'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">AI Debriefer</button>
+              <button onClick={() => { onNavigate?.('ai-persona'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">AI Persona</button>
+              <button onClick={() => { onNavigate?.('ai-copilot'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">Co-pilot</button>
+              <button onClick={() => { onNavigate?.('quality-automation'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">QA Automation</button>
+            </div>
+          </div>
+
+          <button 
+            onClick={() => {
+              onNavigate?.('faq');
+              setIsMobileMenuOpen(false);
+            }} 
+            className={`text-left text-base font-semibold py-2 border-b border-white/5 transition-colors ${currentPage === 'faq' ? 'text-emerald-400' : 'text-on-surface-variant'}`}
+          >
+            FAQs
+          </button>
+
+          <button 
+            onClick={() => {
+              onNavigate?.('company');
+              setIsMobileMenuOpen(false);
+            }} 
+            className={`text-left text-base font-semibold py-2 transition-colors ${currentPage === 'company' ? 'text-emerald-400' : 'text-on-surface-variant'}`}
+          >
+            Company
+          </button>
+        </div>
+      )}
     </nav>
   )
 }
