@@ -78,13 +78,13 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
         {/* Header / Intro */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
               Cut rep ramp-up <br />
               <span className="bg-gradient-to-r from-primary via-primary-dim to-secondary bg-clip-text text-transparent">
                 time by over 90%.
               </span>
             </h1>
-            <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+            <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium">
               Traditional sales onboarding requires hours of shadow sessions, call listening, and manual check-ins. CloseIQ automates this entirely using interactive practice sandboxes and live conversational aids.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -100,18 +100,18 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2">
               <h3 className="text-4xl font-bold text-primary">30 Days</h3>
-              <p className="text-xs font-semibold text-on-surface">Average Ramp Time</p>
-              <p className="text-[10px] text-on-surface-variant">Down from 90 days industry average</p>
+              <p className="text-sm font-bold text-on-surface">Average Ramp Time</p>
+              <p className="text-xs text-on-surface-variant">Down from 90 days industry average</p>
             </div>
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2">
               <h3 className="text-4xl font-bold text-secondary">2.1x</h3>
-              <p className="text-xs font-semibold text-on-surface">Quota Attainment</p>
-              <p className="text-[10px] text-on-surface-variant">First-month performance boost</p>
+              <p className="text-sm font-bold text-on-surface">Quota Attainment</p>
+              <p className="text-xs text-on-surface-variant">First-month performance boost</p>
             </div>
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2 col-span-2">
               <h3 className="text-3xl font-bold text-emerald-500">0 Hours</h3>
-              <p className="text-xs font-semibold text-on-surface">Manager Shadowing Required</p>
-              <p className="text-[10px] text-on-surface-variant">Self-paced AI playbooks cover mock practice calls</p>
+              <p className="text-sm font-bold text-on-surface">Manager Shadowing Required</p>
+              <p className="text-xs text-on-surface-variant">Self-paced AI playbooks cover mock practice calls</p>
             </div>
           </div>
         </div>
@@ -123,16 +123,16 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             {/* Control Panel */}
             <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
               <div className="space-y-4">
-                <span className="text-[10px] font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive Feature Demo</span>
+                <span className="text-xs font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive Feature Demo</span>
                 <h2 className="text-3xl font-bold text-on-surface leading-tight">The Practice Sandbox</h2>
-                <p className="text-sm text-on-surface-variant leading-relaxed">
+                <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                   Let new hires practice their speech delivery against realistic AI buyers. Select a script scenario below to see how our engine analyzes performance metrics.
                 </p>
               </div>
 
               {/* Scenario switches */}
               <div className="space-y-3">
-                <span className="text-xs font-bold text-on-surface-variant uppercase font-mono tracking-wider">Choose a Training Sandbox</span>
+                <span className="text-sm font-bold text-on-surface-variant uppercase font-mono tracking-wider">Choose a Training Sandbox</span>
                 <div className="space-y-2.5">
                   {Object.entries(scenarios).map(([key, item]) => (
                     <button
@@ -145,12 +145,12 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                       className={`w-full p-4 rounded-2xl border text-left transition-all ${activeScenario === key ? 'bg-surface border-primary shadow-md ring-1 ring-primary' : 'bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high'}`}
                     >
                       <div className="flex justify-between items-center mb-1">
-                        <h4 className="font-bold text-xs text-on-surface">{item.title}</h4>
+                        <h4 className="font-bold text-sm text-on-surface">{item.title}</h4>
                         <span className={`text-[9px] font-bold px-2 py-0.5 rounded font-mono ${item.difficulty === 'Hard' ? 'bg-rose-500/10 text-rose-500 border border-rose-500/20' : 'bg-amber-500/10 text-amber-500 border border-amber-500/20'}`}>
                           {item.difficulty}
                         </span>
                       </div>
-                      <p className="text-[10px] text-on-surface-variant">Buyer: {item.buyerPersona}</p>
+                      <p className="text-xs text-on-surface-variant">Buyer: {item.buyerPersona}</p>
                     </button>
                   ))}
                 </div>
@@ -176,7 +176,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                     {isPlaying ? 'Evaluating Response...' : 'Waiting for Input...'}
                   </span>
                 </div>
-                <span className="text-[10px] font-mono bg-white/10 px-3 py-1 rounded-full text-white/60">
+                <span className="text-xs font-mono bg-white/10 px-3 py-1 rounded-full text-white/60">
                   SANDBOX SESSION V3
                 </span>
               </div>
@@ -188,8 +188,8 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                     B
                   </div>
                   <div className="bg-slate-900/60 p-4 rounded-2xl rounded-tl-none border border-white/5 max-w-md shadow-sm">
-                    <div className="text-[9px] text-white/50 font-bold mb-1 uppercase font-mono">Buyer Persona Objection</div>
-                    <p className="text-xs text-white/90 leading-relaxed font-medium">
+                    <div className="text-xs text-white/50 font-bold mb-1 uppercase font-mono">Buyer Persona Objection</div>
+                    <p className="text-sm text-white/90 leading-relaxed font-medium">
                       {scenarios[activeScenario].objection}
                     </p>
                   </div>
@@ -202,8 +202,8 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                       REP
                     </div>
                     <div className="bg-primary/10 p-4 rounded-2xl rounded-tr-none border border-primary/20 max-w-md text-right shadow-sm">
-                      <div className="text-[9px] text-primary font-bold mb-1 uppercase font-mono">Rep Pitch Audio (Simulated)</div>
-                      <p className="text-xs text-white/90 leading-relaxed italic">
+                      <div className="text-xs text-primary font-bold mb-1 uppercase font-mono">Rep Pitch Audio (Simulated)</div>
+                      <p className="text-sm text-white/90 leading-relaxed italic">
                         {scenarios[activeScenario].winningPitch}
                       </p>
                     </div>
@@ -215,8 +215,8 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
               <div className="bg-slate-900/80 border border-white/10 rounded-2xl p-5 space-y-4">
                 <div className="flex justify-between items-center">
                   <div>
-                    <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">AI Real-Time Evaluation</h4>
-                    <p className="text-[9px] text-white/50">Speech parameters, pace, and playbooks check</p>
+                    <h4 className="text-sm font-bold text-white uppercase tracking-wider font-mono">AI Real-Time Evaluation</h4>
+                    <p className="text-xs text-white/50">Speech parameters, pace, and playbooks check</p>
                   </div>
                   <div className="text-right">
                     <span className="text-3xl font-bold font-mono text-primary">{demoScore}</span>
@@ -224,7 +224,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                   </div>
                 </div>
 
-                <div className="grid grid-cols-3 gap-2.5 text-[10px]">
+                <div className="grid grid-cols-3 gap-2.5 text-xs">
                   <div className="bg-white/5 p-2 rounded-xl border border-white/5 text-center">
                     <span className="text-white/40 block mb-0.5 uppercase tracking-wider font-mono">Empathy check</span>
                     <span className="font-semibold text-white/90">{isPlaying ? scenarios[activeScenario].metrics.empathy : '—'}</span>
@@ -247,9 +247,9 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
         {/* Section 2: Accelerated Ramp Timeline */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="text-secondary text-sm font-bold tracking-widest uppercase font-mono">The Onboarding Timeline</span>
+            <span className="text-secondary text-base font-bold tracking-widest uppercase font-mono">The Onboarding Timeline</span>
             <h2 className="text-3xl md:text-4xl font-bold text-on-surface">Hit quota in 30 days, not 90.</h2>
-            <p className="text-base text-on-surface-variant leading-relaxed">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed font-medium">
               Standard onboarding leaves reps reading hundreds of sheets and shadowing live calls. CloseIQ structures onboarding into a series of active-roleplay achievements. New hires practice the exact talk tracks used by your top 10% closed deals.
             </p>
 
@@ -257,22 +257,22 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
               <div className="flex gap-4">
                 <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
                 <div>
-                  <h4 className="font-bold text-sm text-on-surface">Auto-Extracted Coaching Clips</h4>
-                  <p className="text-xs text-on-surface-variant mt-0.5">Top performing rep audio clips are converted directly into Sandbox practice templates.</p>
+                  <h4 className="font-bold text-base text-on-surface">Auto-Extracted Coaching Clips</h4>
+                  <p className="text-sm text-on-surface-variant mt-0.5">Top performing rep audio clips are converted directly into Sandbox practice templates.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">2</span>
                 <div>
-                  <h4 className="font-bold text-sm text-on-surface">Interactive Skill Tree</h4>
-                  <p className="text-xs text-on-surface-variant mt-0.5">Reps unlock scenarios from discovery queries, technical security reviews, to competitor handling.</p>
+                  <h4 className="font-bold text-base text-on-surface">Interactive Skill Tree</h4>
+                  <p className="text-sm text-on-surface-variant mt-0.5">Reps unlock scenarios from discovery queries, technical security reviews, to competitor handling.</p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <span className="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
                 <div>
-                  <h4 className="font-bold text-sm text-on-surface">Confidence Scorecards</h4>
-                  <p className="text-xs text-on-surface-variant mt-0.5">Manager dashboards verify that reps have unlocked all key playbooks before their first live call.</p>
+                  <h4 className="font-bold text-base text-on-surface">Confidence Scorecards</h4>
+                  <p className="text-sm text-on-surface-variant mt-0.5">Manager dashboards verify that reps have unlocked all key playbooks before their first live call.</p>
                 </div>
               </div>
             </div>
@@ -284,7 +284,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             
             {/* CloseIQ Path */}
             <div className="space-y-3">
-              <div className="flex justify-between items-center text-xs font-bold text-primary font-mono uppercase tracking-wider">
+              <div className="flex justify-between items-center text-sm font-bold text-primary font-mono uppercase tracking-wider">
                 <span>With CloseIQ Onboarding Sandbox</span>
                 <span>30 Days</span>
               </div>
@@ -292,9 +292,9 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                 <div className="bg-gradient-to-r from-primary to-secondary h-full rounded-full w-[33%] text-white text-[9px] font-bold font-mono flex items-center justify-center shadow-md animate-pulse">
                   Ready in 30 Days
                 </div>
-                <span className="absolute right-4 text-[10px] font-bold text-on-surface-variant">Target met in 4 weeks</span>
+                <span className="absolute right-4 text-xs font-bold text-on-surface-variant">Target met in 4 weeks</span>
               </div>
-              <div className="grid grid-cols-3 gap-2 text-[9px] text-on-surface-variant text-center font-semibold pt-1">
+              <div className="grid grid-cols-3 gap-2 text-xs text-on-surface-variant text-center font-semibold pt-1">
                 <div>Week 1: Practice Sandbox</div>
                 <div>Week 2: Call Simulation</div>
                 <div>Week 3-4: Live Deals</div>
@@ -305,7 +305,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
 
             {/* Traditional Path */}
             <div className="space-y-3">
-              <div className="flex justify-between items-center text-xs font-bold text-on-surface-variant font-mono uppercase tracking-wider">
+              <div className="flex justify-between items-center text-sm font-bold text-on-surface-variant font-mono uppercase tracking-wider">
                 <span>Traditional Sales Onboarding</span>
                 <span>90+ Days</span>
               </div>
@@ -314,7 +314,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
                   Takes 90 Days
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-2 text-[9px] text-on-surface-variant text-center font-semibold pt-1">
+              <div className="grid grid-cols-3 gap-2 text-xs text-on-surface-variant text-center font-semibold pt-1">
                 <div>Month 1: Policy Reading</div>
                 <div>Month 2: Manager Shadows</div>
                 <div>Month 3: Slow Discovery</div>

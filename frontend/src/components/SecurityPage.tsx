@@ -21,36 +21,36 @@ export default function SecurityPage({ onBack }: SecurityPageProps) {
         {/* Title */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">Security Statement</h1>
-          <p className="text-on-surface-variant leading-relaxed text-base">
+          <p className="text-on-surface-variant leading-relaxed text-lg md:text-xl font-medium">
             How we protect your data. Simple, clear, and transparent.
           </p>
         </div>
 
         {/* Security Content */}
-        <div className="space-y-8 text-sm leading-relaxed text-on-surface-variant">
+        <div className="space-y-8 text-base md:text-lg leading-relaxed text-on-surface-variant/90 font-medium">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">1. Encryption in Transit & Rest</h2>
+            <h2 className="text-2xl font-bold text-on-surface">1. Encryption in Transit & Rest</h2>
             <p>
               Your data is protected at every stage. All web traffic to the CloseIQ dashboard is encrypted using **TLS 1.3** protocols (HTTPS). All backend database records and transcript storage archives are encrypted at rest using **AES-256** standards.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">2. Absolute Model Training Isolation</h2>
+            <h2 className="text-2xl font-bold text-on-surface">2. Absolute Model Training Isolation</h2>
             <p>
               We prioritize the privacy of your customer conversations. <strong>CloseIQ does not train, fine-tune, or adapt machine learning or artificial intelligence models on your call audio, transcripts, or sales conversations.</strong> Your call logs remain strictly isolated to your organization.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">3. Tenant Separation & Database Isolation</h2>
+            <h2 className="text-2xl font-bold text-on-surface">3. Tenant Separation & Database Isolation</h2>
             <p>
               We implement Row-Level Security (RLS) rules directly at the database engine level. This ensures complete multi-tenant isolation, making it mathematically impossible for queries from one organization to access or reference the transcripts, objections, or playbooks of another.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">4. Reporting Vulnerabilities</h2>
+            <h2 className="text-2xl font-bold text-on-surface">4. Reporting Vulnerabilities</h2>
             <p>
               If you identify any security vulnerability, technical exploit, or data leak, please report it to our engineering team immediately. You can submit details securely through our website's contact form.
             </p>

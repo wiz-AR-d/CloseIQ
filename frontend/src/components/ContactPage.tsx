@@ -65,7 +65,7 @@ export default function ContactPage({ onBack }: ContactPageProps) {
         {/* Header copy */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">Contact Us</h1>
-          <p className="text-on-surface-variant leading-relaxed text-sm">
+          <p className="text-lg md:text-xl text-on-surface-variant max-w-xl mx-auto font-medium">
             Have questions about integrations, security configurations, or custom sandbox setups? Drop us a line below.
           </p>
         </div>
@@ -75,13 +75,13 @@ export default function ContactPage({ onBack }: ContactPageProps) {
           {formSubmitted ? (
             <div className="text-center py-10 space-y-4">
               <span className="material-symbols-outlined text-4xl text-emerald-400">mail</span>
-              <h3 className="text-xl font-bold text-white">Message Sent!</h3>
-              <p className="text-xs text-on-surface-variant leading-relaxed max-w-sm mx-auto">
+              <h3 className="text-2xl font-bold text-white">Message Sent!</h3>
+              <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-sm mx-auto font-medium">
                 Thank you for reaching out. A sales engineer will respond to your inquiry via email within 2 hours.
               </p>
               <button 
                 onClick={() => setFormSubmitted(false)}
-                className="px-5 py-2 border border-outline/30 hover:border-white text-xs font-semibold text-white transition-all rounded-none"
+                className="px-5 py-2.5 border border-outline/30 hover:border-white text-sm font-semibold text-white transition-all rounded-none"
               >
                 Send Another Message
               </button>
@@ -90,45 +90,45 @@ export default function ContactPage({ onBack }: ContactPageProps) {
             <form onSubmit={handleFormSubmit} className="space-y-5">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
-                  <label className="text-[10px] text-on-surface-variant/70 font-mono font-bold uppercase">Name</label>
+                  <label className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Name</label>
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your Name"
-                    className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-xs text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
                   />
                 </div>
                 <div className="space-y-1">
-                  <label className="text-[10px] text-on-surface-variant/70 font-mono font-bold uppercase">Work Email</label>
+                  <label className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Work Email</label>
                   <input
                     type="email"
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="you@company.com"
-                    className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-xs text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
+                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
                   />
                 </div>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[10px] text-on-surface-variant/70 font-mono font-bold uppercase">Message</label>
+                <label className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Message</label>
                 <textarea
                   required
                   rows={6}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="How can we help your team?"
-                  className="w-full bg-[#141416] border border-[#2B2B2F] px-4 py-3 text-xs text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500 resize-none"
+                  className="w-full bg-[#141416] border border-[#2B2B2F] px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500 resize-none"
                 />
               </div>
 
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full py-3.5 bg-emerald-500 text-black font-semibold text-xs uppercase tracking-wider transition-all rounded-none hover:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.25)] disabled:opacity-50"
+                className="w-full py-4 bg-emerald-500 text-black font-bold text-sm uppercase tracking-wider transition-all rounded-none hover:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.25)] disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

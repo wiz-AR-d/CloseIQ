@@ -79,7 +79,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
             Frequently Asked <br />
             <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Questions.</span>
           </h1>
-          <p className="text-base text-on-surface-variant max-w-md mx-auto">
+          <p className="text-lg md:text-xl text-on-surface-variant max-w-xl mx-auto font-medium">
             Everything you need to know about CloseIQ roleplays, live copilot, security, and CRM integrations.
           </p>
         </div>
@@ -93,7 +93,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
                 setActiveCategory(cat);
                 setExpandedIndex(null);
               }}
-              className={`px-4 py-2 border text-xs font-semibold uppercase tracking-wider transition-all rounded-none ${
+              className={`px-4 py-2 border text-sm font-semibold uppercase tracking-wider transition-all rounded-none ${
                 activeCategory === cat
                   ? 'border-emerald-500 bg-emerald-500/5 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.15)]'
                   : 'border-outline/35 hover:bg-[#1A1A1A] text-on-surface-variant hover:text-white'
@@ -118,7 +118,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
                 {/* Header / Click Area */}
                 <button
                   onClick={() => setExpandedIndex(isExpanded ? null : idx)}
-                  className="w-full flex items-center justify-between p-5 text-left font-bold text-sm md:text-base text-white hover:text-emerald-400 transition-colors"
+                  className="w-full flex items-center justify-between p-5 text-left font-bold text-base md:text-lg text-white hover:text-emerald-400 transition-colors"
                 >
                   <span>{faq.question}</span>
                   <span className={`material-symbols-outlined text-[20px] transition-transform duration-300 ${isExpanded ? 'rotate-180 text-emerald-400' : 'text-on-surface-variant'}`}>
@@ -132,7 +132,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
                     isExpanded ? 'max-h-[300px] border-t border-outline/15 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="p-5 text-xs md:text-sm text-on-surface-variant/90 leading-relaxed font-medium">
+                  <p className="p-5 text-sm md:text-base text-on-surface-variant/90 leading-relaxed font-medium">
                     {faq.answer}
                   </p>
                 </div>
@@ -143,8 +143,8 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
 
         {/* CTA Box */}
         <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-8 text-center space-y-4 rounded-none">
-          <h3 className="font-bold text-lg text-white">Still have questions?</h3>
-          <p className="text-xs text-on-surface-variant max-w-sm mx-auto">
+          <h3 className="font-bold text-lg md:text-xl text-white">Still have questions?</h3>
+          <p className="text-sm md:text-base text-on-surface-variant max-w-md mx-auto">
             Our team is available 24/7 to discuss integrations, security specs, and customized deployment models.
           </p>
           <div className="pt-2">

@@ -21,15 +21,15 @@ export default function TermsOfService({ onBack }: TermsOfServiceProps) {
         {/* Title */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-on-surface">Terms of Service</h1>
-          <p className="text-on-surface-variant leading-relaxed text-base">
+          <p className="text-on-surface-variant leading-relaxed text-lg md:text-xl font-medium">
             These terms govern your use of the CloseIQ platform and services. By accessing or using CloseIQ, you agree to comply with these terms.
           </p>
         </div>
 
         {/* Terms Content */}
-        <div className="space-y-8 text-sm leading-relaxed text-on-surface-variant">
+        <div className="space-y-8 text-base md:text-lg leading-relaxed text-on-surface-variant/90 font-medium">
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">1. Account & Usage</h2>
+            <h2 className="text-2xl font-bold text-on-surface">1. Account & Usage</h2>
             <p>
               When registering for CloseIQ, you agree to provide accurate and complete information. You are responsible for maintaining the security of your credentials and account access permissions.
             </p>
@@ -39,7 +39,7 @@ export default function TermsOfService({ onBack }: TermsOfServiceProps) {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">2. Consent & Legal Recording Disclosures</h2>
+            <h2 className="text-2xl font-bold text-on-surface">2. Consent & Legal Recording Disclosures</h2>
             <p>
               CloseIQ provides conversation transcription and analysis. In many jurisdictions, recording or transcribing active phone calls or virtual meetings requires you to disclose the recording and obtain appropriate consent.
             </p>
@@ -49,28 +49,28 @@ export default function TermsOfService({ onBack }: TermsOfServiceProps) {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">3. Service Uptime</h2>
+            <h2 className="text-2xl font-bold text-on-surface">3. Service Uptime</h2>
             <p>
               We host CloseIQ on high-availability cloud infrastructure and aim to maintain standard commercial availability. We do not guarantee uninterrupted platform access or zero-latency audio streaming under all conditions, and reserve the right to perform scheduled maintenance.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">4. Disclaimer of Warranty</h2>
+            <h2 className="text-2xl font-bold text-on-surface">4. Disclaimer of Warranty</h2>
             <p>
               CloseIQ provides live suggestions, object battle cards, and coaching playbooks based on automated transcript parsing. While we strive to maximize the accuracy of these suggestions, we make no guarantees regarding sales conversions, deal outcomes, or buyer response changes. The platform is provided "as is" without warranties of any kind.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">5. Subscriptions & Billing</h2>
+            <h2 className="text-2xl font-bold text-on-surface">5. Subscriptions & Billing</h2>
             <p>
               We charge subscription fees based on monthly or annual commitment terms. You can cancel your subscription at any time. Accounts will remain active until the end of the current billing cycle. For billing corrections or refunds, please reach out to our team via our standard contact form.
             </p>
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-xl font-bold text-on-surface">6. Governing Law</h2>
+            <h2 className="text-2xl font-bold text-on-surface">6. Governing Law</h2>
             <p>
               These Terms of Service are governed by and construed in accordance with the laws applicable in Bengaluru, India, without giving effect to conflicts of laws principles.
             </p>

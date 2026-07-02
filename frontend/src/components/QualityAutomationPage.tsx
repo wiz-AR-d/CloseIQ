@@ -54,19 +54,19 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
           {/* Copy Side */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Every Call Reviewed <br />
                 <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Automatically.</span>
               </h1>
-              <p className="text-xl text-on-surface-variant leading-relaxed max-w-lg font-medium">
+              <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">
                 No manual call reviews. No missed coaching opportunities.
               </p>
             </div>
             
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               After every customer conversation, CloseIQ automatically evaluates the call using customizable scorecards. It measures communication quality, objection handling, discovery, product knowledge, talk ratios, customer engagement, and overall sales effectiveness.
             </p>
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               Managers receive instant performance insights, while every rep gets personalized coaching based on their biggest improvement areas. High-performing calls automatically become future training material for the rest of the team.
             </p>
 
@@ -79,7 +79,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 "Training content from top-performing calls",
                 "Team-wide performance analytics"
               ].map((feature, i) => (
-                <div key={i} className="flex items-center gap-3 text-sm font-medium">
+                <div key={i} className="flex items-center gap-3 text-base md:text-lg font-semibold">
                   <div className="w-5 h-5 rounded-none bg-emerald-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(16,185,129,0.3)]">
                     <span className="material-symbols-outlined text-[12px] text-emerald-400">check</span>
                   </div>
@@ -104,12 +104,12 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
             <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-none pointer-events-none"></div>
 
             {/* Rep selector tabs */}
-            <div className="flex border-b border-outline/35 relative z-10 text-xs">
+            <div className="flex border-b border-outline/35 relative z-10 text-sm">
               {['Alex Carter', 'Jordan Lee', 'Taylor Vance'].map((rep) => (
                 <button
                   key={rep}
                   onClick={() => setSelectedRep(rep)}
-                  className={`px-4 py-3 border-b-2 font-semibold transition-all rounded-none ${
+                  className={`px-4 py-3 border-b-2 font-bold transition-all rounded-none ${
                     selectedRep === rep 
                       ? 'border-emerald-500 bg-emerald-500/5 text-emerald-400' 
                       : 'border-transparent text-on-surface-variant hover:text-white'
@@ -127,15 +127,15 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-outline/20">
                 <div>
                   <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-400">Call Evaluation Analytics</h3>
-                  <p className="text-lg font-bold text-white">Representative: {selectedRep}</p>
+                  <p className="text-xl font-bold text-white">Representative: {selectedRep}</p>
                 </div>
                 
                 {/* Massive overall score */}
                 <div className="flex items-center gap-3 bg-emerald-500/10 border border-emerald-500/20 px-4 py-2">
                   <span className="text-3xl font-black text-emerald-400 font-mono">84%</span>
                   <div className="leading-tight">
-                    <span className="text-[10px] text-on-surface-variant block uppercase font-bold tracking-wider">Overall QA Score</span>
-                    <span className="text-[10px] text-emerald-400 font-bold font-mono">GRADE: GOOD</span>
+                    <span className="text-xs text-on-surface-variant block uppercase font-bold tracking-wider">Overall QA Score</span>
+                    <span className="text-xs text-emerald-400 font-bold font-mono">GRADE: GOOD</span>
                   </div>
                 </div>
               </div>
@@ -145,11 +145,11 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 
                 {/* Metric list */}
                 <div className="space-y-4">
-                  <span className="text-[10px] text-on-surface-variant/60 font-mono font-bold uppercase block">Core Performance Rubrics</span>
+                  <span className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase block">Core Performance Rubrics</span>
                   <div className="space-y-3.5">
                     {metricsList.map((m, idx) => (
                       <div key={idx} className="space-y-1.5">
-                        <div className="flex justify-between text-xs font-semibold text-white/90">
+                        <div className="flex justify-between text-sm font-semibold text-white/90">
                           <span>{m.name}</span>
                           <span className="text-emerald-400 font-mono">{m.score}/100</span>
                         </div>
@@ -163,25 +163,25 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
 
                 {/* Coaching Guidance Panel */}
                 <div className="space-y-4">
-                  <span className="text-[10px] text-on-surface-variant/60 font-mono font-bold uppercase block">AI Coaching Recommendations</span>
+                  <span className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase block">AI Coaching Recommendations</span>
                   <div className="bg-[#101012] border border-outline/35 p-4 space-y-4">
                     
                     <div className="space-y-1">
-                      <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase text-emerald-400 font-mono">
+                      <div className="flex items-center gap-1.5 text-xs font-bold uppercase text-emerald-400 font-mono">
                         <span className="material-symbols-outlined text-[14px]">trending_up</span>
                         Primary Strength
                       </div>
-                      <p className="text-xs text-white/90">
+                      <p className="text-sm text-white/90 font-medium">
                         Excellent competitor differentiation. Handled the free transcription objection using clean ROI math and displaced the competitor logic.
                       </p>
                     </div>
 
                     <div className="space-y-1">
-                      <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase text-red-400 font-mono">
+                      <div className="flex items-center gap-1.5 text-xs font-bold uppercase text-red-400 font-mono">
                         <span className="material-symbols-outlined text-[14px]">warning</span>
                         Key Area to Address
                       </div>
-                      <p className="text-xs text-white/90">
+                      <p className="text-sm text-white/90 font-medium">
                         Discovery phase was too brief. Missed validating the customer's onboarding roadmap. Ensure at least 3 discovery questions are posed in the first 10 minutes.
                       </p>
                     </div>
@@ -192,7 +192,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
               </div>
 
               {/* Trend visualization */}
-              <div className="border-t border-outline/20 pt-4 flex justify-between items-center text-[10px] font-mono text-on-surface-variant/60">
+              <div className="border-t border-outline/20 pt-4 flex justify-between items-center text-xs font-mono text-on-surface-variant/60">
                 <span>Evaluation Type: Playbook Sandbox + Zoom Native</span>
                 <span className="text-emerald-400 uppercase tracking-widest font-bold">100% of calls audited</span>
               </div>
@@ -208,7 +208,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
               Automation that scales <br/>
               <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Enablement.</span>
             </h2>
-            <p className="text-lg text-on-surface-variant">
+            <p className="text-xl text-on-surface-variant font-medium">
               How CloseIQ evaluates compliance and accelerates sales teams automatically.
             </p>
           </div>
@@ -227,7 +227,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Auto-Sync Calls</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Calls from Zoom, Outreach, or dialers are captured and transcribed automatically without rep manual input.
                   </p>
                 </div>
@@ -246,7 +246,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Playbook Scoring</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     CloseIQ evaluates script compliance, competitor responses, discovery structures, and next step locks instantly.
                   </p>
                 </div>
@@ -265,7 +265,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Generate Coaching</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Personalized coaching logs, gap analysis, and tailored training links are pushed directly to each rep.
                   </p>
                 </div>
@@ -284,7 +284,7 @@ export default function QualityAutomationPage({ onBack, onOpenPopup }: QualityAu
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Share Top Playbooks</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Winning calls are automatically indexed and distributed as baseline call libraries to the rest of your sales reps.
                   </p>
                 </div>

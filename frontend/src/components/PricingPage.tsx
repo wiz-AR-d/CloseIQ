@@ -116,13 +116,13 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
               teams of all sizes.
             </span>
           </h1>
-          <p className="text-lg text-on-surface-variant max-w-xl mx-auto leading-relaxed">
+          <p className="text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-medium">
             Choose the plan that fits your quota goals. All contracts include direct Zoom recordings integration and automated transcripts.
           </p>
 
           {/* Monthly/Annual billing switcher toggle */}
           <div className="pt-4 flex justify-center items-center gap-4">
-            <span className={`text-xs font-bold transition-all ${billingCycle === 'monthly' ? 'text-primary' : 'text-on-surface-variant'}`}>Bill Monthly</span>
+            <span className={`text-sm font-bold transition-all ${billingCycle === 'monthly' ? 'text-primary' : 'text-on-surface-variant'}`}>Bill Monthly</span>
             <button 
               onClick={() => setBillingCycle(prev => prev === 'monthly' ? 'annual' : 'monthly')}
               className="w-14 h-8 bg-surface-container-high border border-outline-variant/20 rounded-full p-1 relative transition-colors"
@@ -130,8 +130,8 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
               <div className={`w-6 h-6 bg-primary rounded-full shadow-md transition-all ${billingCycle === 'annual' ? 'translate-x-6' : 'translate-x-0'}`}></div>
             </button>
             <div className="flex items-center gap-1.5">
-              <span className={`text-xs font-bold transition-all ${billingCycle === 'annual' ? 'text-primary' : 'text-on-surface-variant'}`}>Bill Annually</span>
-              <span className="text-[10px] bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-2 py-0.5 rounded font-bold font-mono uppercase tracking-wider">Save 20%</span>
+              <span className={`text-sm font-bold transition-all ${billingCycle === 'annual' ? 'text-primary' : 'text-on-surface-variant'}`}>Bill Annually</span>
+              <span className="text-xs bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-2 py-0.5 rounded font-bold font-mono uppercase tracking-wider">Save 20%</span>
             </div>
           </div>
         </div>
@@ -143,13 +143,13 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
             {/* Range Input Slider */}
             <div className="md:col-span-6 space-y-6">
               <div>
-                <span className="text-[10px] font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive ROI Tool</span>
+                <span className="text-xs font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive ROI Tool</span>
                 <h3 className="text-2xl font-bold text-on-surface mt-2.5">Estimate Your Savings</h3>
-                <p className="text-xs text-on-surface-variant mt-1">Adjust your representative count to forecast CloseIQ billing costs and team savings.</p>
+                <p className="text-sm text-on-surface-variant mt-1">Adjust your representative count to forecast CloseIQ billing costs and team savings.</p>
               </div>
 
               <div className="space-y-3">
-                <div className="flex justify-between text-sm font-semibold">
+                <div className="flex justify-between text-base font-bold">
                   <span className="text-on-surface-variant">Team Size (Reps)</span>
                   <span className="text-primary font-bold">{teamSize} Reps</span>
                 </div>
@@ -161,7 +161,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
                   onChange={(e) => setTeamSize(parseInt(e.target.value))}
                   className="w-full h-2 bg-surface-container-high rounded-lg appearance-none cursor-pointer accent-primary"
                 />
-                <div className="flex justify-between text-[10px] text-on-surface-variant font-mono font-bold">
+                <div className="flex justify-between text-xs text-on-surface-variant font-mono font-bold">
                   <span>2 Reps</span>
                   <span>150 Reps</span>
                 </div>
@@ -171,23 +171,23 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
             {/* Calculations Display Card */}
             <div className="md:col-span-6 bg-surface border border-outline-variant/35 rounded-2xl p-6 shadow-sm grid grid-cols-2 gap-4">
               <div className="p-4 bg-surface-container-low rounded-xl border border-outline-variant/10 text-center">
-                <span className="text-[9px] text-on-surface-variant block uppercase tracking-wider font-mono">Estimated Billing</span>
+                <span className="text-xs text-on-surface-variant block uppercase tracking-wider font-mono">Estimated Billing</span>
                 <span className="text-2xl font-bold text-on-surface">${details.monthlyTotal}</span>
-                <span className="text-[9px] text-on-surface-variant block mt-0.5">/month total</span>
+                <span className="text-xs text-on-surface-variant block mt-0.5">/month total</span>
               </div>
 
               <div className="p-4 bg-surface-container-low rounded-xl border border-outline-variant/10 text-center">
-                <span className="text-[9px] text-on-surface-variant block uppercase tracking-wider font-mono">Cost Per User</span>
+                <span className="text-xs text-on-surface-variant block uppercase tracking-wider font-mono">Cost Per User</span>
                 <span className="text-2xl font-bold text-primary">${details.perUser}</span>
-                <span className="text-[9px] text-on-surface-variant block mt-0.5">/month/rep</span>
+                <span className="text-xs text-on-surface-variant block mt-0.5">/month/rep</span>
               </div>
 
               <div className="p-4 bg-surface-container-low rounded-xl border border-outline-variant/10 text-center col-span-2 space-y-1">
-                <div className="flex justify-between text-[10px] text-on-surface-variant font-semibold">
+                <div className="flex justify-between text-xs text-on-surface-variant font-semibold">
                   <span>Manager Hours Reclaimed:</span>
                   <span className="text-primary font-bold">+{details.hoursSaved} hrs/year</span>
                 </div>
-                <div className="flex justify-between text-[10px] text-on-surface-variant font-semibold">
+                <div className="flex justify-between text-xs text-on-surface-variant font-semibold">
                   <span>Ramp Onboarding Savings:</span>
                   <span className="text-emerald-500 font-bold">+${details.savingsDollar.toLocaleString()} value</span>
                 </div>
@@ -205,7 +205,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
               className={`p-8 rounded-[28px] border flex flex-col justify-between transition-all relative ${plan.primary ? 'bg-surface border-primary shadow-xl ring-1 ring-primary' : 'bg-surface-container border-outline-variant/15 hover:border-primary/20 shadow-sm'}`}
             >
               {plan.primary && (
-                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg font-mono">
+                <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-lg font-mono">
                   {plan.badge}
                 </span>
               )}
@@ -213,7 +213,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-bold text-on-surface">{plan.name}</h3>
-                  <p className="text-xs text-on-surface-variant mt-1.5 leading-relaxed">{plan.description}</p>
+                  <p className="text-sm md:text-base text-on-surface-variant/90 mt-1.5 leading-relaxed font-medium">{plan.description}</p>
                 </div>
 
                 <div className="flex items-baseline gap-1 border-b border-outline-variant/10 pb-6">
@@ -221,7 +221,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
                   <span className="text-xs text-on-surface-variant">/user/month</span>
                 </div>
 
-                <ul className="space-y-4 text-xs text-on-surface-variant">
+                <ul className="space-y-4 text-sm font-medium text-on-surface-variant">
                   {plan.features.map((feature, fIdx) => (
                     <li key={fIdx} className="flex gap-2.5 items-start">
                       <span className="material-symbols-outlined text-primary text-sm shrink-0">check_circle</span>
@@ -234,7 +234,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
               <div className="pt-8">
                 <button
                   onClick={onOpenPopup}
-                  className={`w-full py-3 rounded-xl text-xs font-bold transition-all shadow ${plan.primary ? 'bg-primary text-on-primary hover:brightness-110' : 'bg-surface hover:bg-surface-container-high border border-outline-variant/50 text-on-surface'}`}
+                  className={`w-full py-3 rounded-xl text-sm font-bold transition-all shadow ${plan.primary ? 'bg-primary text-on-primary hover:brightness-110' : 'bg-surface hover:bg-surface-container-high border border-outline-variant/50 text-on-surface'}`}
                 >
                   {plan.cta}
                 </button>

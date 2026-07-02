@@ -37,19 +37,19 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
           {/* Copy Side */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Meet your <br />
                 <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">AI Debriefer.</span>
               </h1>
-              <p className="text-xl text-on-surface-variant leading-relaxed max-w-lg font-medium">
+              <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">
                 Every new sales rep gets an AI debriefer that knows your company inside out.
               </p>
             </div>
             
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               Instead of reading lengthy documentation or waiting for managers to answer questions, reps can have <strong>live voice conversations</strong> with an AI trained on your company's products, pricing, competitors, and objection handling.
             </p>
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               The AI listens, explains concepts, answers follow-up questions, and quizzes reps out loud to reinforce learning—just like a real manager would.
             </p>
 
@@ -61,7 +61,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 "AI-generated audio quizzes",
                 "Personalized learning experience"
               ].map((feature, i) => (
-                <div key={i} className="flex items-center gap-3 text-sm font-medium">
+                <div key={i} className="flex items-center gap-3 text-base md:text-lg font-semibold">
                   <div className="w-5 h-5 rounded-none bg-emerald-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(16,185,129,0.3)]">
                     <span className="material-symbols-outlined text-[12px] text-emerald-400">check</span>
                   </div>
@@ -94,8 +94,8 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                     <span className="material-symbols-outlined text-black">mic</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-sm text-white">Live Debrief Session</h3>
-                    <p className="text-[11px] text-emerald-400 flex items-center gap-1.5 font-medium tracking-wide uppercase">
+                    <h3 className="font-bold text-base text-white">Live Debrief Session</h3>
+                    <p className="text-xs text-emerald-400 flex items-center gap-1.5 font-medium tracking-wide uppercase">
                       <span className="w-1.5 h-1.5 rounded-none bg-emerald-500 animate-pulse shadow-[0_0_5px_rgba(16,185,129,1)]"></span>
                       04:12 • Recording
                     </p>
@@ -139,25 +139,25 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 
                 {/* Rep Audio Transcript */}
                 <div className="space-y-1">
-                  <div className="flex items-center gap-2 text-[10px] text-on-surface-variant/60 uppercase tracking-wider font-bold">
+                  <div className="flex items-center gap-2 text-xs text-on-surface-variant/60 uppercase tracking-wider font-bold">
                     <span className="material-symbols-outlined text-[14px]">person</span>
                     Alex (SDR)
                   </div>
-                  <div className="text-[15px] text-white/80 leading-relaxed pl-6 border-l-2 border-outline/20">
+                  <div className="text-base md:text-lg text-white/80 leading-relaxed pl-6 border-l-2 border-outline/20">
                     "Okay, but what if they bring up pricing? Competitor X is like... twenty percent cheaper."
                   </div>
                 </div>
 
                 {/* AI Audio Transcript */}
                 <div className="space-y-1">
-                  <div className="flex items-center gap-2 text-[10px] text-emerald-400 uppercase tracking-wider font-bold">
+                  <div className="flex items-center gap-2 text-xs text-emerald-400 uppercase tracking-wider font-bold">
                     <span className="material-symbols-outlined text-[14px]">smart_toy</span>
                     CloseIQ Debriefer
                   </div>
-                  <div className="text-[15px] text-white leading-relaxed pl-6 border-l-2 border-emerald-500 shadow-[inset_1px_0_10px_rgba(16,185,129,0.05)]">
+                  <div className="text-base md:text-lg text-white leading-relaxed pl-6 border-l-2 border-emerald-500 shadow-[inset_1px_0_10px_rgba(16,185,129,0.05)]">
                     "I want you to acknowledge it, but pivot immediately to Total Cost of Ownership. Try saying: 
                     <br/><br/>
-                    <span className="text-emerald-400 italic">
+                    <span className="text-emerald-400 italic font-semibold">
                     'They are cheaper on paper, but without native CRM sync, your reps will spend 3 hours a week on data entry. How much is 3 hours of selling time worth?'
                     </span>
                     <br/><br/>
@@ -177,7 +177,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
               Master your <br/>
               <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Company Knowledge.</span>
             </h2>
-            <p className="text-lg text-on-surface-variant">
+            <p className="text-xl text-on-surface-variant font-medium">
               The AI Debriefer gets every rep up to speed in four simple steps.
             </p>
           </div>
@@ -196,7 +196,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Upload Knowledge</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Upload your company documentation, sales playbook, competitors, pricing, and CRM knowledge directly into CloseIQ.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Instant Answers</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Reps ask natural language questions about competitors, pricing, or product specs and get instant, perfectly accurate answers.
                   </p>
                 </div>
@@ -234,7 +234,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Interactive Quizzes</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     The debriefer proactively tests reps on their knowledge to ensure they retain important information before speaking to a customer.
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Readiness Tracking</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Managers get complete visibility into which reps have mastered the material and who needs more help, ensuring consistent ramp times.
                   </p>
                 </div>

@@ -162,19 +162,19 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
           {/* Copy Side */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1]">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Practice Against <br />
                 <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">AI Buyers.</span>
               </h1>
-              <p className="text-xl text-on-surface-variant leading-relaxed max-w-lg font-medium">
+              <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">
                 Realistic conversations before real customers.
               </p>
             </div>
             
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               Once reps understand your product, they begin practicing with AI buyer personas modeled after your ideal customers. Since CloseIQ provides a real-time AI copilot during every simulation, reps don't need to memorize every product detail. Instead, they focus on what matters most: asking better questions, building rapport, handling objections, and leading confident sales conversations.
             </p>
-            <p className="text-[15px] text-on-surface-variant/80 leading-relaxed max-w-lg">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               Each persona has unique goals, personalities, objections, budgets, and buying behaviors, making every practice session feel like a real sales call.
             </p>
 
@@ -186,7 +186,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 "AI Copilot available during every simulation",
                 "Instant performance scoring and feedback"
               ].map((feature, i) => (
-                <div key={i} className="flex items-center gap-3 text-sm font-medium">
+                <div key={i} className="flex items-center gap-3 text-base md:text-lg font-semibold">
                   <div className="w-5 h-5 rounded-none bg-emerald-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(16,185,129,0.3)]">
                     <span className="material-symbols-outlined text-[12px] text-emerald-400">check</span>
                   </div>
@@ -227,7 +227,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                     <span className={`material-symbols-outlined text-[20px] ${isActive ? 'text-emerald-400' : 'text-on-surface-variant'}`}>
                       {persona.avatarIcon}
                     </span>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-center hidden md:block text-white">
+                    <span className="text-xs font-bold uppercase tracking-wider text-center hidden md:block text-white">
                       {persona.role.split(' ')[0]}
                     </span>
                   </button>
@@ -243,32 +243,32 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 {/* Header */}
                 <div className="px-6 py-4 border-b border-outline/25 bg-emerald-500/5 flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-400">Buyer Simulation</h3>
-                    <p className="text-sm font-bold text-white">{activePersona.name} ({activePersona.role})</p>
+                    <h3 className="font-bold text-sm uppercase tracking-wider text-emerald-400">Buyer Simulation</h3>
+                    <p className="text-base font-bold text-white">{activePersona.name} ({activePersona.role})</p>
                   </div>
-                  <span className="text-[10px] bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 text-emerald-400 font-mono font-bold tracking-widest uppercase">
+                  <span className="text-xs bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 text-emerald-400 font-mono font-bold tracking-widest uppercase">
                     Active
                   </span>
                 </div>
 
                 {/* Persona Profile Brief */}
                 <div className="p-4 bg-[#141414]/65 border-b border-outline/20 space-y-1">
-                  <div className="text-[10px] text-on-surface-variant/60 font-mono font-bold uppercase">Persona Context</div>
-                  <p className="text-xs text-white/80"><strong className="text-emerald-400">Behavior: </strong>{activePersona.buyingBehavior}</p>
-                  <p className="text-xs text-white/80"><strong className="text-emerald-400">Budget: </strong>{activePersona.budget}</p>
+                  <div className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Persona Context</div>
+                  <p className="text-sm text-white/80"><strong className="text-emerald-400">Behavior: </strong>{activePersona.buyingBehavior}</p>
+                  <p className="text-sm text-white/80"><strong className="text-emerald-400">Budget: </strong>{activePersona.budget}</p>
                 </div>
 
                 {/* Message Log */}
                 <div className="p-6 space-y-6">
                   {activePersona.conversation.map((msg, idx) => (
                     <div key={idx} className="space-y-1">
-                      <div className={`flex items-center gap-1.5 text-[10px] uppercase tracking-wider font-bold ${msg.speaker === 'buyer' ? 'text-emerald-400' : 'text-on-surface-variant/60'}`}>
+                      <div className={`flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold ${msg.speaker === 'buyer' ? 'text-emerald-400' : 'text-on-surface-variant/60'}`}>
                         <span className="material-symbols-outlined text-[14px]">
                           {msg.speaker === 'buyer' ? 'person' : 'support_agent'}
                         </span>
                         {msg.speaker === 'buyer' ? activePersona.role : 'Alex (SDR)'}
                       </div>
-                      <div className={`text-[14px] leading-relaxed pl-5 border-l-2 ${msg.speaker === 'buyer' ? 'border-emerald-500 text-white' : 'border-outline/25 text-white/70'}`}>
+                      <div className={`text-base leading-relaxed pl-5 border-l-2 ${msg.speaker === 'buyer' ? 'border-emerald-500 text-white' : 'border-outline/25 text-white/70'}`}>
                         {msg.text}
                       </div>
                     </div>
@@ -279,7 +279,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
               {/* AI Copilot Side Guide - 5 Columns */}
               <div className="md:col-span-5 bg-[#0C0C0E]/90 flex flex-col">
                 <div className="px-6 py-4 border-b border-outline/25 bg-emerald-500/5">
-                  <h3 className="font-bold text-xs uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
                     <span className="material-symbols-outlined text-[16px] animate-pulse">auto_awesome</span>
                     Live Copilot Guide
                   </h3>
@@ -288,19 +288,19 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 <div className="p-6 space-y-6 flex-1">
                   {/* Persona Objection */}
                   <div className="space-y-2">
-                    <div className="text-[10px] text-on-surface-variant/60 font-mono font-bold uppercase">Objection Triggered</div>
-                    <div className="bg-[#1C1C1E] border border-red-500/20 p-3 text-xs leading-relaxed text-red-300 italic">
+                    <div className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Objection Triggered</div>
+                    <div className="bg-[#1C1C1E] border border-red-500/20 p-3 text-sm leading-relaxed text-red-300 italic font-medium">
                       {activePersona.objection}
                     </div>
                   </div>
 
                   {/* Dynamic Suggestions */}
                   <div className="space-y-3">
-                    <div className="text-[10px] text-on-surface-variant/60 font-mono font-bold uppercase">Suggested Prompts</div>
+                    <div className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Suggested Prompts</div>
                     <div className="space-y-2">
                       {activePersona.copilotSuggestions.map((sug, idx) => (
-                        <div key={idx} className="flex gap-2.5 items-start text-xs border border-emerald-500/20 bg-emerald-500/[0.02] p-2.5 hover:bg-emerald-500/[0.05] transition-colors cursor-pointer">
-                          <span className="material-symbols-outlined text-[16px] text-emerald-400 mt-0.5">lightbulb</span>
+                        <div key={idx} className="flex gap-2.5 items-start text-sm border border-emerald-500/20 bg-emerald-500/[0.02] p-2.5 hover:bg-emerald-500/[0.05] transition-colors cursor-pointer">
+                          <span className="material-symbols-outlined text-[18px] text-emerald-400 mt-0.5">lightbulb</span>
                           <span className="text-white/95 leading-snug">{sug}</span>
                         </div>
                       ))}
@@ -320,7 +320,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
               Master the <br/>
               <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Art of Selling.</span>
             </h2>
-            <p className="text-lg text-on-surface-variant">
+            <p className="text-xl text-on-surface-variant font-medium">
               The AI Persona sandbox prepares reps for every negotiation curveball.
             </p>
           </div>
@@ -339,7 +339,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Select Buyer</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Choose from standard target ICP roles including CEOs, CFOs, technical CTOs, or budget-conscious procurement leads.
                   </p>
                 </div>
@@ -358,7 +358,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Roleplay out loud</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Have natural vocal conversations. The AI buyer responds immediately, mimicking realistic buyer behaviors and moods.
                   </p>
                 </div>
@@ -377,7 +377,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Copilot Assist</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Get real-time guidance prompts so you learn what response works best before ever jumping on a call with a real prospect.
                   </p>
                 </div>
@@ -396,7 +396,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Instant Feedback</h3>
-                  <p className="text-sm text-on-surface-variant leading-relaxed">
+                  <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                     Evaluate key objection handling and discovery scores instantly. Focus coaching exactly where reps fall short.
                   </p>
                 </div>

@@ -74,7 +74,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
                 Without manual audits.
               </span>
             </h1>
-            <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
+            <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium">
               Sales managers can't listen to every call. CloseIQ automatically evaluates 100% of transcripts, highlights weaknesses, and generates coaching recommendations for each rep instantly.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -92,7 +92,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
             
             <div className="space-y-4">
               <div className="space-y-1">
-                <div className="flex justify-between text-xs font-semibold text-on-surface-variant">
+                <div className="flex justify-between text-sm font-bold text-on-surface-variant">
                   <span>Objection Handling Accuracy</span>
                   <span className="text-primary font-bold">92%</span>
                 </div>
@@ -102,7 +102,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               </div>
 
               <div className="space-y-1">
-                <div className="flex justify-between text-xs font-semibold text-on-surface-variant">
+                <div className="flex justify-between text-sm font-bold text-on-surface-variant">
                   <span>Discovery depth (Value questions)</span>
                   <span className="text-secondary font-bold">78%</span>
                 </div>
@@ -112,7 +112,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               </div>
 
               <div className="space-y-1">
-                <div className="flex justify-between text-xs font-semibold text-on-surface-variant">
+                <div className="flex justify-between text-sm font-bold text-on-surface-variant">
                   <span>Pacing & Nervous Fillers</span>
                   <span className="text-emerald-500 font-bold">85%</span>
                 </div>
@@ -122,7 +122,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               </div>
 
               <div className="space-y-1">
-                <div className="flex justify-between text-xs font-semibold text-on-surface-variant">
+                <div className="flex justify-between text-sm font-bold text-on-surface-variant">
                   <span>Active Listening (Talk Ratio)</span>
                   <span className="text-error font-bold">45%</span>
                 </div>
@@ -132,7 +132,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               </div>
             </div>
             
-            <div className="text-[10px] text-error flex gap-2 items-start bg-error/10 p-3 rounded-xl border border-error/20 leading-tight">
+            <div className="text-xs text-error flex gap-2 items-start bg-error/10 p-3 rounded-xl border border-error/20 leading-tight">
                <span className="material-symbols-outlined text-[14px]">warning</span>
                <span>Average rep active listening score is low. CloseIQ has automatically assigned 'Talk/Listen Sandbox' scenarios to 4 reps.</span>
             </div>
@@ -146,9 +146,9 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
             {/* Interactive Panel */}
             <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
               <div className="space-y-4">
-                <span className="text-[10px] font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive Metric Guide</span>
+                <span className="text-xs font-bold tracking-widest text-primary uppercase font-mono bg-primary/10 px-2.5 py-1 rounded">Interactive Metric Guide</span>
                 <h2 className="text-3xl font-bold text-on-surface leading-tight">Speech & Skill Diagnostics</h2>
-                <p className="text-sm text-on-surface-variant leading-relaxed">
+                <p className="text-base text-on-surface-variant leading-relaxed font-medium">
                   CloseIQ's intelligence engine analyzes dozens of speech patterns. Click on a category below to see how the engine translates raw audio metrics into clear coaching advice.
                 </p>
               </div>
@@ -157,34 +157,34 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               <div className="space-y-2.5">
                 <button
                   onClick={() => setSelectedMetric('listening')}
-                  className={`w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 ${selectedMetric === 'listening' ? 'bg-surface border-primary shadow-md ring-1 ring-primary' : 'bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high'}`}
+                  className="w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 bg-surface border-primary shadow-md ring-1 ring-primary"
                 >
                   <span className="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-xl text-lg">hearing</span>
                   <div>
-                    <h4 className="font-bold text-xs text-on-surface">Talk/Listen Ratio</h4>
-                    <p className="text-[10px] text-on-surface-variant mt-0.5">Active listening and conversational balance</p>
+                    <h4 className="font-bold text-sm text-on-surface">Talk/Listen Ratio</h4>
+                    <p className="text-xs text-on-surface-variant mt-0.5">Active listening and conversational balance</p>
                   </div>
                 </button>
 
                 <button
                   onClick={() => setSelectedMetric('pacing')}
-                  className={`w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 ${selectedMetric === 'pacing' ? 'bg-surface border-primary shadow-md ring-1 ring-primary' : 'bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high'}`}
+                  className="w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high"
                 >
                   <span className="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-xl text-lg">speed</span>
                   <div>
-                    <h4 className="font-bold text-xs text-on-surface">Pacing & Confidence</h4>
-                    <p className="text-[10px] text-on-surface-variant mt-0.5">Speech tempo and pause triggers</p>
+                    <h4 className="font-bold text-sm text-on-surface">Pacing & Confidence</h4>
+                    <p className="text-xs text-on-surface-variant mt-0.5">Speech tempo and pause triggers</p>
                   </div>
                 </button>
 
                 <button
                   onClick={() => setSelectedMetric('objections')}
-                  className={`w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 ${selectedMetric === 'objections' ? 'bg-surface border-primary shadow-md ring-1 ring-primary' : 'bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high'}`}
+                  className="w-full p-4 rounded-2xl border text-left transition-all flex items-center gap-4.5 bg-surface/50 border-outline-variant/20 hover:bg-surface-container-high"
                 >
                   <span className="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-xl text-lg">gavel</span>
                   <div>
-                    <h4 className="font-bold text-xs text-on-surface">Playbook Alignment</h4>
-                    <p className="text-[10px] text-on-surface-variant mt-0.5">Battle card validation and compliance</p>
+                    <h4 className="font-bold text-sm text-on-surface">Playbook Alignment</h4>
+                    <p className="text-xs text-on-surface-variant mt-0.5">Battle card validation and compliance</p>
                   </div>
                 </button>
               </div>
@@ -196,10 +196,10 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               {/* Card Header */}
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[10px] font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full uppercase tracking-wider font-mono">
+                  <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1 rounded-full uppercase tracking-wider font-mono">
                     Evaluation Standard
                   </span>
-                  <span className="text-xs text-on-surface-variant font-semibold">
+                  <span className="text-sm text-on-surface-variant font-bold">
                     {current.scoreLabel}
                   </span>
                 </div>
@@ -209,17 +209,17 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
                   {current.title}
                 </h3>
 
-                <p className="text-xs text-on-surface-variant leading-relaxed">
+                <p className="text-sm text-on-surface-variant leading-relaxed font-medium">
                   {current.description}
                 </p>
               </div>
 
               {/* Evaluation Tips list */}
               <div className="bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 mt-6 space-y-4">
-                <span className="text-[10px] font-bold text-primary uppercase tracking-wider font-mono">How CloseIQ Automates This</span>
+                <span className="text-xs font-bold text-primary uppercase tracking-wider font-mono">How CloseIQ Automates This</span>
                 <div className="space-y-3">
                   {current.tips.map((tip, idx) => (
-                    <div key={idx} className="flex gap-3 items-start text-xs text-on-surface-variant">
+                    <div key={idx} className="flex gap-3 items-start text-sm text-on-surface-variant font-medium">
                       <span className="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
                       <p className="leading-relaxed">{tip}</p>
                     </div>
@@ -227,7 +227,7 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-outline-variant/15 text-[11px] text-on-surface-variant/80 flex justify-between items-center">
+              <div className="mt-6 pt-4 border-t border-outline-variant/15 text-xs text-on-surface-variant/80 flex justify-between items-center">
                 <span>Playbooks are auto-updated daily based on active deal outcomes.</span>
                 <span className="font-semibold text-primary">Continuous Coaching Engine</span>
               </div>
