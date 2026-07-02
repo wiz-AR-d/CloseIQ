@@ -65,69 +65,69 @@ export default function CompanyPage({ onBack }: CompanyPageProps) {
         {/* Section 1: Hero Mission */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tighter leading-[1.1]">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
               Drastically reduce <br />
               <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">rep ramp-up time.</span>
             </h1>
-            <p className="text-lg text-on-surface-variant leading-relaxed font-medium">
+            <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed font-semibold">
               We built CloseIQ to replace slow manual shadow sessions with interactive sales sandboxes and real-time live copilot guidance.
             </p>
-            <p className="text-sm text-on-surface-variant/80 leading-relaxed">
+            <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed font-medium">
               Traditional sales training forces representatives to read outdated wikis, study transcripts of former calls, and shadow managers for hours. We replace that overhead with an active sandbox. Reps practice playbooks out loud against specialized AI buyer profiles, and a Live Copilot acts as their safety net on actual customer calls.
             </p>
           </div>
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-6 text-center space-y-2 rounded-none">
-              <div className="text-3xl font-black font-mono text-emerald-400">90%</div>
-              <div className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant/80">Ramp Time Reduced</div>
+              <div className="text-4xl font-black font-mono text-emerald-400">90%</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Ramp Time Reduced</div>
             </div>
             <div className="border border-outline/25 bg-[#0C0C0E] p-6 text-center space-y-2 rounded-none">
-              <div className="text-3xl font-black font-mono text-white">5+ Hrs</div>
-              <div className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant/80">Manager shadow time saved</div>
+              <div className="text-4xl font-black font-mono text-white">5+ Hrs</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Manager shadow time saved</div>
             </div>
             <div className="border border-outline/25 bg-[#0C0C0E] p-6 text-center space-y-2 rounded-none">
-              <div className="text-3xl font-black font-mono text-white">100%</div>
-              <div className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant/80">Conversations Audited</div>
+              <div className="text-4xl font-black font-mono text-white">100%</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Conversations Audited</div>
             </div>
             <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-6 text-center space-y-2 rounded-none">
-              <div className="text-3xl font-black font-mono text-emerald-400">2.3x</div>
-              <div className="text-[10px] uppercase font-bold tracking-wider text-on-surface-variant/80">Quota Attainment Boost</div>
+              <div className="text-4xl font-black font-mono text-emerald-400">2.3x</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Quota Attainment Boost</div>
             </div>
           </div>
         </section>
 
         {/* Section 2: Values Grid */}
         <section className="space-y-12 border-t border-outline/20 pt-16">
-          <h2 className="text-3xl font-bold tracking-tight text-white">Our Core Philosophy</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white">Our Core Philosophy</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <div className="border border-outline/25 bg-surface/35 p-6 space-y-4 rounded-none">
-              <div className="w-10 h-10 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
-                <span className="material-symbols-outlined text-emerald-400">psychology</span>
+              <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
+                <span className="material-symbols-outlined text-emerald-400 text-[22px]">psychology</span>
               </div>
-              <h3 className="font-bold text-base text-white">Active sandbox first</h3>
-              <p className="text-xs text-on-surface-variant leading-relaxed">
+              <h3 className="font-bold text-xl md:text-2xl text-white">Active sandbox first</h3>
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-medium">
                 Reps don’t learn from watching. They learn by doing. We build simulated arenas where sales teams can make mistakes, handle objections, and master scripts without burning real customer leads.
               </p>
             </div>
 
             <div className="border border-outline/25 bg-surface/35 p-6 space-y-4 rounded-none">
-              <div className="w-10 h-10 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
-                <span className="material-symbols-outlined text-emerald-400">shield</span>
+              <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
+                <span className="material-symbols-outlined text-emerald-400 text-[22px]">shield</span>
               </div>
-              <h3 className="font-bold text-base text-white">Uncompromising Security</h3>
-              <p className="text-xs text-on-surface-variant leading-relaxed">
+              <h3 className="font-bold text-xl md:text-2xl text-white">Uncompromising Security</h3>
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-medium">
                 Sales calls represent highly sensitive business IP. We host all data under single-tenant isolation schemes, scrub personal PII automatically, and support full Okta/Azure SSO.
               </p>
             </div>
 
             <div className="border border-outline/25 bg-surface/35 p-6 space-y-4 rounded-none">
-              <div className="w-10 h-10 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
-                <span className="material-symbols-outlined text-emerald-400">bolt</span>
+              <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25">
+                <span className="material-symbols-outlined text-emerald-400 text-[22px]">bolt</span>
               </div>
-              <h3 className="font-bold text-base text-white">Live Call Safety Net</h3>
-              <p className="text-xs text-on-surface-variant leading-relaxed">
+              <h3 className="font-bold text-xl md:text-2xl text-white">Live Call Safety Net</h3>
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-medium">
                 Rather than auditing call performance hours after it's complete, our Live AI Copilot assists reps mid-call so they always say the winning line and maintain call control.
               </p>
             </div>
@@ -140,7 +140,7 @@ export default function CompanyPage({ onBack }: CompanyPageProps) {
           
           <div className="text-center max-w-xl mx-auto space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">Get in touch</h2>
-            <p className="text-xs md:text-sm text-on-surface-variant">
+            <p className="text-sm md:text-base text-on-surface-variant">
               Have questions about integrations, security configurations, or custom sandbox setups? Drop us a line below.
             </p>
           </div>
