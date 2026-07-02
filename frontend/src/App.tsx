@@ -58,7 +58,7 @@ function App() {
       case 'faq':
         return <FaqPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'company':
-        return <CompanyPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+        return <CompanyPage onBack={() => setCurrentPage('home')} />;
       case 'pricing':
         return <PricingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'home':

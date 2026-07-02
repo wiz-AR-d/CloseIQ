@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface AiCopilotPageProps {
   onBack: () => void;
@@ -10,7 +10,7 @@ interface CopilotTab {
   label: string;
   icon: string;
   title: string;
-  content: JSX.Element;
+  content: React.ReactNode;
 }
 
 export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProps) {

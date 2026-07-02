@@ -2,10 +2,9 @@ import { useState, useEffect } from 'react';
 
 interface CompanyPageProps {
   onBack: () => void;
-  onOpenPopup?: () => void;
 }
 
-export default function CompanyPage({ onBack, onOpenPopup }: CompanyPageProps) {
+export default function CompanyPage({ onBack }: CompanyPageProps) {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
