@@ -6,7 +6,7 @@ export default function ValuePropsSection() {
         {/* Phase 1: Learn */}
         <div className="flex flex-col lg:flex-row items-center gap-16 md:gap-24">
           <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-xs font-semibold tracking-wide uppercase text-on-surface-variant">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 1: Knowledge
             </div>
             <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
@@ -23,7 +23,7 @@ export default function ValuePropsSection() {
               <div className="space-y-6">
                 <div className="flex gap-4 items-end">
                   <div className="w-8 h-8 rounded-full bg-surface/50 backdrop-blur-xl border border-outline-container-highest shrink-0"></div>
-                  <div className="bg-surface/50 backdrop-blur-xl border border-outline-container-high px-4 py-3 rounded-none text-[15px] font-medium text-on-background">
+                  <div className="bg-surface/50 backdrop-blur-xl border border-outline-container-high px-4 py-3 rounded-none text-base font-medium text-on-background">
                     How does our enterprise pricing compare to Acme Corp?
                   </div>
                 </div>
@@ -31,9 +31,9 @@ export default function ValuePropsSection() {
                   <div className="w-8 h-8 rounded-full bg-emerald-500/20 shrink-0 flex items-center justify-center border border-emerald-500/30">
                     <span className="material-symbols-outlined text-emerald-400 text-[16px]">smart_toy</span>
                   </div>
-                  <div className="bg-emerald-500/5 border border-emerald-500/20 px-4 py-3 rounded-none text-[15px] font-medium text-on-background text-right">
+                  <div className="bg-emerald-500/5 border border-emerald-500/20 px-4 py-3 rounded-none text-base font-medium text-on-background text-right">
                     <p className="mb-2 text-left text-white/95">We are typically 15% more expensive upfront, but Acme charges for API access.</p>
-                    <div className="inline-flex items-center gap-1.5 bg-surface-container-high px-2 py-1 rounded-md text-[11px] font-semibold text-emerald-400 border border-emerald-500/10 shadow-sm">
+                    <div className="inline-flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-md text-xs font-semibold text-emerald-400 border border-emerald-500/10 shadow-sm">
                       <span className="material-symbols-outlined text-[12px]">library_books</span> Source: Q3 Battlecard
                     </div>
                   </div>
@@ -48,7 +48,7 @@ export default function ValuePropsSection() {
         {/* Phase 2: Practice */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-16 md:gap-24">
           <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-xs font-semibold tracking-wide uppercase text-on-surface-variant">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 2: Practice
             </div>
             <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
@@ -69,14 +69,14 @@ export default function ValuePropsSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg leading-tight">VP of IT Persona</h4>
-                    <p className="text-xs font-medium text-on-surface-variant">Focus: Security & Compliance</p>
+                    <p className="text-sm font-medium text-on-surface-variant">Focus: Security & Compliance</p>
                   </div>
                 </div>
                 <div className="text-4xl font-sans font-bold tracking-tight text-emerald-400 font-mono">81</div>
               </div>
               <div className="space-y-5">
                 <div>
-                  <div className="flex justify-between font-medium text-sm mb-1.5">
+                  <div className="flex justify-between font-medium text-base mb-1.5">
                     <span>Pitch Clarity</span>
                     <span className="text-emerald-400 font-semibold">92%</span>
                   </div>
@@ -85,7 +85,7 @@ export default function ValuePropsSection() {
                   </div>
                 </div>
                 <div>
-                  <div className="flex justify-between font-medium text-sm mb-1.5">
+                  <div className="flex justify-between font-medium text-base mb-1.5">
                     <span>Objection Handling</span>
                     <span className="text-teal-400 font-semibold">68%</span>
                   </div>
@@ -103,7 +103,7 @@ export default function ValuePropsSection() {
         {/* Phase 3: Perform */}
         <div className="flex flex-col lg:flex-row items-center gap-16 md:gap-24">
           <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-surface/50 backdrop-blur-xl border border-outline-container-highest border border-outline shadow-clay-sm rounded-full text-xs font-semibold tracking-wide uppercase text-on-surface-variant">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 3: Execution
             </div>
             <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
@@ -149,26 +149,26 @@ export default function ValuePropsSection() {
               </div>
                
               {/* Premium Floating Live Insight Card */}
-              <div className="absolute bottom-20 right-5 w-[290px] bg-[#2A2A2D]/95 backdrop-blur-xl rounded-none p-4 shadow-[0_12px_40px_rgba(0,0,0,0.4)] border border-white/10 transform translate-y-2 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="absolute bottom-20 right-5 w-[310px] bg-[#2A2A2D]/95 backdrop-blur-xl rounded-none p-4 shadow-[0_12px_40px_rgba(0,0,0,0.4)] border border-white/10 transform translate-y-2 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
-                    <span className="text-[10px] font-bold tracking-widest text-emerald-400 uppercase">Live Insight</span>
+                    <span className="text-xs font-bold tracking-widest text-emerald-400 uppercase">Live Insight</span>
                   </div>
                   <span className="material-symbols-outlined text-white/30 text-[16px]">psychology</span>
                 </div>
                 
-                <h5 className="text-[15px] font-semibold text-white mb-2 flex items-center gap-1.5">
+                <h5 className="text-[16px] font-semibold text-white mb-2 flex items-center gap-1.5">
                   <span className="text-white/60 font-medium">Mentioned:</span> Nexus
                 </h5>
                 
                 <div className="bg-black/30 rounded-none p-3 mb-3.5 border border-white/5">
-                  <p className="text-[13px] font-medium text-white/80 leading-relaxed">
+                  <p className="text-[14px] font-medium text-white/80 leading-relaxed">
                     "Nexus lacks native Salesforce sync. Highlight our 1-click integration."
                   </p>
                 </div>
                 
-                <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-black font-medium text-[13px] rounded-none transition-colors shadow-[0_4px_12px_rgba(16,185,129,0.3)]">
+                <button className="w-full flex items-center justify-center gap-2 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-black font-semibold text-[14px] rounded-none transition-colors shadow-[0_4px_12px_rgba(16,185,129,0.3)]">
                   <span className="material-symbols-outlined text-[16px]">visibility</span>
                   View Battlecard
                 </button>

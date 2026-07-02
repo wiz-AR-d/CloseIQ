@@ -17,7 +17,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
             />
             CloseIQ
           </div>
-          <p className="text-sm leading-relaxed mb-6 max-w-xs font-medium">
+          <p className="text-base leading-relaxed mb-6 max-w-xs font-medium">
             The AI sales onboarding platform that turns ramp time into your competitive moat.
           </p>
           <div className="flex gap-3">
@@ -70,7 +70,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
 
       </div>
       
-      <div className="max-w-[1200px] mx-auto px-6 mt-20 pt-8 border-t border-outline/30 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium relative z-10">
+      <div className="max-w-[1200px] mx-auto px-6 mt-20 pt-8 border-t border-outline/30 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium relative z-10">
         <p>© 2026 CloseIQ, Inc. All rights reserved.</p>
         <div className="flex gap-6">
           <span>System Status: <span className="text-emerald-500">100% Operational</span></span>

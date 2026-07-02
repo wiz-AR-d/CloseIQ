@@ -38,7 +38,7 @@ export default function HeroSection({ onOpenPopup }: { onOpenPopup?: () => void 
           
           {/* Backed By Section */}
           <div className="mt-24 flex flex-col items-center z-20">
-            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-on-surface-variant mb-8 text-center">
+            <p className="text-sm font-bold tracking-[0.2em] uppercase text-on-surface-variant mb-8 text-center">
               Backed by leaders from
             </p>
             <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14 bg-surface-container-high/60 backdrop-blur-md px-10 py-5 rounded-full border border-outline/30 shadow-clay-sm">
