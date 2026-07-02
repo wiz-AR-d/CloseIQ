@@ -77,7 +77,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-on-background transition-colors duration-300">
-      <NavBar currentPage={currentPage} onNavigate={setCurrentPage} />
+      <NavBar currentPage={currentPage} onNavigate={setCurrentPage} onOpenPopup={() => setIsPopupOpen(true)} />
       <main>
         {renderContent()}
       </main>
