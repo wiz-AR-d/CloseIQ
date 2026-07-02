@@ -17,8 +17,13 @@ import RampTimePage from './components/RampTimePage'
 import CoachingPage from './components/CoachingPage'
 import QualityAutomationPage from './components/QualityAutomationPage'
 import PricingPage from './components/PricingPage'
+import AiDebrieferPage from './components/AiDebrieferPage'
+import AiPersonaPage from './components/AiPersonaPage'
+import AiCopilotPage from './components/AiCopilotPage'
+import FaqPage from './components/FaqPage'
+import CompanyPage from './components/CompanyPage'
 
-type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'quality-automation' | 'pricing';
+type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -42,8 +47,18 @@ function App() {
         return <RampTimePage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'coaching':
         return <CoachingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'ai-debriefer':
+        return <AiDebrieferPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'ai-persona':
+        return <AiPersonaPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'ai-copilot':
+        return <AiCopilotPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'quality-automation':
         return <QualityAutomationPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'faq':
+        return <FaqPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'company':
+        return <CompanyPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'pricing':
         return <PricingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'home':
@@ -54,7 +69,7 @@ function App() {
             <SocialProofSection />
             <ProblemSection />
             <ValuePropsSection />
-            <FinalCtaSection />
+            <FinalCtaSection onNavigateContact={() => setCurrentPage('contact')} />
           </>
         );
     }

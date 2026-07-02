@@ -1,68 +1,61 @@
+// @ts-ignore
+import Hyperspeed from './Hyperspeed';
+
 export default function HeroSection({ onOpenPopup }: { onOpenPopup?: () => void }) {
   return (
-    <header className="pt-24 border-b-4 border-black bg-background text-on-background">
-      <div className="max-w-[1400px] mx-auto px-6 pt-16 pb-12 flex flex-col items-start border-x-4 border-black border-t-4 bg-white relative shadow-brutal-lg mb-12">
+    <header className="min-h-screen pt-20 bg-background text-on-background relative overflow-hidden flex flex-col items-center justify-center">
+      
+      {/* Intense technical Hyperspeed background (Clay.com style dark mode) */}
+      <div className="absolute inset-0 z-0">
+        <Hyperspeed
+          effectOptions={{"distortion":"turbulentDistortion","length":400,"roadWidth":10,"islandWidth":2,"lanesPerRoad":3,"fov":90,"fovSpeedUp":150,"speedUp":2,"carLightsFade":0.4,"totalSideLightSticks":20,"lightPairsPerRoadWay":40,"shoulderLinesWidthPercentage":0.05,"brokenLinesWidthPercentage":0.1,"brokenLinesLengthPercentage":0.5,"lightStickWidth":[0.12,0.5],"lightStickHeight":[1.3,1.7],"movingAwaySpeed":[60,80],"movingCloserSpeed":[-120,-160],"carLightsLength":[12,80],"carLightsRadius":[0.05,0.14],"carWidthPercentage":[0.3,0.5],"carShiftX":[-0.8,0.8],"carFloorSeparation":[0,5],"colors":{"roadColor":526344,"islandColor":657930,"background":0,"shoulderLines":1250072,"brokenLines":1250072,"leftCars":[366185,1096065,2278750],"rightCars":[1096065,889992,292951],"sticks":1096065}}}
+        />
+      </div>
+
+      <div className="max-w-[1200px] mx-auto px-6 relative z-10 w-full">
         
-        {/* Banner Tag */}
-        <div className="absolute top-0 right-0 bg-primary text-white font-bold px-6 py-2 border-b-4 border-l-4 border-black uppercase tracking-widest text-sm">
-          Sales Ramp Accelerator
-        </div>
-
-        {/* Aggressive Headline */}
-        <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-black uppercase leading-[0.85] tracking-tighter max-w-5xl mb-8">
-          Slash Ramp Time.<br/>
-          <span className="text-primary">Build Killers.</span>
-        </h1>
-        
-        {/* Subheadline */}
-        <p className="text-xl md:text-2xl font-medium max-w-3xl leading-snug mb-12 border-l-8 border-black pl-6">
-          GET NEW HIRES REVENUE-READY FASTER. DATA-DRIVEN COACHING. BOOST PRODUCTIVITY BY 40% WITHOUT BURNING REAL LEADS.
-        </p>
-
-        {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 mb-16 w-full">
-          <button 
-            onClick={onOpenPopup}
-            className="px-10 py-5 bg-primary text-white font-black uppercase text-xl border-4 border-black shadow-brutal hover:-translate-y-1 hover:shadow-brutal-lg transition-all"
-          >
-            Demo Now
-          </button>
-          <a
-            href="#how-it-works"
-            className="px-10 py-5 bg-white text-black font-black uppercase text-xl border-4 border-black shadow-brutal hover:-translate-y-1 hover:shadow-brutal-lg transition-all flex items-center justify-center"
-          >
-            How it Works
-          </a>
-        </div>
-
-        {/* Brutalist 3-Step Product Flow Grid */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 border-t-4 border-black mt-4">
+        {/* Top Text Content */}
+        <div className="text-center max-w-4xl mx-auto mb-16 relative z-20">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-high rounded-full text-xs font-bold tracking-wider uppercase text-on-surface-variant mb-8 border border-outline shadow-clay-sm">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]"></span>
+            FASTER TO FIRST DEAL
+          </div>
+          <h1 className="font-sans text-5xl md:text-7xl lg:text-[5.5rem] font-semibold leading-[1.05] tracking-tighter text-on-background mb-6">
+            Ramp reps in days, <br className="hidden md:block"/>
+            <span className="text-on-surface-variant">not months.</span>
+          </h1>
+          <p className="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed mb-10 font-sans font-medium">
+            AI onboarding, practice, and live guidance for modern sales teams.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button 
+              onClick={onOpenPopup}
+              className="px-8 py-3.5 bg-primary text-on-primary font-semibold rounded-full hover:bg-surface-container-highest transition-colors shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+            >
+              Start Building
+            </button>
+          </div>
           
-          {/* Step 1: Learn */}
-          <div className="p-8 border-b-4 md:border-b-0 md:border-r-4 border-black bg-surface-container-high hover:bg-white transition-colors group">
-            <h3 className="text-4xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">1. Learn</h3>
-            <p className="font-bold text-lg leading-tight uppercase">
-              AI Debriefer ingests docs & pricing. Interactive QA.
+          {/* Backed By Section */}
+          <div className="mt-24 flex flex-col items-center z-20">
+            <p className="text-xs font-semibold tracking-[0.2em] uppercase text-on-surface-variant mb-8 text-center">
+              Backed by leaders from
             </p>
+            <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14 bg-surface-container-high/60 backdrop-blur-md px-10 py-5 rounded-full border border-outline/30 shadow-clay-sm">
+              <div className="flex items-center cursor-default">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" alt="Microsoft" className="h-5 brightness-0 invert" />
+                <span className="font-sans font-semibold tracking-tight text-white text-lg ml-2">for  Startups</span>
+              </div>
+              <div className="h-6 w-px bg-outline/30 hidden sm:block"></div>
+              <div className="flex items-center cursor-default">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google G" className="h-5 w-5 brightness-0 invert mr-2" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google" className="h-5 brightness-0 invert" />
+                <span className="font-sans font-semibold tracking-tight text-white text-lg ml-2">for  Startups</span>
+              </div>
+            </div>
           </div>
-
-          {/* Step 2: Practice */}
-          <div className="p-8 border-b-4 md:border-b-0 md:border-r-4 border-black bg-surface-container-high hover:bg-white transition-colors group">
-            <h3 className="text-4xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">2. Practice</h3>
-            <p className="font-bold text-lg leading-tight uppercase">
-              Roleplay with ruthless AI buyer personas.
-            </p>
-          </div>
-
-          {/* Step 3: Perform */}
-          <div className="p-8 bg-surface-container-high hover:bg-white transition-colors group">
-            <h3 className="text-4xl font-black uppercase mb-4 tracking-tighter group-hover:text-primary transition-colors">3. Perform</h3>
-            <p className="font-bold text-lg leading-tight uppercase">
-              Live Copilot guides real calls with battlecards.
-            </p>
-          </div>
-
         </div>
+
       </div>
     </header>
   );

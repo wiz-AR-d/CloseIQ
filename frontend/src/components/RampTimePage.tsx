@@ -16,15 +16,15 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
       difficulty: "Medium",
       buyerPersona: "Skeptical Ops Director",
       objection: "\"Competitor X claims they do call recording and summarization for free. Why should we invest in CloseIQ?\"",
-      winningPitch: "\"Competitor X records and summarizes calls, but they don't solve rep ramp. CloseIQ uses active conversation cues during live calls to coach your reps and automates practice sandbox training. Our customers hit quota 40% faster and reclaim 5+ hours/week in manager shadow time. That's why CloseIQ pays for itself in weeks.\"",
+      winningPitch: "\"Competitor X records and summarizes calls, but they don't solve rep ramp. CloseIQ uses active conversation cues during live calls to coach your reps and automates practice sandbox training. Our customers reduce onboarding ramp time by 90% and reclaim 5+ hours/week in manager shadow time. That's why CloseIQ pays for itself in weeks.\"",
       metrics: { score: 94, empathy: "Excellent", alignment: "98%" }
     },
     enterprise: {
-      title: "Enterprise Custom SSO & SOC2 Compliance",
+      title: "Enterprise Custom SSO & Data Security",
       difficulty: "Hard",
       buyerPersona: "Strict Chief Information Officer",
-      objection: "\"We cannot deploy any sales assistant that transcribes customer calls without SOC2 compliance verification and Okta integration.\"",
-      winningPitch: "\"CloseIQ is fully SOC2 Type II audited. All data is isolated and encrypted both in transit and at rest. We support native Okta and Azure AD SSO, and you can configure custom data retention rules to automatically scrub sensitive PII. Let's schedule a deep-dive security review with our engineering lead.\"",
+      objection: "\"We cannot deploy any sales assistant that transcribes customer calls without strict data privacy verification and Okta integration.\"",
+      winningPitch: "\"We design our architecture with enterprise-grade data isolation. All data is isolated and encrypted both in transit and at rest. We support native Okta and Azure AD SSO, and you can configure custom data retention rules to automatically scrub sensitive PII. Let's schedule a deep-dive security review with our engineering lead.\"",
       metrics: { score: 91, empathy: "Professional", alignment: "95%" }
     },
     negotiation: {
@@ -81,7 +81,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
               Cut rep ramp-up <br />
               <span className="bg-gradient-to-r from-primary via-primary-dim to-secondary bg-clip-text text-transparent">
-                time by over 40%.
+                time by over 90%.
               </span>
             </h1>
             <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">

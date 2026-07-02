@@ -72,35 +72,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-  --color-background: 244 244 240; /* Off-white / Cream */
-  --color-on-background: 17 17 17; /* Solid Black */
+  --color-background: 10 10 10; /* Very Dark #0A0A0A */
+  --color-on-background: 255 255 255; /* Pure White */
   
-  --color-surface: 255 255 255; /* Pure White for cards */
-  --color-surface-container-low: 244 244 240;
-  --color-surface-container: 255 255 255;
-  --color-surface-container-high: 230 230 225;
-  --color-surface-container-highest: 210 210 200;
-  --color-surface-variant: 255 255 255;
+  --color-surface: 20 20 20; /* Dark Grey for floating cards #141414 */
+  --color-surface-container-low: 15 15 15;
+  --color-surface-container: 26 26 26;
+  --color-surface-container-high: 38 38 38;
+  --color-surface-container-highest: 50 50 50;
+  --color-surface-variant: 26 26 26;
   
-  --color-on-surface: 17 17 17;
-  --color-on-surface-variant: 60 60 60;
+  --color-on-surface: 255 255 255;
+  --color-on-surface-variant: 156 163 175; /* Cool Grey #9CA3AF */
   
-  --color-outline: 17 17 17; /* Stark black borders */
-  --color-outline-variant: 17 17 17;
+  --color-outline: 38 38 38; /* Very subtle dark borders #262626 */
+  --color-outline-variant: 64 64 64;
   
-  --color-primary: 230 57 70; /* Aggressive Red */
-  --color-on-primary: 255 255 255;
-  --color-primary-container: 230 57 70;
+  --color-primary: 255 255 255; /* White for primary actions */
+  --color-on-primary: 0 0 0; /* Black text on white buttons */
+  --color-primary-container: 38 38 38;
   --color-on-primary-container: 255 255 255;
   
-  --color-secondary: 17 17 17;
+  --color-secondary: 26 26 26;
   --color-on-secondary: 255 255 255;
-  --color-secondary-container: 200 200 200;
-  --color-on-secondary-container: 17 17 17;
+  --color-secondary-container: 38 38 38;
+  --color-on-secondary-container: 255 255 255;
   
-  --color-error: 230 57 70;
-  --color-on-error: 255 255 255;
-  --color-error-container: 255 0 0;
-  --color-on-error-container: 255 255 255;
+  --color-error: 248 113 113;
+  --color-on-error: 0 0 0;
+  --color-error-container: 127 29 29;
+  --color-on-error-container: 254 202 202;
 }
 

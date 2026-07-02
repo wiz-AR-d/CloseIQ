@@ -68,15 +68,13 @@ export default {
     extend: {
       colors,
       fontFamily: {
-        "headline": ["Space Grotesk"],
-        "body": ["Inter"],
-        "label": ["Inter"],
-        "serif": ["Cormorant Garamond", "serif"]
+        "sans": ["Inter", "sans-serif"],
       },
-      borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "0px"},
+      borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "2xl": "1.5rem", "3xl": "2rem", "full": "9999px"},
       boxShadow: {
-        'brutal': '4px 4px 0px 0px rgba(0,0,0,1)',
-        'brutal-lg': '8px 8px 0px 0px rgba(0,0,0,1)',
+        'clay': '0 0 20px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+        'clay-sm': '0 0 10px rgba(255, 255, 255, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+        'clay-hover': '0 0 40px rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
       }
     },
   },

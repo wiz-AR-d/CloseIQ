@@ -1,26 +1,21 @@
 export default function ProblemSection() {
   return (
-    <section className="py-32 bg-primary text-white border-b-4 border-black flex items-center justify-center relative">
-      {/* Background pattern for texture */}
-      <div 
-        className="absolute inset-0 z-0 opacity-10"
-        style={{
-          backgroundImage: `repeating-linear-gradient(45deg, #000 0, #000 2px, transparent 2px, transparent 10px)`
-        }}
-      />
+    <section className="min-h-[60vh] py-20 bg-background text-on-background relative flex flex-col items-center justify-center">
       
-      <div className="max-w-[1400px] mx-auto px-6 relative z-10 w-full">
-        <div className="bg-white text-black border-4 border-black p-12 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] text-center">
-          <h2 className="text-5xl md:text-7xl lg:text-[6rem] font-black uppercase leading-[0.9] tracking-tighter mb-8">
-            Every day a new rep <br className="hidden md:block"/> isn't productive is <br className="hidden md:block"/>
-            <span className="text-primary bg-black text-white px-4">revenue lost.</span>
-          </h2>
-          
-          <p className="text-2xl font-bold max-w-4xl mx-auto leading-tight uppercase border-t-4 border-black pt-8 mt-8">
-            The old playbook of shadowing calls and reading wikis is broken. 
-            It takes too long, scales poorly, and leaves your reps guessing when it matters most.
-          </p>
-        </div>
+      {/* Very subtle glow behind text */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-[80px] pointer-events-none" />
+
+      <div className="max-w-[1000px] mx-auto px-6 relative z-10 text-center">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight leading-[1.1] text-on-background mb-8">
+          The traditional onboarding playbook <br className="hidden md:block"/>
+          <span className="italic text-on-surface-variant">costs you time and deals.</span>
+        </h2>
+        
+        <p className="text-lg font-medium max-w-3xl mx-auto leading-relaxed text-on-surface-variant">
+          Shadowing calls and reading wikis doesn't scale. It leaves your new hires guessing 
+          when it matters most, burning valuable leads while they try to find their footing.
+          CloseIQ replaces guesswork with a predictable revenue engine.
+        </p>
       </div>
     </section>
   );

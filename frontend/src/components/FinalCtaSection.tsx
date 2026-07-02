@@ -1,28 +1,30 @@
-export default function FinalCtaSection() {
+interface FinalCtaSectionProps {
+  onNavigateContact?: () => void;
+}
+
+export default function FinalCtaSection({ onNavigateContact }: FinalCtaSectionProps) {
   return (
-    <section className="py-32 bg-primary text-white border-b-4 border-black">
-      <div className="max-w-[1200px] mx-auto px-6 text-center">
-        <div className="bg-white text-black border-4 border-black shadow-brutal p-12 md:p-24 relative">
-          
-          <div className="absolute -top-6 -left-6 bg-primary text-white border-4 border-black font-black uppercase px-6 py-2 text-2xl rotate-[-2deg]">
-            Stop Losing Money
-          </div>
-          
-          <h2 className="text-6xl md:text-[5rem] font-black uppercase leading-[0.85] tracking-tighter mb-8 mt-4">
-            Stop paying reps to read wikis.
-          </h2>
-          <p className="text-2xl font-bold uppercase mb-12 max-w-3xl mx-auto border-y-4 border-black py-6">
-            Get your team to quota 2 months faster. CloseIQ is the only platform that trains, tests, and guides your reps from day one.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="px-12 py-6 bg-black text-white font-black uppercase text-2xl border-4 border-black hover:bg-primary transition-colors shadow-[8px_8px_0px_0px_rgba(230,57,70,1)] hover:shadow-none hover:translate-x-2 hover:translate-y-2">
-              Book a Demo
-            </button>
-            <button className="px-12 py-6 bg-white text-black font-black uppercase text-2xl border-4 border-black hover:bg-surface-container-high transition-colors shadow-brutal hover:shadow-none hover:translate-x-1 hover:translate-y-1">
-              View Pricing
-            </button>
-          </div>
+    <section className="py-32 bg-background text-on-background relative overflow-hidden flex justify-center items-center">
+      
+      {/* Soft clay-like glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-emerald-100/40 rounded-full blur-[120px] pointer-events-none" />
+
+      <div className="max-w-[800px] mx-auto px-6 relative z-10 text-center">
+        <h2 className="text-5xl md:text-6xl lg:text-[4.5rem] font-sans font-bold tracking-tight leading-[1.05] tracking-tight text-on-background mb-8">
+          Turn your ramp time <br/>
+          <span className="italic text-on-surface-variant">into a competitive moat.</span>
+        </h2>
+        <p className="text-lg font-medium text-on-surface-variant max-w-2xl mx-auto mb-10">
+          Stop leaving revenue on the table while new hires figure things out. 
+          Equip them with the intelligence they need to win from day one.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button 
+            onClick={onNavigateContact}
+            className="px-8 py-4 bg-surface text-on-background font-medium rounded-full border border-outline hover:bg-surface-container-high transition-colors shadow-sm"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </section>
