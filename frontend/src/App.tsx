@@ -22,8 +22,9 @@ import AiPersonaPage from './components/AiPersonaPage'
 import AiCopilotPage from './components/AiCopilotPage'
 import FaqPage from './components/FaqPage'
 import CompanyPage from './components/CompanyPage'
+import PilotProgramPage from './components/PilotProgramPage'
 
-type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company';
+type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -59,6 +60,8 @@ function App() {
         return <FaqPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'company':
         return <CompanyPage onBack={() => setCurrentPage('home')} />;
+      case 'pilot-program':
+        return <PilotProgramPage onBack={() => setCurrentPage('home')} />;
       case 'pricing':
         return <PricingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'home':

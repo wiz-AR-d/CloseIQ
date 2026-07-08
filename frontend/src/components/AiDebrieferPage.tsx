@@ -38,7 +38,8 @@ export default function AiDebrieferPage({ onBack, onOpenPopup }: AiDebrieferPage
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
-                Meet your <br />
+                Meet <br />
+                your <br />
                 <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">AI Debriefer.</span>
               </h1>
               <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">

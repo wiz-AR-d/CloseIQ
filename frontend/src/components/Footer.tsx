@@ -55,6 +55,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
           <h5 className="font-semibold text-on-background mb-6">Company</h5>
           <ul className="space-y-4 text-sm font-medium">
             <li><button onClick={() => onNavigate?.('company')} className="hover:text-primary transition-colors text-left">About Us</button></li>
+            <li><button onClick={() => onNavigate?.('pilot-program')} className="hover:text-primary transition-colors text-left">Pilot Program</button></li>
           </ul>
         </div>
 

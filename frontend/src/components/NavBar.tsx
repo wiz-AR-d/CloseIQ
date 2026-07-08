@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 interface NavBarProps {
-  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company';
-  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company') => void;
+  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program';
+  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program') => void;
   onOpenPopup?: () => void;
 }
 
@@ -25,14 +25,14 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
         ? 'bg-background/90 backdrop-blur-md border-b border-outline/20 py-4' 
         : 'bg-background/80 md:bg-transparent backdrop-blur-md md:backdrop-blur-none border-b border-outline/10 md:border-none py-4 md:py-6'
     }`}>
-      <div className="max-w-[1200px] mx-auto px-6 flex justify-between items-center">
+      <div className="w-full max-w-full px-6 md:px-12 flex justify-between items-center md:grid md:grid-cols-[1fr_auto_1fr]">
         {/* Left Side: Logo */}
         <div 
           onClick={() => {
             onNavigate?.('home');
             setIsMobileMenuOpen(false);
           }}
-          className="cursor-pointer select-none flex items-center gap-3 group"
+          className="cursor-pointer select-none flex items-center gap-3 group justify-self-start"
         >
           <img 
             src="/fox_logo.png" 
@@ -43,7 +43,7 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
         </div>
         
         {/* Center: Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-8 bg-surface-container-high/50 backdrop-blur-md px-6 py-2 rounded-full border border-outline/30">
+        <div className="hidden md:flex items-center gap-8 bg-surface-container-high/50 backdrop-blur-md px-6 py-2 rounded-full border border-outline/30 justify-self-center">
           <button onClick={() => onNavigate?.('home')} className={`text-[15px] font-medium transition-colors ${currentPage === 'home' ? 'text-white' : 'text-on-surface-variant hover:text-white'}`}>Home</button>
           
           {/* Solutions Dropdown */}
@@ -64,12 +64,22 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
             </div>
           </div>
 
+          <button 
+            onClick={() => onNavigate?.('pilot-program')} 
+            className={`text-[16px] font-bold px-3.5 py-1 rounded-full transition-all ${
+              currentPage === 'pilot-program' 
+                ? 'bg-emerald-500 text-black shadow-[0_0_12px_rgba(16,185,129,0.45)]' 
+                : 'text-emerald-400 hover:text-emerald-300 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/20'
+            }`}
+          >
+            Pilot Program
+          </button>
           <button onClick={() => onNavigate?.('faq')} className={`text-[15px] font-medium transition-colors ${currentPage === 'faq' ? 'text-white' : 'text-on-surface-variant hover:text-white'}`}>FAQs</button>
           <button onClick={() => onNavigate?.('company')} className={`text-[15px] font-medium transition-colors ${currentPage === 'company' ? 'text-white' : 'text-on-surface-variant hover:text-white'}`}>Company</button>
         </div>
 
         {/* Right Side: Actions & Burger Toggle */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-3 justify-self-end">
           <button 
             onClick={() => {
               onNavigate?.('contact');
@@ -86,7 +96,7 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
             }}
             className="px-4 md:px-6 py-2 md:py-2.5 bg-emerald-500 text-black font-bold text-[14px] md:text-[15px] rounded-full hover:bg-emerald-600 transition-colors shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:shadow-[0_0_20px_rgba(16,185,129,0.5)]"
           >
-            Join Waitlist
+            Register for Pilot
           </button>
           
           {/* Mobile menu burger toggler */}
@@ -126,6 +136,16 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
 
           <button 
             onClick={() => {
+              onNavigate?.('pilot-program');
+              setIsMobileMenuOpen(false);
+            }} 
+            className={`text-left text-base font-semibold py-2 border-b border-white/5 transition-colors ${currentPage === 'pilot-program' ? 'text-emerald-400' : 'text-on-surface-variant'}`}
+          >
+            Pilot Program
+          </button>
+
+          <button 
+            onClick={() => {
               onNavigate?.('faq');
               setIsMobileMenuOpen(false);
             }} 
@@ -152,7 +172,7 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
               }}
               className="w-full py-3 bg-emerald-500 text-black font-bold text-center text-sm rounded-full shadow-[0_0_15px_rgba(16,185,129,0.3)]"
             >
-              Join Waitlist
+              Register for Pilot
             </button>
             <button 
               onClick={() => {

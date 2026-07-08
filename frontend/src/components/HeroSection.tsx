@@ -32,7 +32,7 @@ export default function HeroSection({ onOpenPopup }: { onOpenPopup?: () => void 
               onClick={onOpenPopup}
               className="px-8 py-3.5 bg-primary text-on-primary font-semibold rounded-full hover:bg-surface-container-highest transition-colors shadow-[0_0_20px_rgba(255,255,255,0.2)]"
             >
-              Join the Waitlist
+              Register for Pilot
             </button>
           </div>
           
