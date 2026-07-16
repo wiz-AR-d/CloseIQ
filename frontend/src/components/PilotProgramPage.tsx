@@ -75,23 +75,23 @@ Additional Notes: ${formData.notes}
   const pilotOfferings = [
     {
       icon: "psychology",
-      title: "Custom AI Buyer Personas",
-      description: "We ingest your actual sales call transcripts and product documentation to generate high-fidelity AI simulation profiles. Reps practice against your actual target ICP (Ideal Customer Profile) in realistic scenarios."
-    },
-    {
-      icon: "sports_esports",
-      title: "Interactive Practice Sandbox",
-      description: "A simulated arena where reps talk out loud to handle tough objections, master pricing pitches, and practice playbooks. They get instant, action-oriented scoring and speech diagnostics without burning customer leads."
+      title: "Custom AI Persona Sandbox",
+      description: "We ingest your actual sales call transcripts and product documentation to generate high-fidelity AI simulation profiles. Reps practice playbooks out loud against your actual target ICP (Ideal Customer Profile) before ever talking to a prospect."
     },
     {
       icon: "bolt",
-      title: "Live Copilot Integration",
-      description: "An on-screen safety net for live customer calls. The AI Copilot detects speech cues in real time, serving up winning battlecards, objection-handling templates, and prompt checklist alerts."
+      title: "Continuous Co-pilot Integration",
+      description: "An on-screen safety net present with the rep continuously—both during AI Persona sandbox calls and real live customer calls. The AI Copilot detects speech cues in real time to serve up objection handling battlecards and eliminate the memory bottleneck."
     },
     {
       icon: "dashboard",
-      title: "Manager Coaching Insights",
-      description: "Skip manual shadow hours. Managers get automated, structured dashboards highlighting pacing, script adherence, filler words, and individual progress alerts for every single rep."
+      title: "Manager Readiness Analytics",
+      description: "Skip manual shadow hours. Managers get automated, structured dashboards highlighting pacing, script compliance, and checklist audits for every rep, showing exactly who is ready for live deals."
+    },
+    {
+      icon: "sync",
+      title: "Two-Way CRM Auto-Sync",
+      description: "No manual data entry. Playbooks hit, objections encountered, call metrics, and customer sentiments are logged directly to LeadSquared, Salesforce, or HubSpot CRM automatically."
     }
   ];
 
@@ -107,9 +107,9 @@ Additional Notes: ${formData.notes}
   const pilotRoadmap = [
     {
       step: "01",
-      title: "Kickoff & Integration Setup",
+      title: "Kickoff & Native Integration",
       duration: "Days 1–3",
-      desc: "Connect Zoom/Teams/LeadSquared recording channels and configure Azure AD or Okta Single Sign-On (SSO) with zero developer friction."
+      desc: "Connect Zoom/Teams/LeadSquared recording channels and configure SSO with zero developer friction. Backed by Microsoft and Google for Startups engineering support."
     },
     {
       step: "02",
@@ -119,21 +119,21 @@ Additional Notes: ${formData.notes}
     },
     {
       step: "03",
-      title: "Sandbox Validation",
-      duration: "Days 8–10",
-      desc: "Run a subset of pilot reps through the active practice environment, adjusting AI objection density and scoring metrics."
+      title: "AI Persona Sandbox Practice",
+      duration: "Days 8–14",
+      desc: "Reps practice roleplays out loud against specialized AI profiles with real-time Co-pilot guidance prompts to build muscle memory."
     },
     {
       step: "04",
-      title: "Full Launch & Live Copilot Assist",
-      duration: "Days 11–28",
-      desc: "Reps run sandboxes daily and use Live Copilot on live calls. Managers receive auto-generated dashboard evaluations."
+      title: "Live Calls with Co-pilot Assist",
+      duration: "Days 15–21",
+      desc: "Reps deploy to live prospect calls with the continuous Co-pilot serving as an active safety net. Newton School pilot shows quota attainment in 3 weeks."
     },
     {
       step: "05",
-      title: "ROI & Performance Review",
-      duration: "Days 29–30",
-      desc: "Analyze ramp acceleration time, manager hours saved, and objection handling metrics to project annual ARR ROI."
+      title: "ROI & Performance Audit",
+      duration: "Days 22–30",
+      desc: "Finalize ramp acceleration audit (targeting a 75% reduction), measure manager hours saved, and project annual ROI."
     }
   ];
 

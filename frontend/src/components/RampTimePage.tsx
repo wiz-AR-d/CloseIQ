@@ -16,7 +16,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
       difficulty: "Medium",
       buyerPersona: "Skeptical Ops Director",
       objection: "\"Competitor X claims they do call recording and summarization for free. Why should we invest in CloseIQ?\"",
-      winningPitch: "\"Competitor X records and summarizes calls, but they don't solve rep ramp. CloseIQ uses active conversation cues during live calls to coach your reps and automates practice sandbox training. Our customers reduce onboarding ramp time by 90% and reclaim 5+ hours/week in manager shadow time. That's why CloseIQ pays for itself in weeks.\"",
+      winningPitch: "\"Competitor X records and summarizes calls, but they don't solve rep ramp. CloseIQ uses active conversation cues during live calls to coach your reps and automates practice sandbox training. Our customers reduce onboarding ramp time by 75% and save weeks of shadow time. That's why CloseIQ pays for itself instantly.\"",
       metrics: { score: 94, empathy: "Excellent", alignment: "98%" }
     },
     enterprise: {
@@ -81,7 +81,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight">
               Cut rep ramp-up <br />
               <span className="bg-gradient-to-r from-primary via-primary-dim to-secondary bg-clip-text text-transparent">
-                time by over 90%.
+                time by 75%.
               </span>
             </h1>
             <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium">
@@ -99,19 +99,19 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2">
-              <h3 className="text-4xl font-bold text-primary">30 Days</h3>
+              <h3 className="text-4xl font-bold text-primary">3 Weeks</h3>
               <p className="text-sm font-bold text-on-surface">Average Ramp Time</p>
-              <p className="text-xs text-on-surface-variant">Down from 90 days industry average</p>
+              <p className="text-xs text-on-surface-variant">Down from 3 months average</p>
             </div>
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2">
-              <h3 className="text-4xl font-bold text-secondary">2.1x</h3>
-              <p className="text-sm font-bold text-on-surface">Quota Attainment</p>
-              <p className="text-xs text-on-surface-variant">First-month performance boost</p>
+              <h3 className="text-4xl font-bold text-secondary">2x Faster</h3>
+              <p className="text-sm font-bold text-on-surface">First Closed Deal</p>
+              <p className="text-xs text-on-surface-variant">Quota attained in 21 days</p>
             </div>
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2 col-span-2">
-              <h3 className="text-3xl font-bold text-emerald-500">0 Hours</h3>
-              <p className="text-sm font-bold text-on-surface">Manager Shadowing Required</p>
-              <p className="text-xs text-on-surface-variant">Self-paced AI playbooks cover mock practice calls</p>
+              <h3 className="text-3xl font-bold text-emerald-500">25–40%</h3>
+              <p className="text-sm font-bold text-on-surface">Tenure Spent Ramping</p>
+              <p className="text-xs text-on-surface-variant">Reps waste active time before consistently hitting quota</p>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <span className="text-secondary text-base font-bold tracking-widest uppercase font-mono">The Onboarding Timeline</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-on-surface">Hit quota in 30 days, not 90.</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-on-surface">Hit quota in 3 weeks, not 3 months.</h2>
             <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed font-medium">
               Standard onboarding leaves reps reading hundreds of sheets and shadowing live calls. CloseIQ structures onboarding into a series of active-roleplay achievements. New hires practice the exact talk tracks used by your top 10% closed deals.
             </p>
@@ -286,18 +286,18 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             <div className="space-y-3">
               <div className="flex justify-between items-center text-sm font-bold text-primary font-mono uppercase tracking-wider">
                 <span>With CloseIQ Onboarding Sandbox</span>
-                <span>30 Days</span>
+                <span>3 Weeks</span>
               </div>
               <div className="w-full bg-surface-container-low h-8 rounded-full border border-primary/20 p-1 overflow-hidden relative flex items-center">
-                <div className="bg-gradient-to-r from-primary to-secondary h-full rounded-full w-[33%] text-white text-[9px] font-bold font-mono flex items-center justify-center shadow-md animate-pulse">
-                  Ready in 30 Days
+                <div className="bg-gradient-to-r from-primary to-secondary h-full rounded-full w-[25%] text-white text-[9px] font-bold font-mono flex items-center justify-center shadow-md animate-pulse">
+                  Ready in 3 Weeks
                 </div>
-                <span className="absolute right-4 text-xs font-bold text-on-surface-variant">Target met in 4 weeks</span>
+                <span className="absolute right-4 text-xs font-bold text-on-surface-variant">Quota met in 3 weeks</span>
               </div>
               <div className="grid grid-cols-3 gap-2 text-xs text-on-surface-variant text-center font-semibold pt-1">
-                <div>Week 1: Practice Sandbox</div>
-                <div>Week 2: Call Simulation</div>
-                <div>Week 3-4: Live Deals</div>
+                <div>Week 1: AI Persona Sandbox</div>
+                <div>Week 2: Copilot-Assisted Simulation</div>
+                <div>Week 3: Live Quota Deals</div>
               </div>
             </div>
 
@@ -307,17 +307,17 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
             <div className="space-y-3">
               <div className="flex justify-between items-center text-sm font-bold text-on-surface-variant font-mono uppercase tracking-wider">
                 <span>Traditional Sales Onboarding</span>
-                <span>90+ Days</span>
+                <span>3 Months</span>
               </div>
               <div className="w-full bg-surface-container-low h-8 rounded-full border border-outline-variant/25 p-1 overflow-hidden relative flex items-center">
                 <div className="bg-surface-container-highest h-full rounded-full w-[100%] text-on-surface-variant text-[9px] font-bold font-mono flex items-center justify-center">
-                  Takes 90 Days
+                  Takes 3 Months
                 </div>
               </div>
               <div className="grid grid-cols-3 gap-2 text-xs text-on-surface-variant text-center font-semibold pt-1">
                 <div>Month 1: Policy Reading</div>
                 <div>Month 2: Manager Shadows</div>
-                <div>Month 3: Slow Discovery</div>
+                <div>Month 3: Slow Trial Calls</div>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ const faqList: FaqItem[] = [
   {
     category: 'general',
     question: "What is CloseIQ and how does it help sales teams?",
-    answer: "CloseIQ is a premium sales intelligence platform that automates rep onboarding, practice roleplays, and live call support. By using conversational AI buyer personas and real-time guidance tools, we help SDRs and AEs ramp up to quota 90% faster and eliminate the need for manual call grading."
+    answer: "CloseIQ is a premium sales intelligence platform that automates rep onboarding, practice roleplays, and live call support. By using conversational AI buyer personas and real-time guidance tools, we help SDRs and AEs ramp up to quota 75% faster (reducing ramp from 3 months to 3 weeks) and eliminate the need for manual call grading."
   },
   {
     category: 'product',

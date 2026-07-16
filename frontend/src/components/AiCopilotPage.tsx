@@ -67,7 +67,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
           </div>
           <div className="space-y-1">
             <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Value Pro Tip</span>
-            <p className="text-sm text-white/80">Highlight the 90% reduction in sales onboarding/ramp time due to our interactive roleplay sandbox.</p>
+            <p className="text-sm text-white/80">Highlight the 75% reduction in sales onboarding/ramp time (3 months to 3 weeks) due to our interactive roleplay sandbox.</p>
           </div>
         </div>
       )

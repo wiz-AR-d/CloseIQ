@@ -172,7 +172,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             </div>
             
             <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
-              Once reps understand your product, they begin practicing with AI buyer personas modeled after your ideal customers. Since CloseIQ provides a real-time AI copilot during every simulation, reps don't need to memorize every product detail. Instead, they focus on what matters most: asking better questions, building rapport, handling objections, and leading confident sales conversations.
+              Reps practice playbooks out loud against specialized AI buyer profiles modeled after your ideal customers. Since CloseIQ provides a real-time AI copilot during every simulation, reps don't need to memorize every product detail. Instead, they focus on what matters most: asking better questions, building rapport, handling objections, and leading confident sales conversations.
             </p>
             <p className="text-lg md:text-xl text-on-surface-variant/95 leading-relaxed max-w-lg font-medium">
               Each persona has unique goals, personalities, objections, budgets, and buying behaviors, making every practice session feel like a real sales call.

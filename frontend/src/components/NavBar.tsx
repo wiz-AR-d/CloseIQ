@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 interface NavBarProps {
-  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program';
-  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program') => void;
+  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program';
+  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program') => void;
   onOpenPopup?: () => void;
 }
 
@@ -56,7 +56,6 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
             {/* Dropdown Menu */}
             <div className="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
               <div className="bg-[#1C1C1E] border border-white/10 rounded-xl shadow-2xl p-2 w-[220px] flex flex-col gap-1 relative before:absolute before:-top-2 before:left-1/2 before:-translate-x-1/2 before:border-[8px] before:border-transparent before:border-b-[#1C1C1E]">
-                <button onClick={() => onNavigate?.('ai-debriefer')} className="text-left px-4 py-2.5 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">AI Debriefer</button>
                 <button onClick={() => onNavigate?.('ai-persona')} className="text-left px-4 py-2.5 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">AI Persona</button>
                 <button onClick={() => onNavigate?.('ai-copilot')} className="text-left px-4 py-2.5 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Co-pilot</button>
                 <button onClick={() => onNavigate?.('quality-automation')} className="text-left px-4 py-2.5 text-[14px] font-medium text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Quality Automation</button>
@@ -127,7 +126,6 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
           <div className="py-2 border-b border-white/5 space-y-3">
             <div className="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant/60 font-mono">Solutions</div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 pl-1">
-              <button onClick={() => { onNavigate?.('ai-debriefer'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">AI Debriefer</button>
               <button onClick={() => { onNavigate?.('ai-persona'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">AI Persona</button>
               <button onClick={() => { onNavigate?.('ai-copilot'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">Co-pilot</button>
               <button onClick={() => { onNavigate?.('quality-automation'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">QA Automation</button>

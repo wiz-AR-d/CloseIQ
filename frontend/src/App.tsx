@@ -17,14 +17,13 @@ import RampTimePage from './components/RampTimePage'
 import CoachingPage from './components/CoachingPage'
 import QualityAutomationPage from './components/QualityAutomationPage'
 import PricingPage from './components/PricingPage'
-import AiDebrieferPage from './components/AiDebrieferPage'
 import AiPersonaPage from './components/AiPersonaPage'
 import AiCopilotPage from './components/AiCopilotPage'
 import FaqPage from './components/FaqPage'
 import CompanyPage from './components/CompanyPage'
 import PilotProgramPage from './components/PilotProgramPage'
 
-type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-debriefer' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program';
+type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
@@ -48,8 +47,6 @@ function App() {
         return <RampTimePage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'coaching':
         return <CoachingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
-      case 'ai-debriefer':
-        return <AiDebrieferPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'ai-persona':
         return <AiPersonaPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
       case 'ai-copilot':

@@ -44,7 +44,6 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
         <div>
           <h5 className="font-semibold text-on-background mb-6">Platform</h5>
           <ul className="space-y-4 text-sm font-medium">
-            <li><button onClick={() => onNavigate?.('ai-debriefer')} className="hover:text-primary transition-colors text-left">AI Debriefer</button></li>
             <li><button onClick={() => onNavigate?.('ai-persona')} className="hover:text-primary transition-colors text-left">Roleplay Simulator</button></li>
             <li><button onClick={() => onNavigate?.('ai-copilot')} className="hover:text-primary transition-colors text-left">Live Copilot</button></li>
             <li><button onClick={() => onNavigate?.('quality-automation')} className="hover:text-primary transition-colors text-left">Integrations & QA</button></li>

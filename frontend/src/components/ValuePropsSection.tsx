@@ -3,60 +3,18 @@ export default function ValuePropsSection() {
     <section id="how-it-works" className="py-24 bg-background text-on-background">
       <div className="max-w-[1200px] mx-auto px-6 space-y-40">
         
-        {/* Phase 1: Learn */}
-        <div className="flex flex-col lg:flex-row items-center gap-16 md:gap-24">
-          <div className="flex-1 space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 1: Knowledge
-            </div>
-            <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
-              Skip the wikis. <br/>
-              <span className="italic text-on-surface-variant">Chat with your data.</span>
-            </h2>
-            <p className="text-lg text-on-surface-variant leading-relaxed max-w-lg font-medium">
-              New reps learn faster by doing. Our AI Debriefer ingests your product docs, pricing sheets, and past winning calls to provide instant, conversational answers 24/7.
-            </p>
-          </div>
-          <div className="flex-1 w-full relative">
-            <div className="bg-surface/50 backdrop-blur-xl border border-outline rounded-none p-6 shadow-clay border border-outline/50 relative z-10 w-full max-w-[500px] mx-auto">
-              {/* Premium Chat UI Mockup */}
-              <div className="space-y-6">
-                <div className="flex gap-4 items-end">
-                  <div className="w-8 h-8 rounded-full bg-surface/50 backdrop-blur-xl border border-outline-container-highest shrink-0"></div>
-                  <div className="bg-surface/50 backdrop-blur-xl border border-outline-container-high px-4 py-3 rounded-none text-base font-medium text-on-background">
-                    How does our enterprise pricing compare to Acme Corp?
-                  </div>
-                </div>
-                <div className="flex gap-4 items-end flex-row-reverse">
-                  <div className="w-8 h-8 rounded-full bg-emerald-500/20 shrink-0 flex items-center justify-center border border-emerald-500/30">
-                    <span className="material-symbols-outlined text-emerald-400 text-[16px]">smart_toy</span>
-                  </div>
-                  <div className="bg-emerald-500/5 border border-emerald-500/20 px-4 py-3 rounded-none text-base font-medium text-on-background text-right">
-                    <p className="mb-2 text-left text-white/95">We are typically 15% more expensive upfront, but Acme charges for API access.</p>
-                    <div className="inline-flex items-center gap-1.5 bg-surface-container-high px-2.5 py-1 rounded-md text-xs font-semibold text-emerald-400 border border-emerald-500/10 shadow-sm">
-                      <span className="material-symbols-outlined text-[12px]">library_books</span> Source: Q3 Battlecard
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* Decorative soft glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-emerald-500/10 rounded-full blur-[60px] -z-10 pointer-events-none"></div>
-          </div>
-        </div>
-
-        {/* Phase 2: Practice */}
+        {/* Component 1: AI Persona */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-16 md:gap-24">
           <div className="flex-1 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 2: Practice
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Component 1: AI Persona
             </div>
             <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
               Ruthless roleplay. <br/>
               <span className="italic text-on-surface-variant">Without burning leads.</span>
             </h2>
             <p className="text-lg text-on-surface-variant leading-relaxed max-w-lg font-medium">
-              Our AI buyer personas simulate your toughest prospects. They push back on price, demand features, and provide instant scorecards so your reps refine their pitch in a safe environment.
+              Reps practice playbooks out loud against specialized AI buyer profiles modeled after your actual customer profiles, before ever touching a real prospect. CloseIQ simulates realistic conversations and provides instant scorecards.
             </p>
           </div>
           <div className="flex-1 w-full relative">
@@ -100,18 +58,18 @@ export default function ValuePropsSection() {
           </div>
         </div>
 
-        {/* Phase 3: Perform */}
+        {/* Component 2: AI Co-Pilot */}
         <div className="flex flex-col lg:flex-row items-center gap-16 md:gap-24">
           <div className="flex-1 space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface/50 backdrop-blur-xl border border-outline shadow-clay-sm rounded-full text-sm font-semibold tracking-wide uppercase text-on-surface-variant">
-              <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Phase 3: Execution
+              <span className="w-2 h-2 rounded-full bg-emerald-500"></span> Component 2: AI Co-Pilot
             </div>
             <h2 className="text-4xl md:text-5xl font-sans font-bold tracking-tight leading-[1.1] text-on-background">
-              A safety net for <br/>
-              <span className="italic text-on-surface-variant">live conversations.</span>
+              Continuous guidance. <br/>
+              <span className="italic text-on-surface-variant">No memory bottlenecks.</span>
             </h2>
             <p className="text-lg text-on-surface-variant leading-relaxed max-w-lg font-medium">
-              When the training wheels come off, the Live Copilot surfaces battlecards the exact second a competitor or objection is mentioned on a live customer call.
+              The exact same co-pilot is present with the rep continuously — during AI Persona practice calls AND on real live customer calls once they go live. Rather than relying on memorized scripts, reps get live cues, objections battlecards, and discovery checklists from day one.
             </p>
           </div>
           <div className="flex-1 w-full relative">

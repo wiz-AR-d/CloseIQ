@@ -79,27 +79,27 @@ export default function CompanyPage({ onBack }: CompanyPageProps) {
 
           <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-6 text-center space-y-2 rounded-none">
-              <div className="text-4xl font-black font-mono text-emerald-400">90%</div>
-              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Ramp Time Reduced</div>
+              <div className="text-4xl font-black font-mono text-emerald-400">75%</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Ramp Time Reduction</div>
             </div>
             <div className="border border-outline/25 bg-[#0C0C0E] p-6 text-center space-y-2 rounded-none">
-              <div className="text-4xl font-black font-mono text-white">5+ Hrs</div>
-              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Manager shadow time saved</div>
+              <div className="text-4xl font-black font-mono text-white">25-40%</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Tenure spent ramping</div>
             </div>
             <div className="border border-outline/25 bg-[#0C0C0E] p-6 text-center space-y-2 rounded-none">
-              <div className="text-4xl font-black font-mono text-white">100%</div>
-              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Conversations Audited</div>
+              <div className="text-4xl font-black font-mono text-white">2x</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Faster First Closed Deal</div>
             </div>
             <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-6 text-center space-y-2 rounded-none">
-              <div className="text-4xl font-black font-mono text-emerald-400">2.3x</div>
-              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">Quota Attainment Boost</div>
+              <div className="text-4xl font-black font-mono text-emerald-400">3 Weeks</div>
+              <div className="text-sm uppercase font-bold tracking-wider text-on-surface-variant">To consistent quota</div>
             </div>
           </div>
         </section>
 
         {/* Section 2: Values Grid */}
         <section className="space-y-12 border-t border-outline/20 pt-16">
-          <h2 className="text-4xl font-bold tracking-tight text-white">Our Core Philosophy</h2>
+          <h2 className="text-4xl font-bold tracking-tight text-white font-sans">Our Core Philosophy</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             <div className="border border-outline/25 bg-surface/35 p-6 space-y-4 rounded-none">
@@ -135,7 +135,89 @@ export default function CompanyPage({ onBack }: CompanyPageProps) {
           </div>
         </section>
 
-        {/* Section 3: Contact Form */}
+        {/* Section 3: Founders & Journey */}
+        <section className="space-y-12 border-t border-outline/20 pt-16">
+          <div className="space-y-4 max-w-2xl">
+            <h2 className="text-4xl font-bold tracking-tight text-white font-sans">Our Founders & Journey</h2>
+            <p className="text-lg text-on-surface-variant font-medium">
+              A shared thread of fast building, customer validation, and continuous execution.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="border border-outline/25 bg-[#0C0C0E] p-8 space-y-6 rounded-none relative">
+              <div className="absolute top-4 right-4 text-xs font-mono font-bold text-emerald-400">GTM & SALES</div>
+              <div className="space-y-2">
+                <h3 className="font-bold text-2xl text-white">Soham Saranga</h3>
+                <p className="text-sm font-semibold text-emerald-400">Co-founder</p>
+              </div>
+              <p className="text-base text-on-surface-variant leading-relaxed font-medium">
+                Soham co-authored a published research paper on whole brain emulation before diving into building startup software. He built <strong>Gradnet</strong> (which scaled to over 1,000 active rooms in just 12 hours) and co-founded <strong>Drapeify</strong> (AI product photography for Indian fashion brands, acquiring paying customers like 29 Shades FF, Narie Sarees, Axomiya Buwari, and Swadeshi Videshi). At CloseIQ, Soham leads go-to-market strategies, sales development, and overall execution.
+              </p>
+            </div>
+
+            <div className="border border-outline/25 bg-[#0C0C0E] p-8 space-y-6 rounded-none relative">
+              <div className="absolute top-4 right-4 text-xs font-mono font-bold text-emerald-400">ARCHITECTURE & CODE</div>
+              <div className="space-y-2">
+                <h3 className="font-bold text-2xl text-white">Arkapravo Rajkonwar</h3>
+                <p className="text-sm font-semibold text-emerald-400">Co-founder</p>
+              </div>
+              <p className="text-base text-on-surface-variant leading-relaxed font-medium">
+                Arkapravo ("Arka") is an ICPC Regionalist and a 2500-rated chess.com player who excels in managing deep technical planning and architecture. Prior to CloseIQ, Arka led the system design and tech engineering across several fast-scaling projects alongside Soham. At CloseIQ, he architects our low-latency speech transcription engines, CRM pipelines, and overall AI system infrastructure.
+              </p>
+            </div>
+          </div>
+
+          <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-6 rounded-none space-y-3">
+            <h4 className="font-bold text-lg text-white">The CloseIQ Product Ethos</h4>
+            <p className="text-sm md:text-base text-on-surface-variant leading-relaxed font-medium">
+              Across all our team's ventures—from research papers to Gradnet, Drapeify, and now CloseIQ—there is a single, clear operating thread: build fast, seek direct customer validation, and scale only what works. CloseIQ was born directly out of conversations with dozens of sales directors facing high rep ramp-up attrition.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 4: Traction & ICP focus */}
+        <section className="space-y-12 border-t border-outline/20 pt-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            <div className="lg:col-span-7 space-y-6">
+              <h2 className="text-4xl font-bold tracking-tight text-white font-sans">Our Momentum & ICP</h2>
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-medium">
+                CloseIQ is specifically architected for Series A+ funded Indian B2B SaaS startups actively scaling their outbound pipelines (representing a cohort of 1,000+ companies per Tracxn 2026 data). 
+              </p>
+              <p className="text-base md:text-lg text-on-surface-variant leading-relaxed font-medium">
+                We design sandboxes tailored for CROs, VPs of Sales, founder-CEOs, and HR Business Partners/L&D heads looking to standardize training. CloseIQ handles the onboarding burden so your leadership does not have to shadow calls.
+              </p>
+              
+              <div className="grid grid-cols-2 gap-4 pt-2">
+                <div className="border-l-2 border-emerald-500 pl-4">
+                  <h4 className="font-bold text-white text-base">50+ Discovery Calls</h4>
+                  <p className="text-xs text-on-surface-variant mt-0.5">With CXOs and Sales Directors in the past 30 days.</p>
+                </div>
+                <div className="border-l-2 border-emerald-500 pl-4">
+                  <h4 className="font-bold text-white text-base">Newton School Pilot</h4>
+                  <p className="text-xs text-on-surface-variant mt-0.5">Active pilot cohort live now; additional pilots in discussion.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 bg-[#0C0C0E] border border-outline/25 p-6 space-y-4">
+              <h3 className="font-bold text-sm text-emerald-400 uppercase tracking-widest font-mono">Target Companies</h3>
+              <p className="text-xs text-on-surface-variant">We partner with active sales forces scaling rapidly, including:</p>
+              <div className="flex flex-wrap gap-2 pt-2">
+                {["Rocketlane", "Sprinto", "SpotDraft", "Nanonets", "Zluri", "Hevo Data"].map((company, idx) => (
+                  <span key={idx} className="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 text-xs font-semibold font-mono">
+                    {company}
+                  </span>
+                ))}
+              </div>
+              <div className="pt-4 border-t border-outline/10 text-xs text-on-surface-variant/70 leading-relaxed font-medium">
+                Live product deployed at <a href="https://closeiq.in" target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">CloseIQ.in</a>. Backed by Microsoft for Startups and Google for Startups cohorts.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Section 5: Contact Form */}
         <section className="border-t border-outline/20 pt-16 space-y-12">
           
           <div className="text-center max-w-xl mx-auto space-y-4">
