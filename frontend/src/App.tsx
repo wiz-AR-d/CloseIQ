@@ -22,12 +22,44 @@ import AiCopilotPage from './components/AiCopilotPage'
 import FaqPage from './components/FaqPage'
 import CompanyPage from './components/CompanyPage'
 import PilotProgramPage from './components/PilotProgramPage'
+import TryPage from './components/TryPage'
 
-type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program';
+type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program' | 'try';
 
 function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
-  const [currentPage, setCurrentPage] = useState<PageType>('home')
+  const [currentPage, setCurrentPage] = useState<PageType>(() => {
+    const path = window.location.pathname;
+    if (path === '/try' || path === '/try/') {
+      return 'try';
+    }
+    return 'home';
+  })
+
+  useEffect(() => {
+    const handleLocation = () => {
+      const path = window.location.pathname;
+      if (path === '/try' || path === '/try/') {
+        setCurrentPage('try');
+      } else {
+        setCurrentPage(prev => prev === 'try' ? 'home' : prev);
+      }
+    };
+    window.addEventListener('popstate', handleLocation);
+    return () => window.removeEventListener('popstate', handleLocation);
+  }, []);
+
+  useEffect(() => {
+    if (currentPage === 'try') {
+      if (window.location.pathname !== '/try' && window.location.pathname !== '/try/') {
+        window.history.pushState(null, '', '/try');
+      }
+    } else {
+      if (window.location.pathname === '/try' || window.location.pathname === '/try/') {
+        window.history.pushState(null, '', '/');
+      }
+    }
+  }, [currentPage]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' as any });
@@ -61,6 +93,8 @@ function App() {
         return <PilotProgramPage onBack={() => setCurrentPage('home')} />;
       case 'pricing':
         return <PricingPage onBack={() => setCurrentPage('home')} onOpenPopup={() => setIsPopupOpen(true)} />;
+      case 'try':
+        return <div className="min-h-screen bg-background"></div>;
       case 'home':
       default:
         return (
@@ -74,6 +108,10 @@ function App() {
         );
     }
   };
+
+  if (currentPage === 'try') {
+    return <TryPage onBack={() => setCurrentPage('home')} />;
+  }
 
   return (
     <div className="min-h-screen bg-background text-on-background transition-colors duration-300">

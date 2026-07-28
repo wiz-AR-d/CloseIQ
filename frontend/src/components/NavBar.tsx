@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
 interface NavBarProps {
-  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program';
-  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program') => void;
+  currentPage: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program' | 'try';
+  onNavigate?: (page: 'home' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'contact' | 'security' | 'privacy' | 'terms' | 'faq' | 'company' | 'pilot-program' | 'try') => void;
   onOpenPopup?: () => void;
 }
 
