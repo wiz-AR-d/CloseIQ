@@ -14,7 +14,6 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
               src="/fox_logo.png" 
               alt="CloseIQ Wolf Logo" 
               className="w-8 h-8 object-contain brightness-0 invert" 
-              loading="lazy"
             />
             CloseIQ
           </div>
@@ -74,15 +73,15 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
       <div className="max-w-[1200px] mx-auto px-6 mt-20 pt-8 border-t border-outline/30 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-medium relative z-10">
         <p>© 2026 CloseIQ, Inc. All rights reserved.</p>
         <div className="flex gap-6">
-          <span>System Status: <span className="text-blue-500">100% Operational</span></span>
+          <span>System Status: <span className="text-emerald-500">100% Operational</span></span>
         </div>
       </div>
       
       {/* Massive Screen-Spanning Brand Text */}
-      <div className="w-full overflow-hidden flex justify-center mt-16 h-[18vw] items-start pointer-events-none">
+      <div className="w-full overflow-hidden flex justify-center mt-16 h-[14vw] items-start pointer-events-none">
         <h1 
-          className="text-[24vw] leading-[0.75] font-sans font-bold tracking-tighter text-[#2563EB] select-none text-center animate-pulse duration-3000"
-          style={{ textShadow: '0 0 15px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.5)' }}
+          className="text-[24vw] leading-[0.75] font-sans font-bold tracking-tighter text-[#059669] select-none text-center animate-pulse duration-3000"
+          style={{ textShadow: '0 0 15px rgba(16, 185, 129, 0.8), 0 0 30px rgba(16, 185, 129, 0.5)' }}
         >
           CloseIQ
         </h1>

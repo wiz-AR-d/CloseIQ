@@ -12,8 +12,8 @@ export default function TryPage({ onBack }: TryPageProps) {
       id: 'closer',
       role: 'The Deal Closer',
       description: 'Master of negotiation, handling objections with absolute poise, converting warm leads to signed agreements.',
-      glow: 'shadow-[0_0_25px_rgba(59,130,246,0.25)] border-blue-500/50',
-      badgeColor: 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+      glow: 'shadow-[0_0_25px_rgba(16,185,129,0.25)] border-emerald-500/50',
+      badgeColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
       tag: 'Negotiation Expert'
     },
     {
@@ -37,23 +37,23 @@ export default function TryPage({ onBack }: TryPageProps) {
   return (
     <div className="min-h-screen bg-[#030303] text-white relative overflow-hidden flex flex-col items-center justify-center font-sans py-12 px-6">
       {/* Glow backgrounds */}
-      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 translate-x-1/2 translate-y-1/2 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none"></div>
 
       <div className="max-w-4xl w-full relative z-10 text-center flex flex-col items-center">
         {/* Navigation Indicator / Header */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 backdrop-blur-md rounded-full text-xs font-semibold tracking-widest uppercase text-blue-400 mb-8 border border-white/10 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse"></span>
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/5 backdrop-blur-md rounded-full text-xs font-semibold tracking-widest uppercase text-emerald-400 mb-8 border border-white/10 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
           Try Experience
         </div>
 
         {/* The Title text requested by the user */}
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6 leading-tight max-w-2xl">
           You can be a hero <br />
-          <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(59,130,246,0.2)]">
+          <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(16,185,129,0.2)]">
             who you are
           </span>
         </h1>
@@ -99,7 +99,7 @@ export default function TryPage({ onBack }: TryPageProps) {
           </button>
           <button 
             onClick={() => window.location.href = 'mailto:hello@closeiq.ai?subject=I want to be a CloseIQ Hero'}
-            className="px-8 py-3 bg-blue-500 text-black font-bold text-sm rounded-full hover:bg-blue-400 hover:shadow-[0_0_20px_rgba(96,165,250,0.4)] transition-all duration-300"
+            className="px-8 py-3 bg-emerald-500 text-black font-bold text-sm rounded-full hover:bg-emerald-400 hover:shadow-[0_0_20px_rgba(52,211,153,0.4)] transition-all duration-300"
           >
             Activate Your Persona
           </button>

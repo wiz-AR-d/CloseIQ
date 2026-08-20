@@ -44,7 +44,7 @@ export default function ContactPage({ onBack }: ContactPageProps) {
     <div className="min-h-screen bg-background text-on-surface py-32 px-6 relative overflow-hidden">
       {/* Decorative green glow shapes */}
       <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/20 rounded-none blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-blue-500/10 rounded-none blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-none blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-[700px] mx-auto space-y-12 relative z-10">
         
@@ -57,7 +57,7 @@ export default function ContactPage({ onBack }: ContactPageProps) {
             <span className="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
             Back to Home
           </button>
-          <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+          <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(16,185,129,0.2)]">
             Contact
           </span>
         </div>
@@ -71,10 +71,10 @@ export default function ContactPage({ onBack }: ContactPageProps) {
         </div>
 
         {/* Content Body */}
-        <div className="bg-[#0A0A0B]/80 backdrop-blur-3xl border border-blue-500/25 p-8 rounded-none shadow-xl min-h-[300px] flex flex-col justify-between">
+        <div className="bg-[#0A0A0B]/80 backdrop-blur-3xl border border-emerald-500/25 p-8 rounded-none shadow-xl min-h-[300px] flex flex-col justify-between">
           {formSubmitted ? (
             <div className="text-center py-10 space-y-4">
-              <span className="material-symbols-outlined text-4xl text-blue-400">mail</span>
+              <span className="material-symbols-outlined text-4xl text-emerald-400">mail</span>
               <h3 className="text-2xl font-bold text-white">Message Sent!</h3>
               <p className="text-sm md:text-base text-on-surface-variant leading-relaxed max-w-sm mx-auto font-medium">
                 Thank you for reaching out. A sales engineer will respond to your inquiry via email within 2 hours.
@@ -97,7 +97,7 @@ export default function ContactPage({ onBack }: ContactPageProps) {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your Name"
-                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
                   />
                 </div>
                 <div className="space-y-1">
@@ -108,7 +108,7 @@ export default function ContactPage({ onBack }: ContactPageProps) {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="you@company.com"
-                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-blue-500"
+                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500"
                   />
                 </div>
               </div>
@@ -121,14 +121,14 @@ export default function ContactPage({ onBack }: ContactPageProps) {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="How can we help your team?"
-                  className="w-full bg-[#141416] border border-[#2B2B2F] px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-blue-500 resize-none"
+                  className="w-full bg-[#141416] border border-[#2B2B2F] px-4 py-3 text-sm md:text-base text-white placeholder-white/30 rounded-none focus:outline-none focus:border-emerald-500 resize-none"
                 />
               </div>
 
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full py-4 bg-blue-500 text-black font-bold text-sm uppercase tracking-wider transition-all rounded-none hover:bg-blue-600 shadow-[0_0_15px_rgba(59,130,246,0.25)] disabled:opacity-50"
+                className="w-full py-4 bg-emerald-500 text-black font-bold text-sm uppercase tracking-wider transition-all rounded-none hover:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.25)] disabled:opacity-50"
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

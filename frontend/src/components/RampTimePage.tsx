@@ -109,7 +109,7 @@ export default function RampTimePage({ onBack, onOpenPopup }: RampTimePageProps)
               <p className="text-xs text-on-surface-variant">Quota attained in 21 days</p>
             </div>
             <div className="p-6 bg-surface-container border border-outline-variant/15 rounded-3xl text-center space-y-2 col-span-2">
-              <h3 className="text-3xl font-bold text-blue-500">25–40%</h3>
+              <h3 className="text-3xl font-bold text-emerald-500">25–40%</h3>
               <p className="text-sm font-bold text-on-surface">Tenure Spent Ramping</p>
               <p className="text-xs text-on-surface-variant">Reps waste active time before consistently hitting quota</p>
             </div>

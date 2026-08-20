@@ -1,4 +1,4 @@
-import { useState, useEffect, lazy, Suspense } from 'react'
+import { useState, useEffect } from 'react'
 import NavBar from './components/NavBar'
 import HeroSection from './components/HeroSection'
 import SocialProofSection from './components/SocialProofSection'
@@ -6,23 +6,23 @@ import ProblemSection from './components/ProblemSection'
 import ValuePropsSection from './components/ValuePropsSection'
 import FinalCtaSection from './components/FinalCtaSection'
 import Footer from './components/Footer'
+import PopupForm from './components/PopupForm'
 
-// Lazy Load Secondary Pages & Modals
-const PopupForm = lazy(() => import('./components/PopupForm'));
-const PrivacyPolicy = lazy(() => import('./components/PrivacyPolicy'));
-const TermsOfService = lazy(() => import('./components/TermsOfService'));
-const SecurityPage = lazy(() => import('./components/SecurityPage'));
-const ContactPage = lazy(() => import('./components/ContactPage'));
-const RampTimePage = lazy(() => import('./components/RampTimePage'));
-const CoachingPage = lazy(() => import('./components/CoachingPage'));
-const QualityAutomationPage = lazy(() => import('./components/QualityAutomationPage'));
-const PricingPage = lazy(() => import('./components/PricingPage'));
-const AiPersonaPage = lazy(() => import('./components/AiPersonaPage'));
-const AiCopilotPage = lazy(() => import('./components/AiCopilotPage'));
-const FaqPage = lazy(() => import('./components/FaqPage'));
-const CompanyPage = lazy(() => import('./components/CompanyPage'));
-const PilotProgramPage = lazy(() => import('./components/PilotProgramPage'));
-const TryPage = lazy(() => import('./components/TryPage'));
+// Import New Pages
+import PrivacyPolicy from './components/PrivacyPolicy'
+import TermsOfService from './components/TermsOfService'
+import SecurityPage from './components/SecurityPage'
+import ContactPage from './components/ContactPage'
+import RampTimePage from './components/RampTimePage'
+import CoachingPage from './components/CoachingPage'
+import QualityAutomationPage from './components/QualityAutomationPage'
+import PricingPage from './components/PricingPage'
+import AiPersonaPage from './components/AiPersonaPage'
+import AiCopilotPage from './components/AiCopilotPage'
+import FaqPage from './components/FaqPage'
+import CompanyPage from './components/CompanyPage'
+import PilotProgramPage from './components/PilotProgramPage'
+import TryPage from './components/TryPage'
 
 type PageType = 'home' | 'privacy' | 'terms' | 'contact' | 'security' | 'ramp-time' | 'coaching' | 'ai-persona' | 'ai-copilot' | 'quality-automation' | 'pricing' | 'faq' | 'company' | 'pilot-program' | 'try';
 
@@ -110,25 +110,17 @@ function App() {
   };
 
   if (currentPage === 'try') {
-    return (
-      <Suspense fallback={<div className="min-h-screen bg-background" />}>
-        <TryPage onBack={() => setCurrentPage('home')} />
-      </Suspense>
-    );
+    return <TryPage onBack={() => setCurrentPage('home')} />;
   }
 
   return (
     <div className="min-h-screen bg-background text-on-background transition-colors duration-300">
       <NavBar currentPage={currentPage} onNavigate={setCurrentPage} onOpenPopup={() => setIsPopupOpen(true)} />
       <main>
-        <Suspense fallback={<div className="min-h-screen flex items-center justify-center">Loading...</div>}>
-          {renderContent()}
-        </Suspense>
+        {renderContent()}
       </main>
       <Footer onNavigate={setCurrentPage} />
-      <Suspense fallback={null}>
-        {isPopupOpen && <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />}
-      </Suspense>
+      <PopupForm isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
     </div>
   )
 }
