@@ -140,8 +140,8 @@ Additional Notes: ${formData.notes}
   return (
     <div className="min-h-screen bg-background text-on-surface pt-32 pb-24 relative overflow-hidden">
       {/* Decorative green glow shapes */}
-      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-emerald-500/20 rounded-full blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-[1100px] mx-auto px-6 relative z-10 space-y-24">
         
@@ -154,7 +154,7 @@ Additional Notes: ${formData.notes}
             <span className="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
             Back to Home
           </button>
-          <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 px-3 py-1.5 rounded-full font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(16,185,129,0.2)]">
+          <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/20 px-3 py-1.5 rounded-full font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(59,130,246,0.2)]">
             CloseIQ Pilot Program
           </span>
         </div>
@@ -163,7 +163,7 @@ Additional Notes: ${formData.notes}
         <section className="text-center max-w-4xl mx-auto space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1]">
             Experience CloseIQ. <br />
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Start a Pilot Program.</span>
+            <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Start a Pilot Program.</span>
           </h1>
           <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto font-medium">
             Test-drive customized sales sandboxes and real-time live copilot guidance with your sales team for 30 days.
@@ -181,10 +181,10 @@ Additional Notes: ${formData.notes}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {pilotOfferings.map((offering, idx) => (
-              <div key={idx} className="border border-outline/20 bg-[#0E0E10]/80 backdrop-blur-md p-8 rounded-2xl hover:border-emerald-500/30 transition-all duration-300 group flex flex-col justify-between">
+              <div key={idx} className="border border-outline/20 bg-[#0E0E10]/80 backdrop-blur-md p-8 rounded-2xl hover:border-blue-500/30 transition-all duration-300 group flex flex-col justify-between">
                 <div className="space-y-4">
-                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/25 rounded-xl group-hover:bg-emerald-500/25 group-hover:border-emerald-500/40 transition-colors">
-                    <span className="material-symbols-outlined text-emerald-400 text-2xl">{offering.icon}</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/25 rounded-xl group-hover:bg-blue-500/25 group-hover:border-blue-500/40 transition-colors">
+                    <span className="material-symbols-outlined text-blue-400 text-2xl">{offering.icon}</span>
                   </div>
                   <h3 className="font-bold text-2xl text-white">{offering.title}</h3>
                   <p className="text-lg text-on-surface-variant/95 leading-relaxed font-medium">
@@ -200,7 +200,7 @@ Additional Notes: ${formData.notes}
         <section className="space-y-12 bg-surface-container-low/40 rounded-3xl border border-outline-variant/15 p-8 md:p-12 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold tracking-widest text-emerald-400 uppercase font-mono bg-emerald-500/15 px-3 py-1.5 rounded-full border border-emerald-500/20 shadow-[0_0_10px_rgba(16,185,129,0.15)]">Seamless Integrations</span>
+              <span className="text-xs font-bold tracking-widest text-blue-400 uppercase font-mono bg-blue-500/15 px-3 py-1.5 rounded-full border border-blue-500/20 shadow-[0_0_10px_rgba(59,130,246,0.15)]">Seamless Integrations</span>
               <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">Plugs right into your sales stack</h2>
               <p className="text-lg text-on-surface-variant font-medium leading-relaxed">
                 CloseIQ does not require complicated code changes. We sync with your existing systems to automatically pull recorded conversations, analyze objections, and serve up copilots during live calls.
@@ -208,15 +208,15 @@ Additional Notes: ${formData.notes}
               
               <ul className="space-y-3.5 text-base font-semibold text-on-surface-variant">
                 <li className="flex gap-3 items-center">
-                  <span className="material-symbols-outlined text-emerald-400 text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-blue-400 text-lg">check_circle</span>
                   <span>Auto-ingest recordings from Zoom, Google Meet & Teams</span>
                 </li>
                 <li className="flex gap-3 items-center">
-                  <span className="material-symbols-outlined text-emerald-400 text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-blue-400 text-lg">check_circle</span>
                   <span>Two-way CRM syncing (HubSpot, Salesforce, Pipedrive)</span>
                 </li>
                 <li className="flex gap-3 items-center">
-                  <span className="material-symbols-outlined text-emerald-400 text-lg">check_circle</span>
+                  <span className="material-symbols-outlined text-blue-400 text-lg">check_circle</span>
                   <span>Single-click Okta and Azure Active Directory SSO setup</span>
                 </li>
               </ul>
@@ -245,18 +245,18 @@ Additional Notes: ${formData.notes}
             </p>
           </div>
 
-          <div className="relative border-l border-emerald-500/20 ml-4 md:ml-12 space-y-12">
+          <div className="relative border-l border-blue-500/20 ml-4 md:ml-12 space-y-12">
             {pilotRoadmap.map((roadmap, idx) => (
               <div key={idx} className="relative pl-8 md:pl-12 group">
                 {/* Timeline node */}
-                <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-[#0A0A0C] border-2 border-emerald-500 flex items-center justify-center font-mono text-xs font-bold text-emerald-400 shadow-[0_0_10px_rgba(16,185,129,0.4)] group-hover:scale-110 transition-transform">
+                <div className="absolute -left-[17px] top-1.5 w-8 h-8 rounded-full bg-[#0A0A0C] border-2 border-blue-500 flex items-center justify-center font-mono text-xs font-bold text-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.4)] group-hover:scale-110 transition-transform">
                   {roadmap.step}
                 </div>
                 
-                <div className="space-y-2 bg-[#0E0E10]/40 p-6 md:p-8 border border-outline/10 hover:border-emerald-500/20 rounded-2xl transition-all duration-300">
+                <div className="space-y-2 bg-[#0E0E10]/40 p-6 md:p-8 border border-outline/10 hover:border-blue-500/20 rounded-2xl transition-all duration-300">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="text-2xl font-bold text-white">{roadmap.title}</h3>
-                    <span className="text-sm font-bold font-mono text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20 uppercase tracking-wide">
+                    <span className="text-sm font-bold font-mono text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full border border-blue-500/20 uppercase tracking-wide">
                       {roadmap.duration}
                     </span>
                   </div>
@@ -278,10 +278,10 @@ Additional Notes: ${formData.notes}
             </p>
           </div>
 
-          <div className="bg-[#0E0E10]/80 backdrop-blur-3xl border border-emerald-500/25 p-8 md:p-10 rounded-3xl max-w-2xl mx-auto shadow-2xl">
+          <div className="bg-[#0E0E10]/80 backdrop-blur-3xl border border-blue-500/25 p-8 md:p-10 rounded-3xl max-w-2xl mx-auto shadow-2xl">
             {formSubmitted ? (
               <div className="text-center py-10 space-y-4">
-                <span className="material-symbols-outlined text-5xl text-emerald-400 animate-bounce">mail</span>
+                <span className="material-symbols-outlined text-5xl text-blue-400 animate-bounce">mail</span>
                 <h3 className="text-2xl font-bold text-white">Pilot Application Received!</h3>
                 <p className="text-base text-on-surface-variant leading-relaxed max-w-md mx-auto">
                   Thank you for applying. A sales enablement coordinator will schedule a kickoff session with your team in the next 2 hours.
@@ -304,7 +304,7 @@ Additional Notes: ${formData.notes}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
                   <div className="space-y-2">
@@ -315,7 +315,7 @@ Additional Notes: ${formData.notes}
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@company.com"
-                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
                 </div>
@@ -329,7 +329,7 @@ Additional Notes: ${formData.notes}
                       value={formData.company}
                       onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                       placeholder="Acme Corp"
-                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     />
                   </div>
                   <div className="space-y-2">
@@ -337,7 +337,7 @@ Additional Notes: ${formData.notes}
                     <select
                       value={formData.teamSize}
                       onChange={(e) => setFormData({ ...formData, teamSize: e.target.value })}
-                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
+                      className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white rounded-xl focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
                     >
                       <option value="1-9">1–9 reps</option>
                       <option value="10-25">10–25 reps</option>
@@ -360,8 +360,8 @@ Additional Notes: ${formData.notes}
                           onClick={() => handleIntegrationToggle(name)}
                           className={`py-2 px-3 border rounded-xl text-sm font-semibold flex items-center justify-center gap-2 transition-all ${
                             isSelected 
-                              ? 'bg-emerald-500/25 border-emerald-500 text-white shadow-[0_0_10px_rgba(16,185,129,0.15)]' 
-                              : 'bg-[#141416] border-outline/35 text-on-surface-variant hover:border-emerald-500/20 hover:text-white'
+                              ? 'bg-blue-500/25 border-blue-500 text-white shadow-[0_0_10px_rgba(59,130,246,0.15)]' 
+                              : 'bg-[#141416] border-outline/35 text-on-surface-variant hover:border-blue-500/20 hover:text-white'
                           }`}
                         >
                           {isSelected && <span className="material-symbols-outlined text-sm">check</span>}
@@ -379,14 +379,14 @@ Additional Notes: ${formData.notes}
                     value={formData.notes}
                     onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                     placeholder="Tell us what you want to achieve during the pilot..."
-                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 resize-none"
+                    className="w-full bg-[#141416] border border-outline/35 px-4 py-3 text-base text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 resize-none"
                   />
                 </div>
 
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-emerald-500 text-black font-extrabold text-base uppercase tracking-wider transition-all rounded-xl hover:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.25)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-50"
+                  className="w-full py-4 bg-blue-500 text-black font-extrabold text-base uppercase tracking-wider transition-all rounded-xl hover:bg-blue-600 shadow-[0_0_15px_rgba(59,130,246,0.25)] hover:shadow-[0_0_20px_rgba(59,130,246,0.4)] disabled:opacity-50"
                 >
                   {isSubmitting ? 'Submitting Application...' : 'Apply for Pilot Cohort'}
                 </button>

@@ -55,7 +55,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
     <div className="min-h-screen bg-background text-on-surface pt-32 pb-24 relative overflow-hidden">
       {/* Decorative green glow shapes */}
       <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/20 rounded-none blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-none blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-blue-500/10 rounded-none blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-[800px] mx-auto px-6 relative z-10 space-y-16">
         
@@ -68,7 +68,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
             <span className="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
             Back to Home
           </button>
-          <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(16,185,129,0.2)]">
+          <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(59,130,246,0.2)]">
             Resources / FAQs
           </span>
         </div>
@@ -77,7 +77,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
         <div className="space-y-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tighter leading-tight">
             Frequently Asked <br />
-            <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Questions.</span>
+            <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Questions.</span>
           </h1>
           <p className="text-lg md:text-xl text-on-surface-variant max-w-xl mx-auto font-medium">
             Everything you need to know about CloseIQ roleplays, live copilot, security, and CRM integrations.
@@ -95,7 +95,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
               }}
               className={`px-4 py-2 border text-sm font-semibold uppercase tracking-wider transition-all rounded-none ${
                 activeCategory === cat
-                  ? 'border-emerald-500 bg-emerald-500/5 text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.15)]'
+                  ? 'border-blue-500 bg-blue-500/5 text-blue-400 shadow-[0_0_15px_rgba(59,130,246,0.15)]'
                   : 'border-outline/35 hover:bg-[#1A1A1A] text-on-surface-variant hover:text-white'
               }`}
             >
@@ -112,16 +112,16 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
               <div 
                 key={idx} 
                 className={`border transition-all duration-300 rounded-none bg-[#0A0A0B]/60 backdrop-blur-md ${
-                  isExpanded ? 'border-emerald-500/40 bg-emerald-500/[0.02]' : 'border-outline/25 hover:border-outline/50'
+                  isExpanded ? 'border-blue-500/40 bg-blue-500/[0.02]' : 'border-outline/25 hover:border-outline/50'
                 }`}
               >
                 {/* Header / Click Area */}
                 <button
                   onClick={() => setExpandedIndex(isExpanded ? null : idx)}
-                  className="w-full flex items-center justify-between p-5 text-left font-bold text-base md:text-lg text-white hover:text-emerald-400 transition-colors"
+                  className="w-full flex items-center justify-between p-5 text-left font-bold text-base md:text-lg text-white hover:text-blue-400 transition-colors"
                 >
                   <span>{faq.question}</span>
-                  <span className={`material-symbols-outlined text-[20px] transition-transform duration-300 ${isExpanded ? 'rotate-180 text-emerald-400' : 'text-on-surface-variant'}`}>
+                  <span className={`material-symbols-outlined text-[20px] transition-transform duration-300 ${isExpanded ? 'rotate-180 text-blue-400' : 'text-on-surface-variant'}`}>
                     expand_more
                   </span>
                 </button>
@@ -142,7 +142,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
         </div>
 
         {/* CTA Box */}
-        <div className="border border-emerald-500/20 bg-emerald-500/[0.02] p-8 text-center space-y-4 rounded-none">
+        <div className="border border-blue-500/20 bg-blue-500/[0.02] p-8 text-center space-y-4 rounded-none">
           <h3 className="font-bold text-lg md:text-xl text-white">Still have questions?</h3>
           <p className="text-sm md:text-base text-on-surface-variant max-w-md mx-auto">
             Our team is available 24/7 to discuss integrations, security specs, and customized deployment models.
@@ -150,7 +150,7 @@ export default function FaqPage({ onBack, onOpenPopup }: FaqPageProps) {
           <div className="pt-2">
             <button 
               onClick={onOpenPopup}
-              className="px-6 py-3 bg-emerald-500 text-black font-semibold rounded-none hover:bg-emerald-600 transition-all shadow-[0_0_15px_rgba(16,185,129,0.2)]"
+              className="px-6 py-3 bg-blue-500 text-black font-semibold rounded-none hover:bg-blue-600 transition-all shadow-[0_0_15px_rgba(59,130,246,0.2)]"
             >
               Get in Touch
             </button>
