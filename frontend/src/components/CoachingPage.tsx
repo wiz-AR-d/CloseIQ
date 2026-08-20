@@ -114,10 +114,10 @@ export default function CoachingPage({ onBack, onOpenPopup }: CoachingPageProps)
               <div className="space-y-1">
                 <div className="flex justify-between text-sm font-bold text-on-surface-variant">
                   <span>Pacing & Nervous Fillers</span>
-                  <span className="text-emerald-500 font-bold">85%</span>
+                  <span className="text-blue-500 font-bold">85%</span>
                 </div>
                 <div className="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
-                  <div className="bg-emerald-500 h-full w-[85%]"></div>
+                  <div className="bg-blue-500 h-full w-[85%]"></div>
                 </div>
               </div>
 
