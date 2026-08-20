@@ -80,7 +80,7 @@ Additional Notes: ${formData.notes}
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 p-4 animate-backdrop-fade overflow-y-auto">
-      <div className="relative w-full max-w-2xl bg-[#0E0E10] border border-blue-500/25 rounded-3xl p-6 md:p-8 shadow-2xl animate-modal-entry my-8">
+      <div className="relative w-full max-w-2xl bg-[#0E0E10] border border-emerald-500/25 rounded-3xl p-6 md:p-8 shadow-2xl animate-modal-entry my-8">
         
         {/* Close Button */}
         <button 
@@ -98,8 +98,8 @@ Additional Notes: ${formData.notes}
         </div>
 
         {status === 'success' ? (
-          <div className="bg-blue-500/10 border border-blue-500/20 rounded-2xl p-8 text-center space-y-3">
-            <span className="material-symbols-outlined text-blue-400 text-5xl animate-bounce">mail</span>
+          <div className="bg-emerald-500/10 border border-emerald-500/20 rounded-2xl p-8 text-center space-y-3">
+            <span className="material-symbols-outlined text-emerald-400 text-5xl animate-bounce">mail</span>
             <h3 className="text-2xl font-bold text-white">Application Received!</h3>
             <p className="text-on-surface-variant text-base">
               Thank you! An integration engineer will contact you shortly to schedule your kickoff.
@@ -116,7 +116,7 @@ Additional Notes: ${formData.notes}
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder="Jane Doe"
-                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500"
+                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500"
                 />
               </div>
               <div className="space-y-1">
@@ -127,7 +127,7 @@ Additional Notes: ${formData.notes}
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder="jane@company.com"
-                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500"
+                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500"
                 />
               </div>
             </div>
@@ -141,7 +141,7 @@ Additional Notes: ${formData.notes}
                   value={formData.company}
                   onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                   placeholder="Acme Corp"
-                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500"
+                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500"
                 />
               </div>
               <div className="space-y-1">
@@ -149,7 +149,7 @@ Additional Notes: ${formData.notes}
                 <select
                   value={formData.teamSize}
                   onChange={(e) => setFormData({ ...formData, teamSize: e.target.value })}
-                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white rounded-xl focus:outline-none focus:border-blue-500"
+                  className="w-full bg-[#141416] border border-outline/35 px-4 py-2.5 text-sm text-white rounded-xl focus:outline-none focus:border-emerald-500"
                 >
                   <option value="1-9">1–9 reps</option>
                   <option value="10-25">10–25 reps</option>
@@ -172,8 +172,8 @@ Additional Notes: ${formData.notes}
                       onClick={() => handleIntegrationToggle(name)}
                       className={`py-2 px-2.5 border rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all ${
                         isSelected 
-                          ? 'bg-blue-500/25 border-blue-500 text-white shadow-[0_0_10px_rgba(59,130,246,0.15)]' 
-                          : 'bg-[#141416] border-outline/35 text-on-surface-variant hover:border-blue-500/20 hover:text-white'
+                          ? 'bg-emerald-500/25 border-emerald-500 text-white shadow-[0_0_10px_rgba(16,185,129,0.15)]' 
+                          : 'bg-[#141416] border-outline/35 text-on-surface-variant hover:border-emerald-500/20 hover:text-white'
                       }`}
                     >
                       {isSelected && <span className="material-symbols-outlined text-xs">check</span>}
@@ -191,7 +191,7 @@ Additional Notes: ${formData.notes}
                 value={formData.notes}
                 onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
                 placeholder="Tell us what you want to achieve during the pilot..."
-                className="w-full bg-[#141416] border border-outline/35 px-4 py-2 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-blue-500 resize-none"
+                className="w-full bg-[#141416] border border-outline/35 px-4 py-2 text-sm text-white placeholder-white/20 rounded-xl focus:outline-none focus:border-emerald-500 resize-none"
               />
             </div>
 
@@ -202,7 +202,7 @@ Additional Notes: ${formData.notes}
             <button 
               type="submit" 
               disabled={status === 'submitting'}
-              className="w-full py-3.5 bg-blue-500 text-black font-extrabold text-sm uppercase tracking-wider transition-all rounded-xl hover:bg-blue-600 shadow-[0_0_15px_rgba(59,130,246,0.25)] disabled:opacity-50"
+              className="w-full py-3.5 bg-emerald-500 text-black font-extrabold text-sm uppercase tracking-wider transition-all rounded-xl hover:bg-emerald-600 shadow-[0_0_15px_rgba(16,185,129,0.25)] disabled:opacity-50"
             >
               {status === 'submitting' ? 'Registering...' : 'Apply for Pilot Cohort'}
             </button>

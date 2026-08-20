@@ -138,8 +138,8 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
   return (
     <div className="min-h-screen bg-background text-on-surface pt-32 pb-24 overflow-hidden relative">
       {/* Decorative green glow shapes */}
-      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-none blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-blue-500/10 rounded-none blur-[150px] pointer-events-none"></div>
+      <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-none blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-none blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10 space-y-24">
         
@@ -152,7 +152,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             <span className="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
             Back to Home
           </button>
-          <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+          <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(16,185,129,0.2)]">
             Solutions / AI Personas
           </span>
         </div>
@@ -164,7 +164,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Practice Against <br />
-                <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">AI Buyers.</span>
+                <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">AI Buyers.</span>
               </h1>
               <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">
                 Realistic conversations before real customers.
@@ -187,8 +187,8 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 "Instant performance scoring and feedback"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3 text-base md:text-lg font-semibold">
-                  <div className="w-5 h-5 rounded-none bg-blue-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(59,130,246,0.3)]">
-                    <span className="material-symbols-outlined text-[12px] text-blue-400">check</span>
+                  <div className="w-5 h-5 rounded-none bg-emerald-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(16,185,129,0.3)]">
+                    <span className="material-symbols-outlined text-[12px] text-emerald-400">check</span>
                   </div>
                   {feature}
                 </div>
@@ -198,7 +198,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             <div className="pt-6">
               <button 
                 onClick={onOpenPopup}
-                className="px-8 py-4 bg-blue-500 text-black font-semibold rounded-none hover:bg-blue-600 transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
+                className="px-8 py-4 bg-emerald-500 text-black font-semibold rounded-none hover:bg-emerald-600 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
               >
                 Start Training Sandboxes
               </button>
@@ -208,7 +208,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
           {/* Interactive UI Visualization Side */}
           <div className="space-y-6 relative">
             {/* Massive Green Glow backing */}
-            <div className="absolute inset-0 bg-blue-500/20 blur-[80px] rounded-none pointer-events-none"></div>
+            <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-none pointer-events-none"></div>
 
             {/* Buyer Selector Row */}
             <div className="grid grid-cols-5 gap-2 relative z-10">
@@ -220,11 +220,11 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                     onClick={() => setSelectedId(persona.id)}
                     className={`p-3 border flex flex-col items-center gap-1.5 transition-all rounded-none ${
                       isActive 
-                        ? 'bg-blue-500/10 border-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.25)]' 
+                        ? 'bg-emerald-500/10 border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.25)]' 
                         : 'bg-[#0A0A0A]/60 border-outline/35 hover:bg-[#1A1A1A]'
                     }`}
                   >
-                    <span className={`material-symbols-outlined text-[20px] ${isActive ? 'text-blue-400' : 'text-on-surface-variant'}`}>
+                    <span className={`material-symbols-outlined text-[20px] ${isActive ? 'text-emerald-400' : 'text-on-surface-variant'}`}>
                       {persona.avatarIcon}
                     </span>
                     <span className="text-xs font-bold uppercase tracking-wider text-center hidden md:block text-white">
@@ -236,17 +236,17 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             </div>
 
             {/* Interactive Sandbox HUD */}
-            <div className="relative bg-[#0A0A0A]/80 backdrop-blur-3xl border border-blue-500/30 rounded-none shadow-[0_0_50px_rgba(59,130,246,0.15)] grid grid-cols-1 md:grid-cols-12 overflow-hidden z-10">
+            <div className="relative bg-[#0A0A0A]/80 backdrop-blur-3xl border border-emerald-500/30 rounded-none shadow-[0_0_50px_rgba(16,185,129,0.15)] grid grid-cols-1 md:grid-cols-12 overflow-hidden z-10">
               
               {/* Conversation Area - 7 Columns */}
               <div className="md:col-span-7 flex flex-col border-b md:border-b-0 md:border-r border-outline/25">
                 {/* Header */}
-                <div className="px-6 py-4 border-b border-outline/25 bg-blue-500/5 flex items-center justify-between">
+                <div className="px-6 py-4 border-b border-outline/25 bg-emerald-500/5 flex items-center justify-between">
                   <div>
-                    <h3 className="font-bold text-sm uppercase tracking-wider text-blue-400">Buyer Simulation</h3>
+                    <h3 className="font-bold text-sm uppercase tracking-wider text-emerald-400">Buyer Simulation</h3>
                     <p className="text-base font-bold text-white">{activePersona.name} ({activePersona.role})</p>
                   </div>
-                  <span className="text-xs bg-blue-500/15 border border-blue-500/25 px-2 py-0.5 text-blue-400 font-mono font-bold tracking-widest uppercase">
+                  <span className="text-xs bg-emerald-500/15 border border-emerald-500/25 px-2 py-0.5 text-emerald-400 font-mono font-bold tracking-widest uppercase">
                     Active
                   </span>
                 </div>
@@ -254,21 +254,21 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                 {/* Persona Profile Brief */}
                 <div className="p-4 bg-[#141414]/65 border-b border-outline/20 space-y-1">
                   <div className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Persona Context</div>
-                  <p className="text-sm text-white/80"><strong className="text-blue-400">Behavior: </strong>{activePersona.buyingBehavior}</p>
-                  <p className="text-sm text-white/80"><strong className="text-blue-400">Budget: </strong>{activePersona.budget}</p>
+                  <p className="text-sm text-white/80"><strong className="text-emerald-400">Behavior: </strong>{activePersona.buyingBehavior}</p>
+                  <p className="text-sm text-white/80"><strong className="text-emerald-400">Budget: </strong>{activePersona.budget}</p>
                 </div>
 
                 {/* Message Log */}
                 <div className="p-6 space-y-6">
                   {activePersona.conversation.map((msg, idx) => (
                     <div key={idx} className="space-y-1">
-                      <div className={`flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold ${msg.speaker === 'buyer' ? 'text-blue-400' : 'text-on-surface-variant/60'}`}>
+                      <div className={`flex items-center gap-1.5 text-xs uppercase tracking-wider font-bold ${msg.speaker === 'buyer' ? 'text-emerald-400' : 'text-on-surface-variant/60'}`}>
                         <span className="material-symbols-outlined text-[14px]">
                           {msg.speaker === 'buyer' ? 'person' : 'support_agent'}
                         </span>
                         {msg.speaker === 'buyer' ? activePersona.role : 'Alex (SDR)'}
                       </div>
-                      <div className={`text-base leading-relaxed pl-5 border-l-2 ${msg.speaker === 'buyer' ? 'border-blue-500 text-white' : 'border-outline/25 text-white/70'}`}>
+                      <div className={`text-base leading-relaxed pl-5 border-l-2 ${msg.speaker === 'buyer' ? 'border-emerald-500 text-white' : 'border-outline/25 text-white/70'}`}>
                         {msg.text}
                       </div>
                     </div>
@@ -278,8 +278,8 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
 
               {/* AI Copilot Side Guide - 5 Columns */}
               <div className="md:col-span-5 bg-[#0C0C0E]/90 flex flex-col">
-                <div className="px-6 py-4 border-b border-outline/25 bg-blue-500/5">
-                  <h3 className="font-bold text-sm uppercase tracking-wider text-blue-400 flex items-center gap-1.5">
+                <div className="px-6 py-4 border-b border-outline/25 bg-emerald-500/5">
+                  <h3 className="font-bold text-sm uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
                     <span className="material-symbols-outlined text-[16px] animate-pulse">auto_awesome</span>
                     Live Copilot Guide
                   </h3>
@@ -299,8 +299,8 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
                     <div className="text-xs text-on-surface-variant/80 font-mono font-bold uppercase">Suggested Prompts</div>
                     <div className="space-y-2">
                       {activePersona.copilotSuggestions.map((sug, idx) => (
-                        <div key={idx} className="flex gap-2.5 items-start text-sm border border-blue-500/20 bg-blue-500/[0.02] p-2.5 hover:bg-blue-500/[0.05] transition-colors cursor-pointer">
-                          <span className="material-symbols-outlined text-[18px] text-blue-400 mt-0.5">lightbulb</span>
+                        <div key={idx} className="flex gap-2.5 items-start text-sm border border-emerald-500/20 bg-emerald-500/[0.02] p-2.5 hover:bg-emerald-500/[0.05] transition-colors cursor-pointer">
+                          <span className="material-symbols-outlined text-[18px] text-emerald-400 mt-0.5">lightbulb</span>
                           <span className="text-white/95 leading-snug">{sug}</span>
                         </div>
                       ))}
@@ -318,7 +318,7 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
           <div className="space-y-4 max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
               Master the <br/>
-              <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Art of Selling.</span>
+              <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Art of Selling.</span>
             </h2>
             <p className="text-xl text-on-surface-variant font-medium">
               The AI Persona sandbox prepares reps for every negotiation curveball.
@@ -329,13 +329,13 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
             
             {/* Step 1 */}
             <div className="relative group p-8 border-b md:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">group</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">group</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">01</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">01</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Select Buyer</h3>
@@ -348,13 +348,13 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
 
             {/* Step 2 */}
             <div className="relative group p-8 border-b lg:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">voice_chat</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">voice_chat</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">02</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">02</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Roleplay out loud</h3>
@@ -367,13 +367,13 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
 
             {/* Step 3 */}
             <div className="relative group p-8 border-b md:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">auto_awesome</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">auto_awesome</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">03</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">03</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Copilot Assist</h3>
@@ -386,13 +386,13 @@ export default function AiPersonaPage({ onBack, onOpenPopup }: AiPersonaPageProp
 
             {/* Step 4 */}
             <div className="relative group p-8 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">insights</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">insights</span>
                   </div>
-                  <span className="text-4xl font-black text-blue-500/30 group-hover:text-blue-400/20 transition-colors font-mono">04</span>
+                  <span className="text-4xl font-black text-emerald-500/30 group-hover:text-emerald-400/20 transition-colors font-mono">04</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Instant Feedback</h3>

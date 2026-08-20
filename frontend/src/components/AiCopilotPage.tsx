@@ -33,9 +33,9 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             <p className="text-sm text-white/90 italic">"Competitor X claims they do call recording and summarization for free. Why should we invest in CloseIQ?"</p>
           </div>
           <div className="space-y-2">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">Suggested Response</span>
-            <div className="border border-blue-500/30 bg-blue-500/[0.02] p-3 text-sm leading-relaxed text-white">
-              "I understand they do free transcription. However, CloseIQ isn't just a recorder; we are a behavior-driving tool. Our <strong className="text-blue-400">Live Copilot</strong> assists your reps mid-call so they handle objections and stay on playbook, leading to a 35% higher close rate."
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Suggested Response</span>
+            <div className="border border-emerald-500/30 bg-emerald-500/[0.02] p-3 text-sm leading-relaxed text-white">
+              "I understand they do free transcription. However, CloseIQ isn't just a recorder; we are a behavior-driving tool. Our <strong className="text-emerald-400">Live Copilot</strong> assists your reps mid-call so they handle objections and stay on playbook, leading to a 35% higher close rate."
             </div>
           </div>
         </div>
@@ -48,8 +48,8 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
       title: 'Competitive Battle Card',
       content: (
         <div className="space-y-4">
-          <div className="border border-blue-500/20 bg-[#141414] p-3 space-y-2">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">Competitor X Comparison</span>
+          <div className="border border-emerald-500/20 bg-[#141414] p-3 space-y-2">
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Competitor X Comparison</span>
             <div className="grid grid-cols-2 gap-2 text-xs md:text-sm text-on-surface-variant">
               <div>
                 <strong className="text-white block mb-0.5">Competitor X</strong>
@@ -58,7 +58,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                 • No live rep assistance
               </div>
               <div className="border-l border-outline/30 pl-2">
-                <strong className="text-blue-400 block mb-0.5">CloseIQ</strong>
+                <strong className="text-emerald-400 block mb-0.5">CloseIQ</strong>
                 • Live real-time prompting<br />
                 • Custom ICP persona sandbox<br />
                 • Native CRM sync (no zaps)
@@ -66,7 +66,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             </div>
           </div>
           <div className="space-y-1">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">Value Pro Tip</span>
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Value Pro Tip</span>
             <p className="text-sm text-white/80">Highlight the 75% reduction in sales onboarding/ramp time (3 months to 3 weeks) due to our interactive roleplay sandbox.</p>
           </div>
         </div>
@@ -79,16 +79,16 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
       title: 'Pricing & ROI Guidance',
       content: (
         <div className="space-y-4">
-          <div className="border border-blue-500/20 bg-[#141414] p-3 space-y-1">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">ROI Calculator Cues</span>
-            <p className="text-sm text-white/90">Average CloseIQ customers reclaim their initial investment in <strong className="text-blue-400">47 days</strong> by:</p>
+          <div className="border border-emerald-500/20 bg-[#141414] p-3 space-y-1">
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">ROI Calculator Cues</span>
+            <p className="text-sm text-white/90">Average CloseIQ customers reclaim their initial investment in <strong className="text-emerald-400">47 days</strong> by:</p>
             <ul className="text-sm text-white/70 list-disc pl-4 space-y-1">
               <li>Reducing manager call shadow hours (saves ~5 hours/week per manager).</li>
               <li>Boosting average contract values by 18% through playbook alignment.</li>
             </ul>
           </div>
           <div className="space-y-1">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">Action Prompt</span>
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Action Prompt</span>
             <p className="text-sm text-white/80">Propose a 30-day deferred billing pilot program to eliminate immediate budget hurdles.</p>
           </div>
         </div>
@@ -102,12 +102,12 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
       content: (
         <div className="space-y-4">
           <div className="space-y-2">
-            <span className="text-xs text-blue-400 font-mono font-bold uppercase block">Recommended Discovery Questions</span>
+            <span className="text-xs text-emerald-400 font-mono font-bold uppercase block">Recommended Discovery Questions</span>
             <div className="space-y-2 text-sm text-white/90">
-              <div className="p-2 border border-outline/30 bg-[#141414] hover:border-blue-500/30 transition-colors cursor-pointer">
+              <div className="p-2 border border-outline/30 bg-[#141414] hover:border-emerald-500/30 transition-colors cursor-pointer">
                 "How are your managers currently auditing call quality? What percentage of calls are reviewed?"
               </div>
-              <div className="p-2 border border-outline/30 bg-[#141414] hover:border-blue-500/30 transition-colors cursor-pointer">
+              <div className="p-2 border border-outline/30 bg-[#141414] hover:border-emerald-500/30 transition-colors cursor-pointer">
                 "What is the average ramp time for a new sales rep to hit quota in your team?"
               </div>
             </div>
@@ -123,7 +123,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
     <div className="min-h-screen bg-background text-on-surface pt-32 pb-24 overflow-hidden relative">
       {/* Decorative green glow shapes */}
       <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-primary/20 rounded-none blur-[150px] pointer-events-none"></div>
-      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-blue-500/10 rounded-none blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-40 left-0 w-[600px] h-[600px] bg-emerald-500/10 rounded-none blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10 space-y-24">
         
@@ -136,7 +136,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             <span className="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
             Back to Home
           </button>
-          <span className="text-xs bg-blue-500/15 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(59,130,246,0.2)]">
+          <span className="text-xs bg-emerald-500/15 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-none font-semibold font-mono tracking-wide uppercase shadow-[0_0_10px_rgba(16,185,129,0.2)]">
             Solutions / AI Copilot
           </span>
         </div>
@@ -148,7 +148,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[1.1]">
                 Your AI Copilot. <br />
-                <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Every Call.</span>
+                <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Every Call.</span>
               </h1>
               <p className="text-2xl text-on-surface-variant leading-relaxed max-w-lg font-semibold">
                 Never search for answers while selling.
@@ -172,8 +172,8 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                 "Context-aware responses during every call"
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3 text-base md:text-lg font-semibold">
-                  <div className="w-5 h-5 rounded-none bg-blue-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(59,130,246,0.3)]">
-                    <span className="material-symbols-outlined text-[12px] text-blue-400">check</span>
+                  <div className="w-5 h-5 rounded-none bg-emerald-500/20 flex items-center justify-center shadow-[0_0_8px_rgba(16,185,129,0.3)]">
+                    <span className="material-symbols-outlined text-[12px] text-emerald-400">check</span>
                   </div>
                   {feature}
                 </div>
@@ -183,7 +183,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             <div className="pt-6">
               <button 
                 onClick={onOpenPopup}
-                className="px-8 py-4 bg-blue-500 text-black font-semibold rounded-none hover:bg-blue-600 transition-all shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)]"
+                className="px-8 py-4 bg-emerald-500 text-black font-semibold rounded-none hover:bg-emerald-600 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]"
               >
                 Start Live Call Assist
               </button>
@@ -193,10 +193,10 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
           {/* Interactive UI Visualization Side */}
           <div className="space-y-6 relative">
             {/* Massive Green Glow backing */}
-            <div className="absolute inset-0 bg-blue-500/20 blur-[80px] rounded-none pointer-events-none"></div>
+            <div className="absolute inset-0 bg-emerald-500/20 blur-[80px] rounded-none pointer-events-none"></div>
 
             {/* Live Sales Call HUD */}
-            <div className="relative bg-[#0A0A0A]/80 backdrop-blur-3xl border border-blue-500/30 rounded-none shadow-[0_0_50px_rgba(59,130,246,0.15)] grid grid-cols-1 md:grid-cols-12 overflow-hidden z-10">
+            <div className="relative bg-[#0A0A0A]/80 backdrop-blur-3xl border border-emerald-500/30 rounded-none shadow-[0_0_50px_rgba(16,185,129,0.15)] grid grid-cols-1 md:grid-cols-12 overflow-hidden z-10">
               
               {/* Meeting View Area - 7 Columns */}
               <div className="md:col-span-7 flex flex-col border-b md:border-b-0 md:border-r border-outline/25">
@@ -220,15 +220,15 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                     </div>
                     <span className="text-sm font-bold text-white">David (Procurement)</span>
                     <div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 bg-black/60 border border-outline/20">
-                      <span className="material-symbols-outlined text-xs text-blue-400 animate-pulse">mic</span>
+                      <span className="material-symbols-outlined text-xs text-emerald-400 animate-pulse">mic</span>
                       <span className="text-[10px] font-mono text-on-surface-variant font-medium">Speaking</span>
                     </div>
                   </div>
 
                   {/* Rep Screen */}
                   <div className="border border-outline/35 bg-[#141414]/90 p-4 flex flex-col items-center justify-center gap-3 relative">
-                    <div className="w-16 h-16 bg-blue-500/10 flex items-center justify-center border border-blue-500/30">
-                      <span className="material-symbols-outlined text-4xl text-blue-400">support_agent</span>
+                    <div className="w-16 h-16 bg-emerald-500/10 flex items-center justify-center border border-emerald-500/30">
+                      <span className="material-symbols-outlined text-4xl text-emerald-400">support_agent</span>
                     </div>
                     <span className="text-sm font-bold text-white">Alex (CloseIQ)</span>
                     <div className="absolute bottom-2 left-2 flex items-center gap-1.5 px-2 py-0.5 bg-black/60 border border-outline/20">
@@ -240,7 +240,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
 
                 {/* Subtitles Area */}
                 <div className="p-4 bg-[#141414]/75 border-t border-outline/20">
-                  <span className="text-xs text-blue-400 font-mono font-bold uppercase block mb-1">Live Transcript Feed</span>
+                  <span className="text-xs text-emerald-400 font-mono font-bold uppercase block mb-1">Live Transcript Feed</span>
                   <p className="text-sm md:text-base text-white/90 leading-relaxed">
                     <strong className="text-on-surface-variant">David: </strong>
                     "I see. But Competitor X offers basic call transcription for free. We can't pay a premium just for notes."
@@ -260,7 +260,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                         onClick={() => setActiveTab(tab.id)}
                         className={`py-3 border-b-2 flex flex-col items-center gap-1 transition-all min-w-0 ${
                           isActive 
-                            ? 'border-blue-500 bg-[#0C0C0E]/80 text-blue-400' 
+                            ? 'border-emerald-500 bg-[#0C0C0E]/80 text-emerald-400' 
                             : 'border-transparent text-on-surface-variant hover:text-white'
                         }`}
                       >
@@ -276,7 +276,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                 {/* Tab Content */}
                 <div className="p-5 flex-1 flex flex-col justify-between">
                   <div className="space-y-4">
-                    <h3 className="font-bold text-sm uppercase tracking-wider text-blue-400 flex items-center gap-1.5">
+                    <h3 className="font-bold text-sm uppercase tracking-wider text-emerald-400 flex items-center gap-1.5">
                       <span className="material-symbols-outlined text-[16px]">auto_awesome</span>
                       {currentTab.title}
                     </h3>
@@ -286,7 +286,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
                   {/* Manual trigger indicator */}
                   <div className="border-t border-outline/20 pt-4 flex items-center justify-between text-xs text-on-surface-variant/80 uppercase tracking-widest font-mono font-bold">
                     <span>Sync: Zoom Native</span>
-                    <span className="text-blue-400">Listening...</span>
+                    <span className="text-emerald-400">Listening...</span>
                   </div>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
           <div className="space-y-4 max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white">
               Instant Answers. <br/>
-              <span className="bg-gradient-to-r from-blue-400 to-blue-200 bg-clip-text text-transparent">Zero Delay.</span>
+              <span className="bg-gradient-to-r from-emerald-400 to-emerald-200 bg-clip-text text-transparent">Zero Delay.</span>
             </h2>
             <p className="text-xl text-on-surface-variant font-medium">
               The AI Copilot does the heavy lifting, allowing reps to focus 100% on the buyer.
@@ -311,13 +311,13 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
             
             {/* Step 1 */}
             <div className="relative group p-8 border-b md:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">hearing</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">hearing</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">01</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">01</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Real-time Listening</h3>
@@ -330,13 +330,13 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
 
             {/* Step 2 */}
             <div className="relative group p-8 border-b lg:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">bolt</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">bolt</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">02</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">02</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Context matching</h3>
@@ -349,13 +349,13 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
 
             {/* Step 3 */}
             <div className="relative group p-8 border-b md:border-b-0 lg:border-r border-outline/20 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">forum</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">forum</span>
                   </div>
-                  <span className="text-4xl font-black text-outline/30 group-hover:text-blue-400/20 transition-colors font-mono">03</span>
+                  <span className="text-4xl font-black text-outline/30 group-hover:text-emerald-400/20 transition-colors font-mono">03</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Dynamic Prompts</h3>
@@ -368,13 +368,13 @@ export default function AiCopilotPage({ onBack, onOpenPopup }: AiCopilotPageProp
 
             {/* Step 4 */}
             <div className="relative group p-8 bg-surface/30 hover:bg-surface/60 transition-colors">
-              <div className="absolute inset-0 bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="relative z-10 space-y-16">
                 <div className="flex justify-between items-start">
-                  <div className="w-12 h-12 flex items-center justify-center bg-blue-500/10 border border-blue-500/30">
-                    <span className="material-symbols-outlined text-2xl text-blue-400">cloud_sync</span>
+                  <div className="w-12 h-12 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30">
+                    <span className="material-symbols-outlined text-2xl text-emerald-400">cloud_sync</span>
                   </div>
-                  <span className="text-4xl font-black text-blue-500/30 group-hover:text-blue-400/20 transition-colors font-mono">04</span>
+                  <span className="text-4xl font-black text-emerald-500/30 group-hover:text-emerald-400/20 transition-colors font-mono">04</span>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-white uppercase tracking-wide">Auto CRM Logging</h3>

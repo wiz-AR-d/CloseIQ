@@ -131,7 +131,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
             </button>
             <div className="flex items-center gap-1.5">
               <span className={`text-sm font-bold transition-all ${billingCycle === 'annual' ? 'text-primary' : 'text-on-surface-variant'}`}>Bill Annually</span>
-              <span className="text-xs bg-blue-500/10 text-blue-500 border border-blue-500/20 px-2 py-0.5 rounded font-bold font-mono uppercase tracking-wider">Save 20%</span>
+              <span className="text-xs bg-emerald-500/10 text-emerald-500 border border-emerald-500/20 px-2 py-0.5 rounded font-bold font-mono uppercase tracking-wider">Save 20%</span>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ export default function PricingPage({ onBack, onOpenPopup }: PricingPageProps) {
                 </div>
                 <div className="flex justify-between text-xs text-on-surface-variant font-semibold">
                   <span>Ramp Onboarding Savings:</span>
-                  <span className="text-blue-500 font-bold">+${details.savingsDollar.toLocaleString()} value</span>
+                  <span className="text-emerald-500 font-bold">+${details.savingsDollar.toLocaleString()} value</span>
                 </div>
               </div>
             </div>
