@@ -30,7 +30,7 @@ function App() {
   const [isPopupOpen, setIsPopupOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState<PageType>(() => {
     const path = window.location.pathname;
-    if (path === '/try' || path === '/try/') {
+    if (path.startsWith('/try')) {
       return 'try';
     }
     return 'home';
@@ -39,7 +39,7 @@ function App() {
   useEffect(() => {
     const handleLocation = () => {
       const path = window.location.pathname;
-      if (path === '/try' || path === '/try/') {
+      if (path.startsWith('/try')) {
         setCurrentPage('try');
       } else {
         setCurrentPage(prev => prev === 'try' ? 'home' : prev);
@@ -51,11 +51,11 @@ function App() {
 
   useEffect(() => {
     if (currentPage === 'try') {
-      if (window.location.pathname !== '/try' && window.location.pathname !== '/try/') {
+      if (!window.location.pathname.startsWith('/try')) {
         window.history.pushState(null, '', '/try');
       }
     } else {
-      if (window.location.pathname === '/try' || window.location.pathname === '/try/') {
+      if (window.location.pathname.startsWith('/try')) {
         window.history.pushState(null, '', '/');
       }
     }

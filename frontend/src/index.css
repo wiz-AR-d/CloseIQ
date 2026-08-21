@@ -104,3 +104,28 @@ h1, h2, h3, h4, h5, h6 {
   --color-on-error-container: 254 202 202;
 }
 
+@keyframes pulse-wave {
+  0%, 100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-wave-1 {
+  animation: 1.2s ease-in-out infinite pulse-wave;
+}
+.animate-wave-2 {
+  animation: 0.8s ease-in-out 0.2s infinite pulse-wave;
+}
+.animate-wave-3 {
+  animation: 1.4s ease-in-out 0.4s infinite pulse-wave;
+}
+.animate-wave-4 {
+  animation: 0.9s ease-in-out 0.1s infinite pulse-wave;
+}
+.animate-wave-5 {
+  animation: 1.1s ease-in-out 0.3s infinite pulse-wave;
+}
+

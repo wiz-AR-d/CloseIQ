@@ -64,6 +64,18 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
           </div>
 
           <button 
+            onClick={() => onNavigate?.('try')} 
+            className={`text-[15px] font-bold px-3 py-1 rounded-full transition-all flex items-center gap-1.5 ${
+              currentPage === 'try' 
+                ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-[0_0_12px_rgba(59,130,246,0.45)]' 
+                : 'text-slate-200 hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+            Try Roleplay
+          </button>
+
+          <button 
             onClick={() => onNavigate?.('pilot-program')} 
             className={`text-[16px] font-bold px-3.5 py-1 rounded-full transition-all ${
               currentPage === 'pilot-program' 
@@ -131,6 +143,17 @@ export default function NavBar({ currentPage, onNavigate, onOpenPopup }: NavBarP
               <button onClick={() => { onNavigate?.('quality-automation'); setIsMobileMenuOpen(false); }} className="text-left text-sm font-medium text-white/80 hover:text-white">QA Automation</button>
             </div>
           </div>
+
+          <button 
+            onClick={() => {
+              onNavigate?.('try');
+              setIsMobileMenuOpen(false);
+            }} 
+            className={`text-left text-base font-semibold py-2 border-b border-white/5 transition-colors flex items-center justify-between ${currentPage === 'try' ? 'text-blue-400' : 'text-on-surface-variant'}`}
+          >
+            <span>Try AI Roleplay</span>
+            <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-400">Live Sim</span>
+          </button>
 
           <button 
             onClick={() => {
