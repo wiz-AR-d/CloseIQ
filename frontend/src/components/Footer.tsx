@@ -79,7 +79,7 @@ export default function Footer({ onNavigate }: { onNavigate?: (page: any) => voi
       </div>
       
       {/* Massive Screen-Spanning Brand Text */}
-      <div className="w-full overflow-hidden flex justify-center mt-16 h-[18vw] items-start pointer-events-none">
+      <div className="w-full overflow-hidden flex justify-center mt-16 h-[32vw] items-center pointer-events-none">
         <h1 
           className="text-[24vw] leading-[0.75] font-sans font-bold tracking-tighter text-[#2563EB] select-none text-center animate-pulse duration-3000"
           style={{ textShadow: '0 0 15px rgba(59, 130, 246, 0.8), 0 0 30px rgba(59, 130, 246, 0.5)' }}
