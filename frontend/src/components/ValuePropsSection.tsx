@@ -18,7 +18,7 @@ export default function ValuePropsSection() {
             </p>
           </div>
           <div className="flex-1 w-full relative">
-            <div className="bg-surface/50 backdrop-blur-xl border border-outline rounded-none p-6 shadow-clay border border-outline/50 relative z-10 w-full max-w-[500px] mx-auto">
+            <div className="bg-surface/50 backdrop-blur-xl rounded-none p-6 shadow-clay border border-outline/50 relative z-10 w-full max-w-[500px] mx-auto">
                {/* Premium Scorecard UI Mockup */}
               <div className="flex items-center justify-between pb-5 border-b border-outline/40 mb-5">
                 <div className="flex items-center gap-3">
@@ -107,7 +107,7 @@ export default function ValuePropsSection() {
               </div>
                
               {/* Premium Floating Live Insight Card */}
-              <div className="absolute bottom-20 right-5 w-[310px] bg-[#2A2A2D]/95 backdrop-blur-xl rounded-none p-4 shadow-[0_12px_40px_rgba(0,0,0,0.4)] border border-white/10 transform translate-y-2 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+              <div className="absolute bottom-20 left-1/2 -translate-x-1/2 w-[310px] bg-[#2A2A2D]/95 backdrop-blur-xl rounded-none p-4 shadow-[0_12px_40px_rgba(0,0,0,0.4)] border border-white/10 transform translate-y-2 opacity-90 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]"></span>

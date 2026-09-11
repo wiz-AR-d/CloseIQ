@@ -10,7 +10,7 @@ export default function FinalCtaSection({ onNavigateContact }: FinalCtaSectionPr
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-blue-100/40 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-[800px] mx-auto px-6 relative z-10 text-center">
-        <h2 className="text-5xl md:text-6xl lg:text-[4.5rem] font-sans font-bold tracking-tight leading-[1.05] tracking-tight text-on-background mb-8">
+        <h2 className="text-5xl md:text-6xl lg:text-[4.5rem] font-sans font-bold tracking-tight leading-[1.05] text-on-background mb-8">
           Turn your ramp time <br/>
           <span className="italic text-on-surface-variant">into a competitive moat.</span>
         </h2>
